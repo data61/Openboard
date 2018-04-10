@@ -17,7 +17,9 @@ import decimal
 import types
 
 from django.shortcuts import render
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
+from django.utils.http import urlencode
+
 
 def redirect_for_external_view(request, view):
     path = view.external_url + request.path_info

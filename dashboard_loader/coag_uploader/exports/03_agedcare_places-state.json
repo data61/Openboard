@@ -499,9 +499,9 @@
                                 "label": "Aust"
                             }
                         ], 
-                        "numeric_axis_label": "places per 1000 older persons", 
+                        "numeric_axis_label": "places/recipients per 1000 older persons",
                         "graph_type": 1, 
-                        "heading": "Community Aged Care Places"
+                        "heading": "Community Aged Care Places/Recipients"
                     }, 
                     "tile_type": 6, 
                     "geo_datasets": [], 
