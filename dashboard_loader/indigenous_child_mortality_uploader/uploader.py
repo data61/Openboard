@@ -309,6 +309,9 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "rate_ratio": "rate_ratio",
                                 "rate_diff": "rate_difference",
                             },
+                            jurisdiction_overrides={
+                                'Australia': 'Total'
+                            },
                             pval=pval)
             )
     except LoaderException, e:

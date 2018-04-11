@@ -672,7 +672,8 @@ def load_benchmark_description(wb, sheetname, indicator=False, additional_lookup
     return desc
 
 def populate_raw_data(widget_url, label, rds_url,
-                    model, field_map, query_kwargs={}, 
+                    model, field_map, query_kwargs={},
+                    jurisdiction_overrides={},
                     use_states=True, use_dates=True, pval=None):
     messages = []
     rds = get_rawdataset(widget_url, label, rds_url)
@@ -685,7 +686,10 @@ def populate_raw_data(widget_url, label, rds_url,
     for obj in model.objects.filter(**query_kwargs).order_by(*order_by_args):
         kwargs = {}
         if use_states:
-            kwargs["jurisdiction"] = obj.state_display()
+            if obj.state_display() in jurisdiction_overrides:
+                kwargs["jurisdiction"] = jurisdiction_overrides[obj.state_display()]
+            else:
+                kwargs["jurisdiction"] = obj.state_display()
         if use_dates:
             kwargs["year"] = obj.year_display()
         for model_field, rds_field in field_map.items():

@@ -149,6 +149,9 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             "variability_upper": "indigenous_variability_upper",
                             "indigenous_target": "indigenous_target",
                             "non_indigenous_projected": "non_indigenous_projected",
+                        },
+                        jurisdiction_overrides={
+                            'Australia': 'Total'
                         }
                 )
         )

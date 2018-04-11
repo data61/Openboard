@@ -157,6 +157,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             "indigenous_indig_num", "indigenous_indig_num", 
                             "indigenous_indig_num", IndigenousNaplanData, 
                                 {
+                                    "year_level": "year_lvl",
                                     "indig_proportion_above_nms": "proportion_above_nms",
                                     "indig_confidence_interval": "confidence_interval",
                                     "indig_trajectory": "trajectory_point"
@@ -169,6 +170,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             "indigenous_indig_lit", "indigenous_indig_lit", 
                             "indigenous_indig_lit", IndigenousNaplanData, 
                                 {
+                                    "year_level": "year_lvl",
                                     "indig_proportion_above_nms": "proportion_above_nms",
                                     "indig_confidence_interval": "confidence_interval",
                                     "indig_trajectory": "trajectory_point"
