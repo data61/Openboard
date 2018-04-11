@@ -281,7 +281,7 @@ class EditStatView(InitialisableFormView):
             return self.form_invalid(self.get_reset_form())
     def form_valid(self, form):
         if self.stat.is_data_list():
-            clear_statistic_list(self.stat, pval=pval)
+            clear_statistic_list(self.stat, pval=self.pval)
             for subform in form:
                 fd = subform.cleaned_data
                 if fd and not fd.get("DELETE"):
@@ -289,7 +289,7 @@ class EditStatView(InitialisableFormView):
                                 fd.get("datetime"), fd.get("level"), fd.get("date"), fd.get("label"),
                                 fd.get("traffic_light_code"), fd.get("icon_code"),
                                 fd.get("trend"), fd.get("url"))
-            if request.POST.get("submit"):
+            if self.request.POST.get("submit"):
                 redirect_out=True
             else:
                 form = self.get_reset_form()

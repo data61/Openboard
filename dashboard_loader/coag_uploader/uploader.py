@@ -1003,7 +1003,7 @@ def update_state_stats(wurl_hero, wlbl_hero, wurl_dtl, wlbl_dtl,
     messages = []
     try:
         if len(fields) != len(want_increase):
-            raise LoaderError("fields/want_increase array length mismatch")
+            raise LoaderException("fields/want_increase array length mismatch")
     except TypeError:
         want_increase = [ want_increase ] * len(fields)
     if use_benchmark_tls:
