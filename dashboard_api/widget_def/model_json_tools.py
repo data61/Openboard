@@ -317,10 +317,10 @@ class JSON_CAT_LOOKUP(JSON_ATTR):
             cons_args[key] = obj
 
 class JSON_NUM_ATTR(JSON_ATTR):
-    def __init__(self, precision, allow_int=True, attribute=None):
+    def __init__(self, precision, allow_int=True, default=None, attribute=None):
         self.precision = precision
         self.allow_int=allow_int
-        super(JSON_NUM_ATTR, self).__init__(attribute=attribute)
+        super(JSON_NUM_ATTR, self).__init__(attribute=attribute, default=default)
     def handle_export(self, obj, export, key, env, recurse_func="export", **kwargs):
         if self.attribute:
             attrval = getattr(obj, self.attribute)
@@ -334,14 +334,17 @@ class JSON_NUM_ATTR(JSON_ATTR):
             export[key] = float(attrval)
         return
     def handle_import(self, js, cons_args, key, imp_kwargs, env):
-        if js[key] is None:
-            val = None
+        if key not in js and self.default is not None:
+            cons_args[key] = decimal.Decimal(self.default)
         else:
-            val = decimal.Decimal(("%%.%df" % self.precision) % js[key]) 
-        if self.attribute:
-            cons_args[self.attribute] = val
-        else:
-            cons_args[key] = val
+            if js[key] is None:
+                val = None
+            else:
+                val = decimal.Decimal(("%%.%df" % self.precision) % js[key])
+            if self.attribute:
+                cons_args[self.attribute] = val
+            else:
+                cons_args[key] = val
 
 class JSON_EXP_SUB_DICT(JSON_ATTR):
     def __init__(self, defn, **kwargs):

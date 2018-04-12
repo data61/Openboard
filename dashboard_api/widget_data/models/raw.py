@@ -25,7 +25,7 @@ class RawDataRecord(models.Model):
     def update_csv(self):
         out = ""
         first_cell = True
-        for col in self.rds.rawdatasetcolumn_set.all():
+        for col in self.rds.columns.all():
             if not first_cell:
                 out += ","
             try:
@@ -39,7 +39,7 @@ class RawDataRecord(models.Model):
         self.save()
     def json(self):
         result = {}
-        for col in self.rds.rawdatasetcolumn_set.all():
+        for col in self.rds.columns.all():
             try:
                 rd = self.rawdata_set.get(column=col)
                 result[col.url] = rd.json_val()

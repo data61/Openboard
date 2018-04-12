@@ -1,236 +1,220 @@
 {
-    "category": "skills", 
     "edit_all_groups": [], 
-    "source_url_text": "Data source: DET", 
+    "category": "skills", 
     "subtitle": "Skills Reform", 
     "subcategory": "national partnership agreement", 
-    "groups": [], 
     "url": "skills_reform", 
+    "source_url": "https://www.education.gov.au/national-partnership-agreement-skills-reform", 
+    "source_url_text": "Data source: DET", 
+    "groups": [], 
     "definitions": [
         {
+            "about": "<p>The Commonwealth committed $1.75 billion over five years for a National Partnership Agreement on Skills Reform (NPASR) to reform the vocational education and training system. The NPASR commenced in 2012 and expires in June 2017.</p>", 
+            "refresh_rate": 3780, 
+            "views": [
+                {
+                    "view": "skills"
+                }
+            ], 
+            "default_frequency_text": "Six monthly", 
             "tiles": [
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 100, 
-                    "aspect": 1, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "skills_reform_header", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 1, 
                     "columns": null
                 }, 
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 200, 
-                    "aspect": 3, 
                     "statistics": [
                         {
-                            "num_precision": 0, 
+                            "unit_prefix": "", 
                             "icon_library": null, 
                             "name": "Commonwealth Performance Indicators Completed", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "completed", 
-                            "traffic_light_automation": null, 
+                            "num_precision": 0, 
+                            "stat_type": 2, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "completed", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": "", 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": "/5", 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "skills-reform-hero-stats", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 3, 
                     "columns": null
                 }, 
                 {
-                    "expansion": true, 
-                    "main_stat_count": 1, 
-                    "sort_order": 300, 
-                    "aspect": 1, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_short", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_short", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }, 
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": null, 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_long", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 8, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_long", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 8, 
-                            "unit_prefix": null, 
-                            "sort_order": 200
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "skills_reform_status", 
                     "tile_type": 20, 
+                    "expansion": true, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 1, 
                     "columns": null
                 }, 
                 {
-                    "expansion": true, 
-                    "sort_order": 400, 
-                    "aspect": 2, 
                     "statistics": [], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "skills_reform_details", 
                     "tile_type": 19, 
+                    "expansion": true, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }
             ], 
-            "views": [
-                {
-                    "sort_order": 115, 
-                    "view": "skills"
-                }
-            ], 
-            "default_frequency_text": "Six monthly", 
+            "label": "skills_reform", 
+            "parametisation": null, 
             "raw_data_sets": [
                 {
                     "url": "data_table", 
-                    "name": "National Partnership Agreement Progress", 
                     "columns": [
                         {
                             "url": "assessment", 
-                            "sort_order": 10, 
                             "heading": "Assessment", 
                             "description": "NPA Assessment."
                         }, 
                         {
                             "url": "performance_indicator", 
-                            "sort_order": 20, 
                             "heading": "Performance Indicator", 
                             "description": "Performance Indicator."
                         }, 
                         {
                             "url": "nsw_status", 
-                            "sort_order": 30, 
                             "heading": "NSW", 
                             "description": "NSW Performance Status."
                         }, 
                         {
                             "url": "vic_status", 
-                            "sort_order": 40, 
                             "heading": "Vic", 
                             "description": "Vic Performance Status."
                         }, 
                         {
                             "url": "qld_status", 
-                            "sort_order": 50, 
                             "heading": "Qld", 
                             "description": "Qld Performance Status."
                         }, 
                         {
                             "url": "wa_status", 
-                            "sort_order": 60, 
                             "heading": "WA", 
                             "description": "WA Performance Status."
                         }, 
                         {
                             "url": "sa_status", 
-                            "sort_order": 70, 
                             "heading": "SA", 
                             "description": "SA Performance Status."
                         }, 
                         {
                             "url": "tas_status", 
-                            "sort_order": 80, 
                             "heading": "Tas", 
                             "description": "Tas Performance Status."
                         }, 
                         {
                             "url": "act_status", 
-                            "sort_order": 90, 
                             "heading": "ACT", 
                             "description": "ACT Performance Status."
                         }, 
                         {
                             "url": "nt_status", 
-                            "sort_order": 100, 
                             "heading": "NT", 
                             "description": "NT Performance Status."
                         }, 
                         {
                             "url": "australia_status", 
-                            "sort_order": 110, 
                             "heading": "Commonwealth", 
                             "description": "Commonwealth Performance Status."
                         }
@@ -239,71 +223,59 @@
                 }, 
                 {
                     "url": "skills_reform", 
-                    "name": "Skills Reform NPA Data", 
                     "columns": [
                         {
                             "url": "assessment", 
-                            "sort_order": 10, 
                             "heading": "Assessment", 
                             "description": "NPA Assessment."
                         }, 
                         {
                             "url": "performance_indicator", 
-                            "sort_order": 20, 
                             "heading": "Performance Indicator", 
                             "description": "Performance Indicator."
                         }, 
                         {
                             "url": "nsw_status", 
-                            "sort_order": 30, 
                             "heading": "NSW", 
                             "description": "NSW Performance Status."
                         }, 
                         {
                             "url": "vic_status", 
-                            "sort_order": 40, 
                             "heading": "Vic", 
                             "description": "Vic Performance Status."
                         }, 
                         {
                             "url": "qld_status", 
-                            "sort_order": 50, 
                             "heading": "Qld", 
                             "description": "Qld Performance Status."
                         }, 
                         {
                             "url": "wa_status", 
-                            "sort_order": 60, 
                             "heading": "WA", 
                             "description": "WA Performance Status."
                         }, 
                         {
                             "url": "sa_status", 
-                            "sort_order": 70, 
                             "heading": "SA", 
                             "description": "SA Performance Status."
                         }, 
                         {
                             "url": "tas_status", 
-                            "sort_order": 80, 
                             "heading": "Tas", 
                             "description": "Tas Performance Status."
                         }, 
                         {
                             "url": "act_status", 
-                            "sort_order": 90, 
                             "heading": "ACT", 
                             "description": "ACT Performance Status."
                         }, 
                         {
                             "url": "nt_status", 
-                            "sort_order": 100, 
                             "heading": "NT", 
                             "description": "NT Performance Status."
                         }, 
                         {
                             "url": "australia_status", 
-                            "sort_order": 110, 
                             "heading": "Commonwealth", 
                             "description": "Commonwealth Performance Status."
                         }
@@ -311,16 +283,10 @@
                     "filename": "coag_skills_reform_data.csv"
                 }
             ], 
-            "sort_order": 2415, 
-            "expansion_hint": "View more", 
-            "about": "<p>The Commonwealth committed $1.75 billion over five years for a National Partnership Agreement on Skills Reform (NPASR) to reform the vocational education and training system. The NPASR commenced in 2012 and expires in June 2017.</p>", 
-            "refresh_rate": 3780, 
-            "label": "skills_reform", 
-            "parametisation": null, 
-            "deexpansion_hint": "View less"
+            "deexpansion_hint": "View less", 
+            "expansion_hint": "View more"
         }
     ], 
-    "source_url": "https://www.education.gov.au/national-partnership-agreement-skills-reform", 
     "name": "National Partnership Agreement on Skills Reform"
 }
 

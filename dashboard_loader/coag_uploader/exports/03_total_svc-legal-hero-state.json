@@ -1,91 +1,223 @@
 {
-    "category": "legal assistance", 
     "edit_all_groups": [], 
-    "source_url_text": "Data source: Attorney General's Department",
+    "category": "legal assistance", 
     "subtitle": "Targeting of legal representation services to financially disadvantaged people", 
     "subcategory": "summary", 
-    "groups": [], 
     "url": "total_svc-legal-hero-state", 
+    "source_url": "", 
+    "source_url_text": "Data source: Attorney General's Department", 
+    "groups": [], 
     "definitions": [
         {
+            "about": "<p>At least 95% (for legal aid commissions) or at least 85% (for community legal centres) of representation services are delivered to people experiencing financial disadvantage - to be achieved by each State in each six month period from 1 July 2015.</p>", 
+            "refresh_rate": 3850, 
+            "views": [
+                {
+                    "child_view": "legal_assistance_act", 
+                    "child_view_text": "See all", 
+                    "view": "act"
+                }, 
+                {
+                    "child_view": "legal_assistance_nsw", 
+                    "child_view_text": "See all", 
+                    "view": "nsw"
+                }, 
+                {
+                    "child_view": "legal_assistance_nt", 
+                    "child_view_text": "See all", 
+                    "view": "nt"
+                }, 
+                {
+                    "child_view": "legal_assistance_sa", 
+                    "child_view_text": "See all", 
+                    "view": "sa"
+                }, 
+                {
+                    "child_view": "legal_assistance_qld", 
+                    "child_view_text": "See all", 
+                    "view": "qld"
+                }, 
+                {
+                    "child_view": "legal_assistance_vic", 
+                    "child_view_text": "See all", 
+                    "view": "vic"
+                }, 
+                {
+                    "child_view": "legal_assistance_tas", 
+                    "child_view_text": "See all", 
+                    "view": "tas"
+                }, 
+                {
+                    "child_view": "legal_assistance_wa", 
+                    "child_view_text": "See all", 
+                    "view": "wa"
+                }
+            ], 
+            "default_frequency_text": "Annual", 
             "tiles": [
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 100, 
-                    "aspect": 2, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header_state", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header_state", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "legal-total_svc-hero-header_state", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }, 
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 200, 
-                    "aspect": 2, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "legal-total_svc-hero-header", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }, 
                 {
+                    "statistics": [
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "benchmark_clc", 
+                            "traffic_light_scale": "Benchmark Scale", 
+                            "unit_underfix": "", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "%", 
+                            "trend": false, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "achievement_clc", 
+                            "traffic_light_scale": "Benchmark Scale", 
+                            "unit_underfix": "", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "%", 
+                            "trend": true, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "achievement_lac", 
+                            "traffic_light_scale": "Benchmark Scale", 
+                            "unit_underfix": "", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "%", 
+                            "trend": true, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "benchmark_lac", 
+                            "traffic_light_scale": "Benchmark Scale", 
+                            "unit_underfix": "", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "%", 
+                            "trend": false, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }
+                    ], 
+                    "template": null, 
+                    "list_label_width": null, 
+                    "url": "legal-total_svc-hero-stats", 
+                    "tile_type": 9, 
                     "expansion": false, 
-                    "sort_order": 300, 
+                    "geo_datasets": [], 
                     "grid": {
                         "corner_label": "", 
                         "show_column_headers": true, 
@@ -95,7 +227,6 @@
                                     "benchmark_lac", 
                                     "achievement_lac"
                                 ], 
-                                "sort_order": 100, 
                                 "label": "LAC"
                             }, 
                             {
@@ -103,184 +234,31 @@
                                     "benchmark_clc", 
                                     "achievement_clc"
                                 ], 
-                                "sort_order": 200, 
                                 "label": "CLC"
                             }
                         ], 
                         "columns": [
                             {
-                                "sort_order": 101, 
                                 "label": "State Benchmark"
                             }, 
                             {
-                                "sort_order": 200, 
                                 "label": "Achievement"
                             }
                         ], 
                         "show_row_headers": true
                     }, 
                     "aspect": 3, 
-                    "statistics": [
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "benchmark_clc", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": false, 
-                            "traffic_light_scale": "Benchmark Scale", 
-                            "unit_underfix": "", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "%", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 100
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "achievement_clc", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": true, 
-                            "traffic_light_scale": "Benchmark Scale", 
-                            "unit_underfix": "", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "%", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 200
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "benchmark_lac", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": false, 
-                            "traffic_light_scale": "Benchmark Scale", 
-                            "unit_underfix": "", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "%", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 300
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "achievement_lac", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": true, 
-                            "traffic_light_scale": "Benchmark Scale", 
-                            "unit_underfix": "", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "%", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 300
-                        }
-                    ], 
-                    "list_label_width": null, 
-                    "url": "legal-total_svc-hero-stats", 
-                    "tile_type": 9, 
-                    "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
                     "columns": null
                 }
             ], 
-            "views": [
-                {
-                    "child_view": "legal_assistance_act", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "act"
-                }, 
-                {
-                    "child_view": "legal_assistance_nsw", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "nsw"
-                }, 
-                {
-                    "child_view": "legal_assistance_nt", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "nt"
-                }, 
-                {
-                    "child_view": "legal_assistance_sa", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "sa"
-                }, 
-                {
-                    "child_view": "legal_assistance_qld", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "qld"
-                }, 
-                {
-                    "child_view": "legal_assistance_vic", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "vic"
-                }, 
-                {
-                    "child_view": "legal_assistance_tas", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "tas"
-                }, 
-                {
-                    "child_view": "legal_assistance_wa", 
-                    "sort_order": 800, 
-                    "child_view_text": "See all", 
-                    "view": "wa"
-                }
-            ], 
-            "default_frequency_text": "Annual", 
-            "raw_data_sets": [], 
-            "sort_order": 1500, 
-            "expansion_hint": "", 
-            "about": "<p>At least 95% (for legal aid commissions) or at least 85% (for community legal centres) of representation services are delivered to people experiencing financial disadvantage - to be achieved by each State in each six month period from 1 July 2015.</p>", 
-            "refresh_rate": 3850, 
             "label": "total_svc-legal-hero-state", 
             "parametisation": "state_param", 
-            "deexpansion_hint": ""
+            "raw_data_sets": [], 
+            "deexpansion_hint": "", 
+            "expansion_hint": ""
         }
     ], 
-    "source_url": "",
     "name": "Legal Assistance"
 }
 

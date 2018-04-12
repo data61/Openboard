@@ -93,7 +93,7 @@ class GraphDefinition(models.Model, WidgetDefJsonMixin):
         "dataset_label": JSON_ATTR(),
         "display_options": JSON_PASSDOWN(model="GraphDisplayOptions",app="widget_def", attribute="options", related_attr="graph"),
         "dynamic_clusters": JSON_ATTR(),
-        "vertical_axis_buffer": JSON_NUM_ATTR(precision=0),
+        "vertical_axis_buffer": JSON_NUM_ATTR(precision=0, default="0"),
         "clusters": JSON_RECURSEDOWN("GraphCluster", "graphcluster_set", "graph", "url", app="widget_def"),
         "datasets": JSON_RECURSEDOWN("GraphDataset", "datasets", "graph", "url", app="widget_def")
     }

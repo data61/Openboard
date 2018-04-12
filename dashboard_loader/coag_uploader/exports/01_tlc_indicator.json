@@ -2,37 +2,30 @@
     "codes": [
         {
             "colour": "green", 
-            "sort_order": 100, 
             "value": "improving"
         }, 
         {
             "colour": "amber", 
-            "sort_order": 200, 
             "value": "no_improvement"
         }, 
         {
             "colour": "red", 
-            "sort_order": 300, 
             "value": "negative_change"
         }, 
         {
             "colour": "grey1", 
-            "sort_order": 400, 
             "value": "mixed_results"
         }, 
         {
             "colour": "grey2", 
-            "sort_order": 500, 
             "value": "new_indicator"
         }, 
         {
             "colour": "grey3", 
-            "sort_order": 600, 
             "value": "no_data"
         }, 
         {
             "colour": "grey4", 
-            "sort_order": 700, 
             "value": "no_trend_data"
         }
     ], 

@@ -2,52 +2,42 @@
     "codes": [
         {
             "colour": "green1", 
-            "sort_order": 100, 
             "value": "achieved"
         }, 
         {
             "colour": "green2", 
-            "sort_order": 120, 
             "value": "on_track"
         }, 
         {
             "colour": "green3", 
-            "sort_order": 130, 
             "value": "likely_to_have_been_met"
         }, 
         {
             "colour": "amber2", 
-            "sort_order": 140, 
             "value": "unlikely_to_have_been_met"
         }, 
         {
             "colour": "amber1", 
-            "sort_order": 200, 
             "value": "not_on_track"
         }, 
         {
             "colour": "red", 
-            "sort_order": 300, 
             "value": "not_met"
         }, 
         {
             "colour": "grey1", 
-            "sort_order": 401, 
             "value": "new_benchmark"
         }, 
         {
             "colour": "grey2", 
-            "sort_order": 411, 
             "value": "revised_benchmark"
         }, 
         {
             "colour": "grey3", 
-            "sort_order": 420, 
             "value": "mixed_results"
         }, 
         {
             "colour": "grey4", 
-            "sort_order": 430, 
             "value": "not_applicable"
         }
     ], 

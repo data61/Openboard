@@ -1,230 +1,217 @@
 {
-    "category": "education", 
     "edit_all_groups": [], 
-    "source_url_text": "Data source: ACARA", 
+    "category": "education", 
     "subtitle": "Reading improvement", 
     "subcategory": "summary", 
-    "groups": [], 
     "url": "naplan_lit-education-hero-state", 
+    "source_url": "http://www.pc.gov.au/research/ongoing/report-on-government-services/2016/childcare-education-and-training/school-education", 
+    "source_url_text": "Data source: ACARA", 
+    "groups": [], 
     "definitions": [
         {
+            "about": "<p>The National Assessment Program\u2014Literacy and Numeracy (NAPLAN) measures proportions of children in Years 3, 5, 7 and 9 meeting national minimum standards (NMS) and their average scores. Tracking the proportion of students meeting the NMS shows the performance of low achieving students over time. The average score is a measure of achievement and is an indication of the performance of the students, school, jurisdiction and the system as a whole. Results for the Northern Territory may reflect, in part, a high proportion of disadvantaged Indigenous students. In the Northern Territory, Indigenous children made up 44 per cent of the 5\u201319 year old population.</p>", 
+            "refresh_rate": 3820, 
+            "views": [
+                {
+                    "child_view": "education_act", 
+                    "child_view_text": "See all", 
+                    "view": "act"
+                }, 
+                {
+                    "child_view": "education_nsw", 
+                    "child_view_text": "See all", 
+                    "view": "nsw"
+                }, 
+                {
+                    "child_view": "education_nt", 
+                    "child_view_text": "See all", 
+                    "view": "nt"
+                }, 
+                {
+                    "child_view": "education_sa", 
+                    "child_view_text": "See all", 
+                    "view": "sa"
+                }, 
+                {
+                    "child_view": "education_qld", 
+                    "child_view_text": "See all", 
+                    "view": "qld"
+                }, 
+                {
+                    "child_view": "education_vic", 
+                    "child_view_text": "See all", 
+                    "view": "vic"
+                }, 
+                {
+                    "child_view": "education_tas", 
+                    "child_view_text": "See all", 
+                    "view": "tas"
+                }, 
+                {
+                    "child_view": "education_wa", 
+                    "child_view_text": "See all", 
+                    "view": "wa"
+                }
+            ], 
+            "default_frequency_text": "Annual", 
             "tiles": [
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 100, 
-                    "aspect": 2, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header_state", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header_state", 
                             "traffic_light_scale": "Indicator Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "education-naplan_lit-hero-header-state", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }, 
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 200, 
-                    "aspect": 2, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header", 
                             "traffic_light_scale": "Indicator Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "education-naplan_lit-hero-header", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }, 
                 {
-                    "expansion": false, 
-                    "sort_order": 300, 
-                    "aspect": 3, 
                     "statistics": [], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "education-naplan_lit-hero-graph", 
                     "graph": {
                         "numeric_axis_always_show_zero": false, 
+                        "horiz_axis_type": 2, 
+                        "datasets": [
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "year3", 
+                                "colour": "green", 
+                                "dynamic_label": false, 
+                                "label": "Year 3", 
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            }, 
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "year5", 
+                                "colour": "blue", 
+                                "dynamic_label": false, 
+                                "label": "Year 5", 
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            }, 
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "year7", 
+                                "colour": "orange", 
+                                "dynamic_label": false, 
+                                "label": "Year 7", 
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            }, 
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "year9", 
+                                "colour": "purple", 
+                                "dynamic_label": false, 
+                                "label": "Year 9", 
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            }
+                        ], 
+                        "numeric_axis_label": "% students", 
+                        "secondary_numeric_axis_label": null, 
+                        "secondary_numeric_axis_always_show_zero": true, 
                         "display_options": {
                             "shaded": false, 
                             "stacked": false, 
                             "single_graph": true, 
                             "point_colour_map": null, 
                             "lines": 1, 
+                            "pie": 0, 
                             "points": 0, 
                             "rotates": false
                         }, 
-                        "secondary_numeric_axis_label": null, 
-                        "secondary_numeric_axis_always_show_zero": true, 
                         "horiz_axis_label": "", 
-                        "use_secondary_numeric_axis": false, 
                         "dataset_label": "dataset", 
-                        "clusters": [], 
-                        "cluster_label": "cluster", 
-                        "dynamic_clusters": false, 
-                        "horiz_axis_type": 2, 
-                        "datasets": [
-                            {
-                                "use_secondary_numeric_axis": false, 
-                                "sort_order": 100, 
-                                "use_error_bars": false, 
-                                "hyperlink": "", 
-                                "url": "year3", 
-                                "colour": "green", 
-                                "dynamic_label": false, 
-                                "label": "Year 3"
-                            }, 
-                            {
-                                "use_secondary_numeric_axis": false, 
-                                "sort_order": 200, 
-                                "use_error_bars": false, 
-                                "hyperlink": "", 
-                                "url": "year5", 
-                                "colour": "blue", 
-                                "dynamic_label": false, 
-                                "label": "Year 5"
-                            }, 
-                            {
-                                "use_secondary_numeric_axis": false, 
-                                "sort_order": 300, 
-                                "use_error_bars": false, 
-                                "hyperlink": "", 
-                                "url": "year7", 
-                                "colour": "orange", 
-                                "dynamic_label": false, 
-                                "label": "Year 7"
-                            }, 
-                            {
-                                "use_secondary_numeric_axis": false, 
-                                "sort_order": 400, 
-                                "use_error_bars": false, 
-                                "hyperlink": "", 
-                                "url": "year9", 
-                                "colour": "purple", 
-                                "dynamic_label": false, 
-                                "label": "Year 9"
-                            }
-                        ], 
-                        "numeric_axis_label": "% students", 
+                        "vertical_axis_buffer": 0, 
                         "graph_type": 1, 
-                        "heading": ""
+                        "cluster_label": "cluster", 
+                        "clusters": [], 
+                        "heading": "", 
+                        "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
+                    "expansion": false, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 3, 
                     "columns": null
                 }
             ], 
-            "views": [
-                {
-                    "child_view": "education_act", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "act"
-                }, 
-                {
-                    "child_view": "education_nsw", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "nsw"
-                }, 
-                {
-                    "child_view": "education_nt", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "nt"
-                }, 
-                {
-                    "child_view": "education_sa", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "sa"
-                }, 
-                {
-                    "child_view": "education_qld", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "qld"
-                }, 
-                {
-                    "child_view": "education_vic", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "vic"
-                }, 
-                {
-                    "child_view": "education_tas", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "tas"
-                }, 
-                {
-                    "child_view": "education_wa", 
-                    "sort_order": 210, 
-                    "child_view_text": "See all", 
-                    "view": "wa"
-                }
-            ], 
-            "default_frequency_text": "Annual", 
-            "raw_data_sets": [], 
-            "sort_order": 310, 
-            "expansion_hint": "", 
-            "about": "<p>The National Assessment Program\u2014Literacy and Numeracy (NAPLAN) measures proportions of children in Years 3, 5, 7 and 9 meeting national minimum standards (NMS) and their average scores. Tracking the proportion of students meeting the NMS shows the performance of low achieving students over time. The average score is a measure of achievement and is an indication of the performance of the students, school, jurisdiction and the system as a whole. Results for the Northern Territory may reflect, in part, a high proportion of disadvantaged Indigenous students. In the Northern Territory, Indigenous children made up 44 per cent of the 5\u201319 year old population.</p>", 
-            "refresh_rate": 3820, 
             "label": "naplan_lit-education-hero-state", 
             "parametisation": "state_param", 
-            "deexpansion_hint": ""
+            "raw_data_sets": [], 
+            "deexpansion_hint": "", 
+            "expansion_hint": ""
         }
     ], 
-    "source_url": "http://www.pc.gov.au/research/ongoing/report-on-government-services/2016/childcare-education-and-training/school-education", 
     "name": "Education"
 }
 

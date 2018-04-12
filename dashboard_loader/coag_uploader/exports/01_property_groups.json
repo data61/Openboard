@@ -1,458 +1,476 @@
 {
     "exports": [
         {
+            "label": "traffic_background", 
             "properties": [
                 {
-                    "value": "#AA4744", 
-                    "key": "no"
+                    "key": "amber", 
+                    "value": "#FFFF00"
                 }, 
                 {
-                    "value": "#5E5E5E", 
-                    "key": "unknown"
+                    "key": "green", 
+                    "value": "#00FF00"
                 }, 
                 {
-                    "value": "#F6A623", 
-                    "key": "warning"
-                }, 
-                {
-                    "value": "#89A54E", 
-                    "key": "yes"
+                    "key": "red", 
+                    "value": "#FF0000"
                 }
             ], 
-            "name": "Traffic Light Text Colour", 
-            "label": "traffic_text"
+            "name": "Traffic light backgrounds"
         }, 
         {
+            "label": "traffic_text", 
             "properties": [
                 {
-                    "value": "#AA4744", 
-                    "key": "no"
+                    "key": "no", 
+                    "value": "#AA4744"
                 }, 
                 {
-                    "value": "#5E5E5E", 
-                    "key": "unknown"
+                    "key": "unknown", 
+                    "value": "#5E5E5E"
                 }, 
                 {
-                    "value": "#F6A623", 
-                    "key": "warning"
+                    "key": "warning", 
+                    "value": "#F6A623"
                 }, 
                 {
-                    "value": "#89A54E", 
-                    "key": "yes"
+                    "key": "yes", 
+                    "value": "#89A54E"
                 }
             ], 
-            "name": "Widget Header Colour", 
-            "label": "traffic_header"
+            "name": "Traffic Light Text Colour"
         }, 
         {
+            "label": "traffic_header", 
             "properties": [
                 {
-                    "value": "#a06c98", 
-                    "key": "amber"
+                    "key": "no", 
+                    "value": "#AA4744"
                 }, 
                 {
-                    "value": "aqua", 
-                    "key": "aqua"
+                    "key": "unknown", 
+                    "value": "#5E5E5E"
                 }, 
                 {
-                    "value": "steelblue", 
-                    "key": "blue"
+                    "key": "warning", 
+                    "value": "#F6A623"
                 }, 
                 {
-                    "value": "#6590bb", 
-                    "key": "blue-dotted"
-                }, 
-                {
-                    "value": "#6590bb", 
-                    "key": "blue-solid"
-                }, 
-                {
-                    "value": "brown", 
-                    "key": "brown"
-                }, 
-                {
-                    "value": "brown", 
-                    "key": "brown-dotted"
-                }, 
-                {
-                    "value": "brown", 
-                    "key": "brown-solid"
-                }, 
-                {
-                    "value": "steelblue", 
-                    "key": "dark_blue"
-                }, 
-                {
-                    "value": "steelblue", 
-                    "key": "dark_blue-dotted"
-                }, 
-                {
-                    "value": "steelblue", 
-                    "key": "dark_blue-solid"
-                }, 
-                {
-                    "value": "#83a274", 
-                    "key": "dark_green"
-                }, 
-                {
-                    "value": "#83a274", 
-                    "key": "dark_green-dotted"
-                }, 
-                {
-                    "value": "#83a274", 
-                    "key": "dark_green-solid"
-                }, 
-                {
-                    "value": "#aba453", 
-                    "key": "gold"
-                }, 
-                {
-                    "value": "#aba453", 
-                    "key": "gold-dotted"
-                }, 
-                {
-                    "value": "#aba453", 
-                    "key": "gold-solid"
-                }, 
-                {
-                    "value": "#45bcac", 
-                    "key": "green"
-                }, 
-                {
-                    "value": "#45bcac", 
-                    "key": "green-dotted"
-                }, 
-                {
-                    "value": "#45bcac", 
-                    "key": "green-solid"
-                }, 
-                {
-                    "value": "orange", 
-                    "key": "orange"
-                }, 
-                {
-                    "value": "orange", 
-                    "key": "orange-dotted"
-                }, 
-                {
-                    "value": "orange", 
-                    "key": "orange-solid"
-                }, 
-                {
-                    "value": "#245046", 
-                    "key": "pale_blue"
-                }, 
-                {
-                    "value": "#245046", 
-                    "key": "pale_blue-dotted"
-                }, 
-                {
-                    "value": "#245046", 
-                    "key": "pale_blue-solid"
-                }, 
-                {
-                    "value": "purple", 
-                    "key": "purple"
-                }, 
-                {
-                    "value": "purple", 
-                    "key": "purple-dotted"
-                }, 
-                {
-                    "value": "purple", 
-                    "key": "purple-solid"
-                }, 
-                {
-                    "value": "red", 
-                    "key": "red-dotted"
+                    "key": "yes", 
+                    "value": "#89A54E"
                 }
             ], 
-            "name": "Stroke Colour", 
-            "label": "stroke_colour"
+            "name": "Widget Header Colour"
         }, 
         {
+            "label": "stroke_colour", 
             "properties": [
                 {
-                    "value": "7, 4", 
-                    "key": "dashed"
+                    "key": "amber", 
+                    "value": "#a06c98"
                 }, 
                 {
-                    "value": "0", 
-                    "key": "solid"
+                    "key": "aqua", 
+                    "value": "aqua"
+                }, 
+                {
+                    "key": "blue", 
+                    "value": "steelblue"
+                }, 
+                {
+                    "key": "blue-dotted", 
+                    "value": "#6590bb"
+                }, 
+                {
+                    "key": "blue-solid", 
+                    "value": "#6590bb"
+                }, 
+                {
+                    "key": "brown", 
+                    "value": "brown"
+                }, 
+                {
+                    "key": "brown-dotted", 
+                    "value": "brown"
+                }, 
+                {
+                    "key": "brown-solid", 
+                    "value": "brown"
+                }, 
+                {
+                    "key": "dark_blue", 
+                    "value": "steelblue"
+                }, 
+                {
+                    "key": "dark_blue-dotted", 
+                    "value": "steelblue"
+                }, 
+                {
+                    "key": "dark_blue-solid", 
+                    "value": "steelblue"
+                }, 
+                {
+                    "key": "dark_green", 
+                    "value": "#83a274"
+                }, 
+                {
+                    "key": "dark_green-dotted", 
+                    "value": "#83a274"
+                }, 
+                {
+                    "key": "dark_green-solid", 
+                    "value": "#83a274"
+                }, 
+                {
+                    "key": "gold", 
+                    "value": "#aba453"
+                }, 
+                {
+                    "key": "gold-dotted", 
+                    "value": "#aba453"
+                }, 
+                {
+                    "key": "gold-solid", 
+                    "value": "#aba453"
+                }, 
+                {
+                    "key": "green", 
+                    "value": "#45bcac"
+                }, 
+                {
+                    "key": "green-dotted", 
+                    "value": "#45bcac"
+                }, 
+                {
+                    "key": "green-solid", 
+                    "value": "#45bcac"
+                }, 
+                {
+                    "key": "orange", 
+                    "value": "orange"
+                }, 
+                {
+                    "key": "orange-dotted", 
+                    "value": "orange"
+                }, 
+                {
+                    "key": "orange-solid", 
+                    "value": "orange"
+                }, 
+                {
+                    "key": "pale_blue", 
+                    "value": "#245046"
+                }, 
+                {
+                    "key": "pale_blue-dotted", 
+                    "value": "#245046"
+                }, 
+                {
+                    "key": "pale_blue-solid", 
+                    "value": "#245046"
+                }, 
+                {
+                    "key": "purple", 
+                    "value": "purple"
+                }, 
+                {
+                    "key": "purple-dotted", 
+                    "value": "purple"
+                }, 
+                {
+                    "key": "purple-solid", 
+                    "value": "purple"
+                }, 
+                {
+                    "key": "red-dotted", 
+                    "value": "red"
                 }
             ], 
-            "name": "Dashes", 
-            "label": "stroke_dasharray"
+            "name": "Stroke Colour"
         }, 
         {
+            "label": "stroke_dasharray", 
             "properties": [
                 {
-                    "value": "1", 
-                    "key": "dashed"
+                    "key": "dashed", 
+                    "value": "7, 4"
                 }, 
                 {
-                    "value": "0", 
-                    "key": "solid"
+                    "key": "solid", 
+                    "value": "0"
                 }
             ], 
-            "name": "Stroke Dash Width", 
-            "label": "stroke_width"
+            "name": "Dashes"
         }, 
         {
+            "label": "stroke_width", 
             "properties": [
                 {
-                    "value": "steelblue", 
-                    "key": "blue"
+                    "key": "dashed", 
+                    "value": "1"
                 }, 
                 {
-                    "value": "#562b00", 
-                    "key": "brown"
-                }, 
-                {
-                    "value": "#0a1688", 
-                    "key": "dark_blue"
-                }, 
-                {
-                    "value": "#0f4017", 
-                    "key": "dark_green"
-                }, 
-                {
-                    "value": "gold", 
-                    "key": "gold"
-                }, 
-                {
-                    "value": "gold", 
-                    "key": "gold-solid"
-                }, 
-                {
-                    "value": "gold", 
-                    "key": "gold-solid-bar"
-                }, 
-                {
-                    "value": "#92d050", 
-                    "key": "green"
-                }, 
-                {
-                    "value": "white", 
-                    "key": "green-dashed-line"
-                }, 
-                {
-                    "value": "white", 
-                    "key": "green-dotted"
-                }, 
-                {
-                    "value": "#92d050", 
-                    "key": "green-solid"
-                }, 
-                {
-                    "value": "#92d050", 
-                    "key": "green-solid-bar"
-                }, 
-                {
-                    "value": "#d99694", 
-                    "key": "orange"
-                }, 
-                {
-                    "value": "#f6a623", 
-                    "key": "orange-solid"
-                }, 
-                {
-                    "value": "#72afe2", 
-                    "key": "pale_blue"
-                }, 
-                {
-                    "value": "#800080", 
-                    "key": "purple"
-                }, 
-                {
-                    "value": "#800080", 
-                    "key": "purple-solid"
-                }, 
-                {
-                    "value": "#800080", 
-                    "key": "purple-solid-bar"
+                    "key": "solid", 
+                    "value": "0"
                 }
             ], 
-            "name": "Bar Chart Fill", 
-            "label": "bar_fill"
+            "name": "Stroke Dash Width"
         }, 
         {
+            "label": "bar_fill", 
             "properties": [
                 {
-                    "value": "transparent", 
-                    "key": "blue"
+                    "key": "blue", 
+                    "value": "steelblue"
                 }, 
                 {
-                    "value": "gold", 
-                    "key": "gold"
+                    "key": "brown", 
+                    "value": "#562b00"
                 }, 
                 {
-                    "value": "gold", 
-                    "key": "gold-solid"
+                    "key": "dark_blue", 
+                    "value": "#0a1688"
                 }, 
                 {
-                    "value": "gold", 
-                    "key": "gold-solid-bar"
+                    "key": "dark_green", 
+                    "value": "#0f4017"
                 }, 
                 {
-                    "value": "transparent", 
-                    "key": "green"
+                    "key": "gold", 
+                    "value": "gold"
                 }, 
                 {
-                    "value": "rgb(146, 208, 80)", 
-                    "key": "green-dashed-line"
+                    "key": "gold-solid", 
+                    "value": "gold"
                 }, 
                 {
-                    "value": "#92d050", 
-                    "key": "green-dotted"
+                    "key": "gold-solid-bar", 
+                    "value": "gold"
                 }, 
                 {
-                    "value": "#92d050", 
-                    "key": "green-solid"
+                    "key": "green", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "#92d050", 
-                    "key": "green-solid-bar"
+                    "key": "green-dashed-line", 
+                    "value": "white"
                 }, 
                 {
-                    "value": "#92d050", 
-                    "key": "green-solid-line"
+                    "key": "green-dotted", 
+                    "value": "white"
                 }, 
                 {
-                    "value": "#d99694", 
-                    "key": "orange"
+                    "key": "green-solid", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "transparent", 
-                    "key": "orange-solid"
+                    "key": "green-solid-bar", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "#800080", 
-                    "key": "purple"
+                    "key": "orange", 
+                    "value": "#d99694"
                 }, 
                 {
-                    "value": "#800080", 
-                    "key": "purple-solid"
+                    "key": "orange-solid", 
+                    "value": "#f6a623"
                 }, 
                 {
-                    "value": "#800080", 
-                    "key": "purple-solid-bar"
+                    "key": "pale_blue", 
+                    "value": "#72afe2"
+                }, 
+                {
+                    "key": "purple", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-solid", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-solid-bar", 
+                    "value": "#800080"
                 }
             ], 
-            "name": "Bar Chart Stroke", 
-            "label": "bar_stroke"
+            "name": "Bar Chart Fill"
         }, 
         {
+            "label": "bar_stroke", 
             "properties": [
                 {
-                    "value": "#5a4400", 
-                    "key": "amber"
+                    "key": "blue", 
+                    "value": "transparent"
                 }, 
                 {
-                    "value": "#5a4400", 
-                    "key": "amber1"
+                    "key": "gold", 
+                    "value": "gold"
                 }, 
                 {
-                    "value": "#5a4400", 
-                    "key": "amber2"
+                    "key": "gold-solid", 
+                    "value": "gold"
                 }, 
                 {
-                    "value": "#549409", 
-                    "key": "green"
+                    "key": "gold-solid-bar", 
+                    "value": "gold"
                 }, 
                 {
-                    "value": "#549409", 
-                    "key": "green1"
+                    "key": "green", 
+                    "value": "transparent"
                 }, 
                 {
-                    "value": "#549409", 
-                    "key": "green2"
+                    "key": "green-dashed-line", 
+                    "value": "rgb(146, 208, 80)"
                 }, 
                 {
-                    "value": "#616161", 
-                    "key": "grey1"
+                    "key": "green-dotted", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "#616161", 
-                    "key": "grey2"
+                    "key": "green-solid", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "#616161", 
-                    "key": "grey3"
+                    "key": "green-solid-bar", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "#616161", 
-                    "key": "grey4"
+                    "key": "green-solid-line", 
+                    "value": "#92d050"
                 }, 
                 {
-                    "value": "#79d60b", 
-                    "key": "pale_green"
+                    "key": "orange", 
+                    "value": "#d99694"
                 }, 
                 {
-                    "value": "#AB4541", 
-                    "key": "red"
+                    "key": "orange-solid", 
+                    "value": "transparent"
                 }, 
                 {
-                    "value": "#FFFF00", 
-                    "key": "yellow"
+                    "key": "purple", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-solid", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-solid-bar", 
+                    "value": "#800080"
                 }
             ], 
-            "name": "Traffic Light Foreground", 
-            "label": "traffic_fore"
+            "name": "Bar Chart Stroke"
         }, 
         {
+            "label": "traffic_fore", 
             "properties": [
                 {
-                    "value": "rgba(255, 193, 0, 0.5)", 
-                    "key": "amber"
+                    "key": "amber", 
+                    "value": "#5a4400"
                 }, 
                 {
-                    "value": "rgba(255, 193, 0, 0.5)", 
-                    "key": "amber1"
+                    "key": "amber1", 
+                    "value": "#5a4400"
                 }, 
                 {
-                    "value": "rgba(255, 193, 0, 0.5)", 
-                    "key": "amber2"
+                    "key": "amber2", 
+                    "value": "#5a4400"
                 }, 
                 {
-                    "value": "rgba(146, 208, 80, 0.26)", 
-                    "key": "green"
+                    "key": "green", 
+                    "value": "#549409"
                 }, 
                 {
-                    "value": "rgba(195, 214, 155, 0.65)", 
-                    "key": "green1"
+                    "key": "green1", 
+                    "value": "#549409"
                 }, 
                 {
-                    "value": "rgba(195, 214, 155, 0.65)", 
-                    "key": "green2"
+                    "key": "green2", 
+                    "value": "#549409"
                 }, 
                 {
-                    "value": "rgba(0, 0, 0, 0.25)", 
-                    "key": "grey1"
+                    "key": "grey1", 
+                    "value": "#616161"
                 }, 
                 {
-                    "value": "rgba(0, 0, 0, 0.25)", 
-                    "key": "grey2"
+                    "key": "grey2", 
+                    "value": "#616161"
                 }, 
                 {
-                    "value": "rgba(0, 0, 0, 0.25)", 
-                    "key": "grey3"
+                    "key": "grey3", 
+                    "value": "#616161"
                 }, 
                 {
-                    "value": "rgba(0, 0, 0, 0.25)", 
-                    "key": "grey4"
+                    "key": "grey4", 
+                    "value": "#616161"
                 }, 
                 {
-                    "value": "#f3ffe6", 
-                    "key": "pale_green"
+                    "key": "pale_green", 
+                    "value": "#79d60b"
                 }, 
                 {
-                    "value": "#E5D2D1", 
-                    "key": "red"
+                    "key": "red", 
+                    "value": "#AB4541"
+                }, 
+                {
+                    "key": "yellow", 
+                    "value": "#FFFF00"
                 }
             ], 
-            "name": "Traffic Light Background", 
-            "label": "traffic_back"
+            "name": "Traffic Light Foreground"
+        }, 
+        {
+            "label": "traffic_back", 
+            "properties": [
+                {
+                    "key": "amber", 
+                    "value": "rgba(255, 193, 0, 0.5)"
+                }, 
+                {
+                    "key": "amber1", 
+                    "value": "rgba(255, 193, 0, 0.5)"
+                }, 
+                {
+                    "key": "amber2", 
+                    "value": "rgba(255, 193, 0, 0.5)"
+                }, 
+                {
+                    "key": "green", 
+                    "value": "rgba(146, 208, 80, 0.26)"
+                }, 
+                {
+                    "key": "green1", 
+                    "value": "rgba(195, 214, 155, 0.65)"
+                }, 
+                {
+                    "key": "green2", 
+                    "value": "rgba(195, 214, 155, 0.65)"
+                }, 
+                {
+                    "key": "grey1", 
+                    "value": "rgba(0, 0, 0, 0.25)"
+                }, 
+                {
+                    "key": "grey2", 
+                    "value": "rgba(0, 0, 0, 0.25)"
+                }, 
+                {
+                    "key": "grey3", 
+                    "value": "rgba(0, 0, 0, 0.25)"
+                }, 
+                {
+                    "key": "grey4", 
+                    "value": "rgba(0, 0, 0, 0.25)"
+                }, 
+                {
+                    "key": "pale_green", 
+                    "value": "#f3ffe6"
+                }, 
+                {
+                    "key": "red", 
+                    "value": "#E5D2D1"
+                }
+            ], 
+            "name": "Traffic Light Background"
         }
     ], 
     "type": "PropertyGroup"

@@ -1,53 +1,44 @@
 {
+    "family": "region_infrastructure", 
+    "sort_order": 800, 
+    "name": "", 
     "members": [
         {
-            "sort_order": 100, 
             "name": "NATIONAL", 
             "view": "infrastructure"
         }, 
         {
-            "sort_order": 205, 
             "name": "NSW", 
             "view": "infrastructure_nsw"
         }, 
         {
-            "sort_order": 305, 
             "name": "VIC", 
             "view": "infrastructure_vic"
         }, 
         {
-            "sort_order": 405, 
             "name": "QLD", 
             "view": "infrastructure_qld"
         }, 
         {
-            "sort_order": 505, 
             "name": "WA", 
             "view": "infrastructure_wa"
         }, 
         {
-            "sort_order": 605, 
             "name": "SA", 
             "view": "infrastructure_sa"
         }, 
         {
-            "sort_order": 705, 
             "name": "TAS", 
             "view": "infrastructure_tas"
         }, 
         {
-            "sort_order": 805, 
             "name": "ACT", 
             "view": "infrastructure_act"
         }, 
         {
-            "sort_order": 905, 
             "name": "NT", 
             "view": "infrastructure_nt"
         }
-    ], 
-    "sort_order": 800, 
-    "name": "", 
-    "family": "region_infrastructure"
+    ]
 }
 

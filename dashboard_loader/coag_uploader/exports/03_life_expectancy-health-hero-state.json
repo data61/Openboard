@@ -1,91 +1,265 @@
 {
-    "category": "health", 
     "edit_all_groups": [], 
-    "source_url_text": "Data source: ABS", 
+    "category": "health", 
     "subtitle": "Life expectancy", 
     "subcategory": "summary", 
-    "groups": [], 
     "url": "life_expectancy-health-hero-state", 
+    "source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3302.0.55.001", 
+    "source_url_text": "Data source: ABS", 
+    "groups": [], 
     "definitions": [
         {
+            "about": "<p>Improve the life expectancy for Australian men and women.</p>", 
+            "refresh_rate": 3900, 
+            "views": [
+                {
+                    "child_view": "healthcare_act", 
+                    "child_view_text": "See all", 
+                    "view": "act"
+                }, 
+                {
+                    "child_view": "healthcare_nsw", 
+                    "child_view_text": "See all", 
+                    "view": "nsw"
+                }, 
+                {
+                    "child_view": "healthcare_nt", 
+                    "child_view_text": "See all", 
+                    "view": "nt"
+                }, 
+                {
+                    "child_view": "healthcare_sa", 
+                    "child_view_text": "See all", 
+                    "view": "sa"
+                }, 
+                {
+                    "child_view": "healthcare_qld", 
+                    "child_view_text": "See all", 
+                    "view": "qld"
+                }, 
+                {
+                    "child_view": "healthcare_vic", 
+                    "child_view_text": "See all", 
+                    "view": "vic"
+                }, 
+                {
+                    "child_view": "healthcare_tas", 
+                    "child_view_text": "See all", 
+                    "view": "tas"
+                }, 
+                {
+                    "child_view": "healthcare_wa", 
+                    "child_view_text": "See all", 
+                    "view": "wa"
+                }
+            ], 
+            "default_frequency_text": "Annual", 
             "tiles": [
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 100, 
-                    "aspect": 2, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header_state", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header_state", 
                             "traffic_light_scale": "Indicator Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "health-life_expectancy-hero-header_state", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }, 
                 {
-                    "expansion": false, 
-                    "main_stat_count": 1, 
-                    "sort_order": 200, 
-                    "aspect": 2, 
                     "statistics": [
                         {
-                            "num_precision": null, 
+                            "unit_prefix": null, 
                             "icon_library": "indicator_benchmark_icons", 
                             "name": "", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "url": "status_header", 
-                            "traffic_light_automation": null, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "trend": false, 
+                            "url": "status_header", 
                             "traffic_light_scale": "Indicator Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": null, 
+                            "trend": false, 
                             "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": null, 
-                            "sort_order": 100
+                            "traffic_light_automation": null
                         }
                     ], 
+                    "template": null, 
                     "list_label_width": null, 
                     "url": "health-life_expectancy-hero-header", 
                     "tile_type": 20, 
+                    "expansion": false, 
+                    "main_stat_count": 1, 
                     "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
+                    "aspect": 2, 
                     "columns": null
                 }, 
                 {
+                    "statistics": [
+                        {
+                            "unit_prefix": null, 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "year_1", 
+                            "traffic_light_scale": null, 
+                            "unit_underfix": null, 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": null, 
+                            "trend": false, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": null, 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": null, 
+                            "stat_type": 1, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "year_2", 
+                            "traffic_light_scale": null, 
+                            "unit_underfix": null, 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": null, 
+                            "trend": false, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "men_life_exp_state", 
+                            "traffic_light_scale": "Indicator Scale", 
+                            "unit_underfix": "years", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "", 
+                            "trend": true, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "women_life_exp_state", 
+                            "traffic_light_scale": "Indicator Scale", 
+                            "unit_underfix": "years", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "", 
+                            "trend": true, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "women_life_exp", 
+                            "traffic_light_scale": "Indicator Scale", 
+                            "unit_underfix": "years", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "", 
+                            "trend": true, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }, 
+                        {
+                            "unit_prefix": "", 
+                            "icon_library": null, 
+                            "name": "", 
+                            "numbered_list": false, 
+                            "hyperlinkable": false, 
+                            "num_precision": 1, 
+                            "stat_type": 2, 
+                            "footer": false, 
+                            "editable": true, 
+                            "name_as_label": true, 
+                            "url": "men_life_exp", 
+                            "traffic_light_scale": "Indicator Scale", 
+                            "unit_underfix": "years", 
+                            "unit_signed": false, 
+                            "unit_si_prefix_rounding": 0, 
+                            "unit_suffix": "", 
+                            "trend": true, 
+                            "rotates": false, 
+                            "traffic_light_automation": null
+                        }
+                    ], 
+                    "template": null, 
+                    "list_label_width": null, 
+                    "url": "health-life_expectancy-hero-stats", 
+                    "tile_type": 9, 
                     "expansion": false, 
-                    "sort_order": 300, 
+                    "geo_datasets": [], 
                     "grid": {
                         "corner_label": "", 
                         "show_column_headers": true, 
@@ -95,7 +269,6 @@
                                     "year_1", 
                                     "year_2"
                                 ], 
-                                "sort_order": 50, 
                                 "label": "Year"
                             }, 
                             {
@@ -103,7 +276,6 @@
                                     "men_life_exp_state", 
                                     "women_life_exp_state"
                                 ], 
-                                "sort_order": 100, 
                                 "label": "{{ state_abbrev }}"
                             }, 
                             {
@@ -111,228 +283,31 @@
                                     "men_life_exp", 
                                     "women_life_exp"
                                 ], 
-                                "sort_order": 200, 
                                 "label": "Aust"
                             }
                         ], 
                         "columns": [
                             {
-                                "sort_order": 100, 
                                 "label": "Men"
                             }, 
                             {
-                                "sort_order": 200, 
                                 "label": "Women"
                             }
                         ], 
                         "show_row_headers": true
                     }, 
                     "aspect": 3, 
-                    "statistics": [
-                        {
-                            "num_precision": null,
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "year_1", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": false, 
-                            "traffic_light_scale": null,
-                            "unit_underfix": "years", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "", 
-                            "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": "", 
-                            "sort_order": 10
-                        }, 
-                        {
-                            "num_precision": null,
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "year_2", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": false, 
-                            "traffic_light_scale": null,
-                            "unit_underfix": "years", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "", 
-                            "rotates": false, 
-                            "stat_type": 1, 
-                            "unit_prefix": "", 
-                            "sort_order": 20
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "men_life_exp_state", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": true, 
-                            "traffic_light_scale": "Indicator Scale", 
-                            "unit_underfix": "years", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 100
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "women_life_exp_state", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": true, 
-                            "traffic_light_scale": "Indicator Scale", 
-                            "unit_underfix": "years", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 200
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "women_life_exp", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": true, 
-                            "traffic_light_scale": "Indicator Scale", 
-                            "unit_underfix": "years", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 300
-                        }, 
-                        {
-                            "num_precision": 1, 
-                            "icon_library": null, 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "url": "men_life_exp", 
-                            "traffic_light_automation": null, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
-                            "trend": true, 
-                            "traffic_light_scale": "Indicator Scale", 
-                            "unit_underfix": "years", 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "", 
-                            "rotates": false, 
-                            "stat_type": 2, 
-                            "unit_prefix": "", 
-                            "sort_order": 300
-                        }
-                    ], 
-                    "list_label_width": null, 
-                    "url": "health-life_expectancy-hero-stats", 
-                    "tile_type": 9, 
-                    "geo_datasets": [], 
                     "geo_window": null, 
-                    "template": null, 
                     "columns": null
                 }
             ], 
-            "views": [
-                {
-                    "child_view": "healthcare_act", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "act"
-                }, 
-                {
-                    "child_view": "healthcare_nsw", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "nsw"
-                }, 
-                {
-                    "child_view": "healthcare_nt", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "nt"
-                }, 
-                {
-                    "child_view": "healthcare_sa", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "sa"
-                }, 
-                {
-                    "child_view": "healthcare_qld", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "qld"
-                }, 
-                {
-                    "child_view": "healthcare_vic", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "vic"
-                }, 
-                {
-                    "child_view": "healthcare_tas", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "tas"
-                }, 
-                {
-                    "child_view": "healthcare_wa", 
-                    "sort_order": 441, 
-                    "child_view_text": "See all", 
-                    "view": "wa"
-                }
-            ], 
-            "default_frequency_text": "Annual", 
-            "raw_data_sets": [], 
-            "sort_order": 700, 
-            "expansion_hint": "", 
-            "about": "<p>Improve the life expectancy for Australian men and women.</p>", 
-            "refresh_rate": 3900, 
             "label": "life_expectancy-health-hero-state", 
             "parametisation": "state_param", 
-            "deexpansion_hint": ""
+            "raw_data_sets": [], 
+            "deexpansion_hint": "", 
+            "expansion_hint": ""
         }
     ], 
-    "source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/3302.0.55.001", 
     "name": "Health"
 }
 

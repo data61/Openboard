@@ -2,22 +2,18 @@
     "library_name": "indicator_benchmark_icons", 
     "codes": [
         {
-            "sort_order": 100, 
             "description": "A tick", 
             "value": "yes"
         }, 
         {
-            "sort_order": 200, 
             "description": "An exclaimation point", 
             "value": "warning"
         }, 
         {
-            "sort_order": 300, 
             "description": "A cross", 
             "value": "no"
         }, 
         {
-            "sort_order": 400, 
             "description": "A question mark", 
             "value": "unknown"
         }

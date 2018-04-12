@@ -167,7 +167,7 @@ python manage.py export_widget --settings=dashboard_loader.settings_coag educati
 echo "Exporting Skills Detail Widgets"
 python manage.py export_widget --settings=dashboard_loader.settings_coag skills_cert3 > coag_uploader/exports/03_cert3.json
 python manage.py export_widget --settings=dashboard_loader.settings_coag skills_higher_qual > coag_uploader/exports/03_higher_qual.json
-python manage.py export_widget --settings=dashboard_loader.settings_coag skills_higher_qual > coag_uploader/exports/03_higher_qual.json
+python manage.py export_widget --settings=dashboard_loader.settings_coag skills_improved_employ > coag_uploader/exports/03_improved_employ.json
 python manage.py export_widget --settings=dashboard_loader.settings_coag skills_reform > coag_uploader/exports/03_skills_reform.json
 
 echo "Exporting Skills Detail Widgets (Parametised by State)"

@@ -1,22 +1,22 @@
 {
     "edit_all_groups": [], 
-    "category": "housing", 
-    "subtitle": "Reduce the number of Aboriginal and Torres Strait Islanders living in houses of poor condition", 
+    "category": "education", 
+    "subtitle": "Provide universal access to preschool.", 
     "subcategory": "national partnership agreement", 
-    "url": "housing_remote_condition", 
-    "source_url": "http://www.abs.gov.au/websitedbs/d3310114.nsf/home/national+aboriginal+and+torres+strait+islander+social+survey", 
+    "url": "education_uaece", 
+    "source_url": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/4240.0.55.001", 
     "source_url_text": "Data source: ABS", 
     "groups": [], 
     "definitions": [
         {
-            "about": "<p>Reduce the number of Aboriginal and Torres Strait Islanders living in houses of poor condition in remote and very remote Australia.</p>", 
-            "refresh_rate": 3420, 
+            "about": "<p>95 per cent of children enrolled in a quality preschool program in the year before full-time school.</p>", 
+            "refresh_rate": 3790, 
             "views": [
                 {
-                    "view": "housing"
+                    "view": "education"
                 }
             ], 
-            "default_frequency_text": "Three yearly", 
+            "default_frequency_text": "Annual", 
             "tiles": [
                 {
                     "statistics": [
@@ -32,7 +32,7 @@
                             "editable": true, 
                             "name_as_label": true, 
                             "url": "status_header", 
-                            "traffic_light_scale": "Indicator Scale", 
+                            "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
@@ -44,7 +44,7 @@
                     ], 
                     "template": null, 
                     "list_label_width": null, 
-                    "url": "housing_remote_condition_header", 
+                    "url": "education_uaece_header", 
                     "tile_type": 20, 
                     "expansion": false, 
                     "main_stat_count": 1, 
@@ -58,20 +58,20 @@
                         {
                             "unit_prefix": "", 
                             "icon_library": null, 
-                            "name": "Reference Year", 
+                            "name": "Jurisdictions meeting target", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "num_precision": 1, 
+                            "num_precision": 0, 
                             "stat_type": 2, 
                             "footer": false, 
                             "editable": true, 
-                            "name_as_label": false, 
-                            "url": "reference", 
-                            "traffic_light_scale": "Indicator Scale", 
-                            "unit_underfix": "of remote Indigenous people", 
+                            "name_as_label": true, 
+                            "url": "jurisdictions_met", 
+                            "traffic_light_scale": "Benchmark Scale", 
+                            "unit_underfix": "", 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": "%", 
+                            "unit_suffix": "/8", 
                             "trend": false, 
                             "rotates": false, 
                             "traffic_light_automation": null
@@ -79,17 +79,17 @@
                         {
                             "unit_prefix": "", 
                             "icon_library": null, 
-                            "name": "Latest Year", 
+                            "name": "Target", 
                             "numbered_list": false, 
                             "hyperlinkable": false, 
-                            "num_precision": 1, 
+                            "num_precision": 0, 
                             "stat_type": 2, 
                             "footer": false, 
                             "editable": true, 
-                            "name_as_label": false, 
-                            "url": "latest", 
-                            "traffic_light_scale": "Indicator Scale", 
-                            "unit_underfix": "of remote Indigenous people", 
+                            "name_as_label": true, 
+                            "url": "target", 
+                            "traffic_light_scale": "Benchmark Scale", 
+                            "unit_underfix": "of preschool-aged children", 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
                             "unit_suffix": "%", 
@@ -100,7 +100,7 @@
                     ], 
                     "template": null, 
                     "list_label_width": null, 
-                    "url": "housing-remote_condition-summary", 
+                    "url": "education-uaece-summary-stats", 
                     "tile_type": 20, 
                     "expansion": false, 
                     "main_stat_count": 2, 
@@ -123,7 +123,7 @@
                             "editable": true, 
                             "name_as_label": true, 
                             "url": "status_short", 
-                            "traffic_light_scale": "Indicator Scale", 
+                            "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
@@ -144,7 +144,7 @@
                             "editable": true, 
                             "name_as_label": true, 
                             "url": "status_long", 
-                            "traffic_light_scale": "Indicator Scale", 
+                            "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
@@ -156,7 +156,7 @@
                     ], 
                     "template": null, 
                     "list_label_width": null, 
-                    "url": "housing_remote_condition_status", 
+                    "url": "education_uaece_status", 
                     "tile_type": 20, 
                     "expansion": true, 
                     "main_stat_count": 1, 
@@ -169,7 +169,7 @@
                     "statistics": [], 
                     "template": null, 
                     "list_label_width": null, 
-                    "url": "housing_remote_condition_details", 
+                    "url": "education_uaece_details", 
                     "tile_type": 19, 
                     "expansion": true, 
                     "geo_datasets": [], 
@@ -181,7 +181,7 @@
                     "statistics": [], 
                     "template": null, 
                     "list_label_width": null, 
-                    "url": "housing_remote_condition_detail_graph", 
+                    "url": "education_uaece_detail_graph", 
                     "graph": {
                         "numeric_axis_always_show_zero": true, 
                         "horiz_axis_type": 0, 
@@ -189,15 +189,35 @@
                             {
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
-                                "url": "condition", 
-                                "colour": "green", 
-                                "dynamic_label": false, 
-                                "label": "Houses of Poor Condition", 
+                                "url": "reference", 
+                                "colour": "orange", 
+                                "dynamic_label": true, 
+                                "label": "Reference Year", 
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            }, 
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "recent", 
+                                "colour": "purple", 
+                                "dynamic_label": true, 
+                                "label": "Recent Year", 
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            }, 
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "latest", 
+                                "colour": "blue", 
+                                "dynamic_label": true, 
+                                "label": "Latest Year", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
                         ], 
-                        "numeric_axis_label": "% of remote Indigenous people", 
+                        "numeric_axis_label": "% enrolment", 
                         "secondary_numeric_axis_label": null, 
                         "secondary_numeric_axis_always_show_zero": true, 
                         "display_options": {
@@ -211,13 +231,54 @@
                             "rotates": false
                         }, 
                         "horiz_axis_label": null, 
-                        "dataset_label": "dataset", 
+                        "dataset_label": "Year", 
                         "vertical_axis_buffer": 0, 
                         "graph_type": 2, 
-                        "cluster_label": "cluster", 
-                        "clusters": [], 
-                        "heading": "Indigenous people 15 years and older living in remote areas and reporting major structural problems with their house", 
-                        "dynamic_clusters": true
+                        "cluster_label": "State", 
+                        "clusters": [
+                            {
+                                "url": "nsw", 
+                                "label": "NSW", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "vic", 
+                                "label": "Vic", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "qld", 
+                                "label": "Qld", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "wa", 
+                                "label": "WA", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "sa", 
+                                "label": "SA", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "tas", 
+                                "label": "Tas", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "act", 
+                                "label": "ACT", 
+                                "hyperlink": ""
+                            }, 
+                            {
+                                "url": "nt", 
+                                "label": "NT", 
+                                "hyperlink": ""
+                            }
+                        ], 
+                        "heading": "Access to quality early childhood education in the year before full-time school", 
+                        "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
                     "expansion": true, 
@@ -227,7 +288,7 @@
                     "columns": null
                 }
             ], 
-            "label": "housing_remote_condition", 
+            "label": "education_uaece", 
             "parametisation": null, 
             "raw_data_sets": [
                 {
@@ -236,18 +297,53 @@
                         {
                             "url": "year", 
                             "heading": "Year", 
-                            "description": "The year range."
+                            "description": "The calendar or financial year each row describes."
                         }, 
                         {
-                            "url": "australia_proportion", 
-                            "heading": "Proportion of indigenous households in remote areas (%)", 
+                            "url": "nsw_proportion", 
+                            "heading": "NSW | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "vic_proportion", 
+                            "heading": "Vic | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "qld_proportion", 
+                            "heading": "Qld | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "wa_proportion", 
+                            "heading": "WA | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "sa_proportion", 
+                            "heading": "SA | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "tas_proportion", 
+                            "heading": "Tas | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "act_proportion", 
+                            "heading": "ACT | children enrolled (%)", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "nt_proportion", 
+                            "heading": "NT | children enrolled (%)", 
                             "description": ""
                         }
                     ], 
-                    "filename": "housing_remote_condition_data_table.csv"
+                    "filename": "early_childhood_universal_access_data_table.csv"
                 }, 
                 {
-                    "url": "housing_remote_condition", 
+                    "url": "education_uaece", 
                     "columns": [
                         {
                             "url": "jurisdiction", 
@@ -257,21 +353,21 @@
                         {
                             "url": "year", 
                             "heading": "Year", 
-                            "description": "The year range each row describes."
+                            "description": "The calendar or financial year each row describes."
                         }, 
                         {
-                            "url": "percentage_poor_condition", 
-                            "heading": "% poor condition", 
-                            "description": "The proportion of indigenous households in remote areas living in housing of poor condition."
+                            "url": "proportion", 
+                            "heading": "Children enrolled (%)", 
+                            "description": "Proportion of children enrolled in the year before full-time school inquality early childhood education programmes (%)"
                         }
                     ], 
-                    "filename": "coag_housing_remote_condition_data.csv"
+                    "filename": "coag_education_universal_access_to_earlychildhood_data.csv"
                 }
             ], 
             "deexpansion_hint": "View less", 
             "expansion_hint": "View more"
         }
     ], 
-    "name": "National Partnership Agreement on Remote Indigenous Housing"
+    "name": "National Partnership Agreement on Universal Access to Early Childhood Education"
 }
 
