@@ -54,6 +54,8 @@ class WidgetDefinition(models.Model, WidgetDefJsonMixin):
         "name": JSON_ATTR(parametise=True),
         "subtitle": JSON_ATTR(parametise=True),
         "label": JSON_ATTR(attribute="url"),
+        "source_url": JSON_ATTR(),
+        "source_url_text": JSON_ATTR(parametise=True),
         "about": JSON_ATTR(parametise=True),
         "display": JSON_EXP_SUB_DICT({
                     "expansion_hint": JSON_ATTR(),
@@ -122,6 +124,8 @@ class WidgetDefinition(models.Model, WidgetDefJsonMixin):
         return self.family.subtitle
     def source_url(self):
         return self.family.source_url
+    def source_url_text(self):
+        return self.family.source_url_text
     def widget_data(self, view=None, pval=None):
         """
         Return the :model:`widget_data.WidgetData` object for this widget.

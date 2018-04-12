@@ -673,11 +673,6 @@
                             "description": "The Jurisdiction each row describes: A state or territory, or all of Australia."
                         }, 
                         {
-                            "url": "year", 
-                            "heading": "Year range", 
-                            "description": "The year each row describes."
-                        }, 
-                        {
                             "url": "year_level", 
                             "heading": "Year Level", 
                             "description": "The school year level assessed in this row."
