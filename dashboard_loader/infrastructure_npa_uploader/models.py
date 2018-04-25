@@ -51,6 +51,7 @@ PROJ_IN_PROGRESS = 2
 PROJ_NOT_DUE_TO_COMMENCE = 3
 PROJ_NOT_COMPLETED_AND_OVERDUE = 4
 PROJ_NA = 5
+PROJ_CANCELLED = 6
 
 project_statuses = [
     (PROJ_COMPLETED, "Completed"),
@@ -58,6 +59,7 @@ project_statuses = [
     (PROJ_NOT_DUE_TO_COMMENCE, "Not due to commence"),
     (PROJ_NOT_COMPLETED_AND_OVERDUE, "Not completed and past agreed timeframe"),
     (PROJ_NA, "Not applicable"),
+    (PROJ_CANCELLED, "Cancelled"),
 ]
 
 project_status_dict = dict(project_statuses)
@@ -67,6 +69,7 @@ project_status_tlc_dict = {
     PROJ_NOT_DUE_TO_COMMENCE: "not_due_to_commence",
     PROJ_NOT_COMPLETED_AND_OVERDUE: "not_completed_overdue",
     PROJ_NA: "not_applicable",
+    PROJ_CANCELLED: "not_applicable",
 }
 
 project_map = {
@@ -85,7 +88,11 @@ project_map = {
     "Not applicable": PROJ_NA, 
     "not applicable": PROJ_NA, 
     "N/A": PROJ_NA, 
-    "n/a": PROJ_NA, 
+    "n/a": PROJ_NA,
+    "Cancelled": PROJ_CANCELLED,
+    "Cancelled.": PROJ_CANCELLED,
+    "cancelled": PROJ_CANCELLED,
+    "CANCELLED": PROJ_CANCELLED,
 }
 
 class InfrastructureKeyProjects(CoagProgressBase):
