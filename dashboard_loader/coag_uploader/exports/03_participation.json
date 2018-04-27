@@ -288,6 +288,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Post-School Participation", 
                     "columns": [
                         {
                             "url": "year", 
@@ -479,6 +480,7 @@
                 }, 
                 {
                     "url": "education_participation", 
+                    "name": "Post-School Participation Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

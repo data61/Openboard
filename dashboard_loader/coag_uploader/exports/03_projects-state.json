@@ -425,6 +425,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Infrastructure Projects", 
                     "columns": [
                         {
                             "url": "jurisdiction", 
@@ -476,6 +477,7 @@
                 }, 
                 {
                     "url": "infrastructure_projects", 
+                    "name": "Infrastructure Projects Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 
@@ -527,6 +529,7 @@
                 }, 
                 {
                     "url": "infrastructure_projects_status", 
+                    "name": "Infrastructure Key Projects Status Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

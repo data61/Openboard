@@ -305,6 +305,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Indigenous Child Mortality", 
                     "columns": [
                         {
                             "url": "year", 
@@ -336,6 +337,7 @@
                 }, 
                 {
                     "url": "indigenous_child_mortality", 
+                    "name": "National Indigenous Child Mortality Data", 
                     "columns": [
                         {
                             "url": "year", 
@@ -377,6 +379,7 @@
                 }, 
                 {
                     "url": "indigenous_child_mortality_state", 
+                    "name": "State Indigenous Child Mortality Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

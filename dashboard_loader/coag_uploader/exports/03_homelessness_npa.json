@@ -1165,6 +1165,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Homelessness NPA Data Table", 
                     "columns": [
                         {
                             "url": "year", 
@@ -1276,6 +1277,7 @@
                 }, 
                 {
                     "url": "housing_homelessness_npa_data", 
+                    "name": "Homelessness NPA Data", 
                     "columns": [
                         {
                             "url": "year", 

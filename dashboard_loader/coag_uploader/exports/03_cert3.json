@@ -325,6 +325,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Certificate III", 
                     "columns": [
                         {
                             "url": "year", 
@@ -426,6 +427,7 @@
                 }, 
                 {
                     "url": "skills_cert3", 
+                    "name": "Certificate III Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

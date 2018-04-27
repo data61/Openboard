@@ -463,6 +463,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Patients treated within national benchmarks for emergency department waiting time", 
                     "columns": [
                         {
                             "url": "year", 
@@ -519,6 +520,7 @@
                 }, 
                 {
                     "url": "health_edwait", 
+                    "name": "Emergency Department Waiting Time Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

@@ -498,6 +498,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Early Childhood National Quality Standard", 
                     "columns": [
                         {
                             "url": "year", 
@@ -644,6 +645,7 @@
                 }, 
                 {
                     "url": "education_ecenqs", 
+                    "name": "Early Childhood National Quality Standard Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

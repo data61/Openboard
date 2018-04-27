@@ -666,6 +666,7 @@
             "raw_data_sets": [
                 {
                     "url": "indigenous_indig_num", 
+                    "name": "Indigenous Numeracy Performance Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

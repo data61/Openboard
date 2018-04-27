@@ -322,6 +322,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Disabled Social Participation", 
                     "columns": [
                         {
                             "url": "year", 
@@ -423,6 +424,7 @@
                 }, 
                 {
                     "url": "disability_social_participation", 
+                    "name": "Disability Social Participation Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

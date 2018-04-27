@@ -345,6 +345,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Disabled Labour Force Participation", 
                     "columns": [
                         {
                             "url": "year", 
@@ -466,6 +467,7 @@
                 }, 
                 {
                     "url": "disability_labour_participation", 
+                    "name": "Disability Labour-Force Participation Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

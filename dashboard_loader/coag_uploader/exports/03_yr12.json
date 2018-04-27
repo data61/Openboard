@@ -325,6 +325,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Year 12 Attainment", 
                     "columns": [
                         {
                             "url": "year", 
@@ -426,6 +427,7 @@
                 }, 
                 {
                     "url": "education_year12", 
+                    "name": "Year 12 Attainment Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

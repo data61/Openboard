@@ -455,6 +455,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "NAPLAN Reading", 
                     "columns": [
                         {
                             "url": "year", 
@@ -511,6 +512,7 @@
                 }, 
                 {
                     "url": "education_naplan_lit", 
+                    "name": "NAPLAN Reading Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

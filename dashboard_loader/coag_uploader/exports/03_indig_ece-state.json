@@ -433,7 +433,7 @@
                                 "hyperlink": ""
                             }
                         ], 
-                        "heading": "Indigenous four-year-olds enrolled in early childhood education",
+                        "heading": "Indigenous four-year-olds enrolled in early childhood education", 
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
@@ -449,6 +449,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Indigenous Early Childhood Education Enrolment", 
                     "columns": [
                         {
                             "url": "year", 
@@ -550,6 +551,7 @@
                 }, 
                 {
                     "url": "indigenous_indig_ece", 
+                    "name": "Indigenous Early Childhood Education Enrolment Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

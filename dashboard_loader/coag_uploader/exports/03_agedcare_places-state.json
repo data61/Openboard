@@ -500,7 +500,7 @@
                                 "use_error_bars": false
                             }
                         ], 
-                        "numeric_axis_label": "places/recipients per 1000 older persons",
+                        "numeric_axis_label": "places/recipients per 1000 older persons", 
                         "secondary_numeric_axis_label": null, 
                         "secondary_numeric_axis_always_show_zero": true, 
                         "display_options": {
@@ -519,7 +519,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Community Aged Care Places/Recipients",
+                        "heading": "Community Aged Care Places/Recipients", 
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
@@ -535,6 +535,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Aged Care Places per 1,000 Older People", 
                     "columns": [
                         {
                             "url": "year", 
@@ -681,6 +682,7 @@
                 }, 
                 {
                     "url": "health_agedcare", 
+                    "name": "Aged Care Places Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

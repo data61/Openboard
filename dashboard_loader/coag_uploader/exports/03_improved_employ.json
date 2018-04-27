@@ -305,6 +305,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Improved Employment Status", 
                     "columns": [
                         {
                             "url": "year", 
@@ -406,6 +407,7 @@
                 }, 
                 {
                     "url": "skills_improved_employ", 
+                    "name": "Improved Employment Status Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

@@ -325,6 +325,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Homelessness Data Table", 
                     "columns": [
                         {
                             "url": "year", 
@@ -471,6 +472,7 @@
                 }, 
                 {
                     "url": "housing_homelessness", 
+                    "name": "Homelessness Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

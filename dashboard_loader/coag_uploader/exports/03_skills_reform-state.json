@@ -253,6 +253,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "National Partnership Agreement Progress", 
                     "columns": [
                         {
                             "url": "assessment", 
@@ -314,6 +315,7 @@
                 }, 
                 {
                     "url": "skills_reform", 
+                    "name": "Skills Reform NPA Data", 
                     "columns": [
                         {
                             "url": "assessment", 

@@ -376,6 +376,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Indigenous Year 12 Attainment", 
                     "columns": [
                         {
                             "url": "year", 
@@ -477,6 +478,7 @@
                 }, 
                 {
                     "url": "indigenous_yr12", 
+                    "name": "Indigenous Year 12 Attainment Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

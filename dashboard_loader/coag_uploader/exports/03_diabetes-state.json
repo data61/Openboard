@@ -440,6 +440,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Age-Standardised Type 2 Diabetes Prevalence", 
                     "columns": [
                         {
                             "url": "year", 
@@ -541,6 +542,7 @@
                 }, 
                 {
                     "url": "health_diabetes", 
+                    "name": "Diabetes Prevalence Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

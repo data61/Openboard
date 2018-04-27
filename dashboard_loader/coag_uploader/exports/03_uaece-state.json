@@ -349,6 +349,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Access to Quality Early Childhood Education", 
                     "columns": [
                         {
                             "url": "year", 
@@ -400,6 +401,7 @@
                 }, 
                 {
                     "url": "education_uaece", 
+                    "name": "Universal Access to Early Childhood Education Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

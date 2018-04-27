@@ -426,6 +426,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Higher Qualifications", 
                     "columns": [
                         {
                             "url": "year", 
@@ -527,6 +528,7 @@
                 }, 
                 {
                     "url": "skills_higher_qual", 
+                    "name": "Higher Qualifications Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

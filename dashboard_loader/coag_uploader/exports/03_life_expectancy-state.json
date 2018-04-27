@@ -651,6 +651,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Average Life Expectancy in years", 
                     "columns": [
                         {
                             "url": "year", 
@@ -752,6 +753,7 @@
                 }, 
                 {
                     "url": "health_life_expectancy", 
+                    "name": "Life Expectancy Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

@@ -426,6 +426,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Disabled Need For Assistance", 
                     "columns": [
                         {
                             "url": "year", 
@@ -527,6 +528,7 @@
                 }, 
                 {
                     "url": "disability_more_assist", 
+                    "name": "Disability Need for Formal Assistance Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

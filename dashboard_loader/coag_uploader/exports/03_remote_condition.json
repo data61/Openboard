@@ -232,6 +232,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Indigenous households living in houses of poor condition in remote areas", 
                     "columns": [
                         {
                             "url": "year", 
@@ -248,6 +249,7 @@
                 }, 
                 {
                     "url": "housing_remote_condition", 
+                    "name": "Remote Indigenous Poor Housing Conditions Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

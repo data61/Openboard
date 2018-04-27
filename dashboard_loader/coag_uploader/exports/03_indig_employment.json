@@ -370,6 +370,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Indigenous Employment", 
                     "columns": [
                         {
                             "url": "year", 
@@ -471,6 +472,7 @@
                 }, 
                 {
                     "url": "indigenous_indig_employment", 
+                    "name": "Indigenous Employment Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 

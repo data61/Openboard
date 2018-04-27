@@ -13,6 +13,7 @@
 #   limitations under the License.
 
 import re
+from collections import OrderedDict
 
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
@@ -132,23 +133,23 @@ class TileDefinition(models.Model, WidgetDefJsonMixin):
                 "multi_list_stat", "tag_cloud",
                 "time_line", "text_template", "text_block",
                 "main_stat" ]
-    export_def = {
-        "widget": JSON_INHERITED("tiles"),
-        "tile_type": JSON_ATTR(),
-        "expansion": JSON_ATTR(),
-        "aspect": JSON_ATTR(default=1),
-        "url": JSON_ATTR(),
-        "template": JSON_ATTR(),
-        "sort_order": JSON_IMPLIED(),
-        "columns": JSON_ATTR(),
-        "list_label_width": JSON_ATTR(),
-        "main_stat_count": JSON_ATTR(decider="is_main_stat"),
-        "geo_window": JSON_CAT_LOOKUP(["geo_window","name"], lambda js, key, imp_kwargs:apps.get_app_config("widget_def").get_model("GeoWindow").objects.get(name=js["geo_window"])),
-        "statistics": JSON_RECURSEDOWN("Statistic", "statistics", "tile", "url", app="widget_def"),
-        "geo_datasets": JSON_MANYTOMANY_REF("url", "GeoDataset", "widget_def"),
-        "graph": JSON_PASSDOWN(optional=True, model="GraphDefinition", app="widget_def", related_attr="tile"),
-        "grid": JSON_PASSDOWN(optional=True, model="GridDefinition", app="widget_def", related_attr="tile"),
-    }
+    export_def = OrderedDict([
+        ("widget", JSON_INHERITED("tiles")),
+        ("tile_type", JSON_ATTR()),
+        ("expansion", JSON_ATTR()),
+        ("aspect", JSON_ATTR(default=1)),
+        ("url", JSON_ATTR()),
+        ("template", JSON_ATTR()),
+        ("sort_order", JSON_IMPLIED()),
+        ("columns", JSON_ATTR()),
+        ("list_label_width", JSON_ATTR()),
+        ("main_stat_count", JSON_ATTR(decider="is_main_stat")),
+        ("geo_window", JSON_CAT_LOOKUP(["geo_window","name"], lambda js, key, imp_kwargs:apps.get_app_config("widget_def").get_model("GeoWindow").objects.get(name=js["geo_window"]))),
+        ("statistics", JSON_RECURSEDOWN("Statistic", "statistics", "tile", "url", app="widget_def")),
+        ("geo_datasets", JSON_MANYTOMANY_REF("url", "GeoDataset", "widget_def")),
+        ("graph", JSON_PASSDOWN(optional=True, model="GraphDefinition", app="widget_def", related_attr="tile")),
+        ("grid", JSON_PASSDOWN(optional=True, model="GridDefinition", app="widget_def", related_attr="tile")),
+    ])
     export_lookup = { "widget": "widget", "url": "url" }
     api_state_def = {
         "type": JSON_EXP_ARRAY_LOOKUP(tile_types, attribute="tile_type"),

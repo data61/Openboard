@@ -426,6 +426,7 @@
             "raw_data_sets": [
                 {
                     "url": "data_table", 
+                    "name": "Children at a Healthy Weight", 
                     "columns": [
                         {
                             "url": "year", 
@@ -527,6 +528,7 @@
                 }, 
                 {
                     "url": "health_childweight", 
+                    "name": "Children at a Healthy Weight Data", 
                     "columns": [
                         {
                             "url": "jurisdiction", 
