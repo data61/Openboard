@@ -674,12 +674,15 @@ def load_benchmark_description(wb, sheetname, indicator=False, additional_lookup
 def populate_raw_data(widget_url, label, rds_url,
                     model, field_map, query_kwargs={},
                     jurisdiction_overrides={},
+                    order_by_overrides = None,
                     use_states=True, use_dates=True, pval=None):
     messages = []
     rds = get_rawdataset(widget_url, label, rds_url)
     clear_rawdataset(rds, pval=pval)
     sort_order = 1
-    if use_dates:
+    if order_by_overrides is not None:
+        order_by_args = order_by_overrides
+    elif use_dates:
         order_by_args = [ "state", "year", "financial_year" ]
     else:
         order_by_args = [ "state", ]

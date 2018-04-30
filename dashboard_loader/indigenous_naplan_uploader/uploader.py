@@ -163,6 +163,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                     "indig_trajectory": "trajectory_point"
                                 },
                             query_kwargs={ "subject": NUMERACY },
+                            order_by_overrides=["state", "year_lvl"],
                             use_dates=False)
                 )
         messages.extend(
@@ -176,6 +177,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                     "indig_trajectory": "trajectory_point"
                                 },
                             query_kwargs={ "subject": READING },
+                            order_by_overrides=["state", "year_lvl"],
                             use_dates=False)
                 )
         p = Parametisation.objects.get(url="state_param")
@@ -257,6 +259,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                     },
                                 query_kwargs={ "subject": NUMERACY },
                                 use_dates=False,
+                                order_by_overrides=["state", "year_lvl"],
                                 pval=pval)
                     )
             messages.extend(
@@ -271,6 +274,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                     },
                                 query_kwargs={ "subject": READING },
                                 use_dates=False,
+                                order_by_overrides=["state", "year_lvl"],
                                 pval=pval)
                     )
 #except LoaderException, e:
