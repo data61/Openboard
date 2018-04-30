@@ -179,6 +179,8 @@ def load_skills_reform_progress_grid(wb, sheet_name, verbosity=0):
                 if expcol not in column_map:
                     columns_mapped = False
                     break
+            if columns_mapped and verbosity > 2:
+                messages.append("Columns mapped")
         else:
             kwargs = {}
             try:
@@ -195,6 +197,8 @@ def load_skills_reform_progress_grid(wb, sheet_name, verbosity=0):
                     return messages
                 continue
             cval=cval.strip()
+            if verbosity > 2:
+                messages.append("row %d assessment: %s" % (row, cval))
             kwargs["assessment"]=cval
             if cval != last_assessment:
                 last_assessment = cval
@@ -233,5 +237,8 @@ def populate_my_raw_dataset(wurl, wlbl, rdsname, pval=None):
             kwargs["assessment"] = obj.assessment
             kwargs["performance_indicator"] = obj.performance_indicator
         kwargs[obj.state_display().lower() + "_status"] = obj.status
+    if last_pi is not None:
+        add_rawdatarecord(rds, sort_order, pval=pval, **kwargs)
+        sort_order += 1
     return messages
 
