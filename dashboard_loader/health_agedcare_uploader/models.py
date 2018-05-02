@@ -25,6 +25,9 @@ class HealthAgedCareData(CoagDataBase):
                         decimal_places=1)
     community = models.DecimalField(max_digits=5, 
                         decimal_places=1)
+    transitional = models.DecimalField(default="0.0",
+                        max_digits=5,
+                        decimal_places=1)
     def total(self):
-        return self.residential + self.community
+        return self.residential + self.community + self.transitional
 

@@ -98,6 +98,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
         aust_q = HealthEmergencyWaitData.objects.filter(state=AUS).order_by("year")
         aust_ref = aust_q.first()
         aust_latest = aust_q.last()
+        if verbosity > 2:
+            messages.append("Aust  First: %s  Latest: %s" % (aust_ref.year_display(), aust_latest.year_display()))
         aust_tlc, aust_trend = indicator_tlc_trend(aust_ref.treated_ontime, aust_latest.treated_ontime)
         set_statistic_data('edwait-health-hero', 'edwait-health-hero',
                         'reference', aust_ref.treated_ontime,
@@ -145,6 +147,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             state_q = HealthEmergencyWaitData.objects.filter(state=state_num).order_by("year")
             state_ref = state_q.first()
             state_latest = state_q.last()
+            if verbosity > 2:
+                messages.append("%s  First: %s  Latest: %s" % (pval.parameters()["state_abbrev"], state_ref.year_display(), state_latest.year_display()))
             state_tlc, state_trend = indicator_tlc_trend(state_ref.treated_ontime, state_latest.treated_ontime)
             set_statistic_data(
                             "edwait-health-hero-state", "edwait-health-hero-state", 

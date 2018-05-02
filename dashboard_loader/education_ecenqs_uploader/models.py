@@ -23,9 +23,10 @@ from coag_uploader.models import *
 class EducationEceNqsData(CoagDataBase):
     meeting_nqs = models.DecimalField(max_digits=6, decimal_places=0)
     working_towards = models.DecimalField(max_digits=6, decimal_places=0)
+    sig_improvement_req = models.DecimalField(default="0.0", max_digits=6, decimal_places=0)
     no_rating = models.DecimalField(max_digits=6, decimal_places=0)
     def total(self):
-        return self.meeting_nqs + self.working_towards + self.no_rating
+        return self.meeting_nqs + self.working_towards + self.sig_improvement_req + self.no_rating
     def meeting_nqs_pct(self):
         return float(self.meeting_nqs)/float(self.total())*100.0
     def working_towards_pct(self):

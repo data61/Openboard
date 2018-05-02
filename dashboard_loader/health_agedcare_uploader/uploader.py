@@ -40,13 +40,13 @@ file_format = {
                 "name": "Data",
                 "cols": [ 
                             ('A', 'Year e.g. 2007-08 or 2007/08 or 2007'),
-                            ('B', 'Row Discriminator ("Residential aged care places (per 1000 older people)" or "Community aged care places (per 1000 people)")'),
+                            ('B', 'Row Discriminator ("Residential aged care places (per 1000 older people)" or "Community aged care places (per 1000 people)" or "Transitional aged care places (per 1000 older people)"'),
                             ('...', 'Column per state + Aust'),
                         ],
                 "rows": [
                             ('1', "Heading row"),
                             ('2', "State Heading row"),
-                            ('...', 'Pairs of rows per year, one for community places, one for residential places',),
+                            ('...', 'Pairs or triplets of rows per year, one for community places, one for residential places, and optionally one for transitional places',),
                         ],
                 "notes": [
                     'Blank rows and columns ignored',
@@ -86,6 +86,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 {}, {
                                     "residential": "Residential aged care places (per 1000 older people)",
                                     "community": "Community aged care places (per 1000 older people)",
+                                    "transitional": "Transitional aged care places (per 1000 older people)",
                                 },
                                 verbosity=verbosity)
         )
@@ -144,6 +145,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 {
                                     "residential": "residential",
                                     "community": "community",
+                                    "transitional": "transitional",
                                     "total": "total",
                                 })
                 )
@@ -153,6 +155,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 {
                                     "residential": "residential",
                                     "community": "community",
+                                    "transitional": "transitional",
                                     "total": "total",
                                 })
                 )
@@ -203,6 +206,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 {
                                     "residential": "residential",
                                     "community": "community",
+                                    "transitional": "transitional",
                                     "total": "total",
                                 }, pval=pval)
             )
@@ -212,6 +216,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 {
                                     "residential": "residential",
                                     "community": "community",
+                                    "transitional": "transitional",
                                     "total": "total",
                                 }, pval=pval)
             )

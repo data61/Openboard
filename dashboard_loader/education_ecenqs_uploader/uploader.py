@@ -35,14 +35,14 @@ file_format = {
             {
                 "name": "Data",
                 "cols": [ 
-                            ('A', 'Year range e.g. 2007-09 or 2007-2009'),
-                            ('B', 'Row Discriminator ("No rating", "Working towards NQS", "Meeting NQS"'),
+                            ('A', 'Year e.g. 2013'),
+                            ('B', 'Row Discriminator ("No rating", "Significant improvement required", "Working towards NQS", "Meeting NQS or above"'),
                             ('...', 'Column per state + Aust'),
                         ],
                 "rows": [
                             ('1', "Heading row"),
                             ('2', "State Heading row"),
-                            ('...', 'Triplets of rows per year, one for NQS status'),
+                            ('...', 'Quadruplets of rows per year, one for NQS status'),
                         ],
                 "notes": [
                     'Blank rows and columns ignored',
@@ -79,7 +79,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "Education", "Early Childhood Education National Quality Standard",
                                 None, EducationEceNqsData,
                                 {}, {
-                                    "meeting_nqs": "Meeting NQS", 
+                                    "sig_improvement_req": "Significant improvement required",
+                                    "meeting_nqs": "Meeting NQS or above",
                                     "working_towards": "Working towards NQS",
                                     "no_rating": "No rating",
                                 },
@@ -124,18 +125,18 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                 populate_raw_data("education_ecenqs", "education_ecenqs",
                                 "education_ecenqs", EducationEceNqsData,
                                 {
-                                    "meeting_nqs": "meeting",
-                                    "working_towards": "working_towards",
-                                    "no_rating": "no_rating",
+                                    "meeting_nqs_pct": "meeting",
+                                    "working_towards_pct": "working_towards",
+                                    "no_rating_pct": "no_rating",
                                 })
                 )
         messages.extend(
                 populate_crosstab_raw_data("education_ecenqs", "education_ecenqs",
                                 "data_table", EducationEceNqsData,
                                 {
-                                    "meeting_nqs": "meeting",
-                                    "working_towards": "working_towards",
-                                    "no_rating": "no_rating",
+                                    "meeting_nqs_pct": "meeting",
+                                    "working_towards_pct": "working_towards",
+                                    "no_rating_pct": "no_rating",
                                 })
                 )
         p = Parametisation.objects.get(url="state_param")
@@ -209,18 +210,18 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                     populate_raw_data("education_ecenqs_state", "education_ecenqs_state",
                                     "education_ecenqs", EducationEceNqsData,
                                     {
-                                        "meeting_nqs": "meeting",
-                                        "working_towards": "working_towards",
-                                        "no_rating": "no_rating",
+                                        "meeting_nqs_pct": "meeting",
+                                        "working_towards_pct": "working_towards",
+                                        "no_rating_pct": "no_rating",
                                     }, pval=pval)
             )
             messages.extend(
                     populate_crosstab_raw_data("education_ecenqs_state", "education_ecenqs_state",
                                     "data_table", EducationEceNqsData,
                                     {
-                                        "meeting_nqs": "meeting",
-                                        "working_towards": "working_towards",
-                                        "no_rating": "no_rating",
+                                        "meeting_nqs_pct": "meeting",
+                                        "working_towards_pct": "working_towards",
+                                        "no_rating_pct": "no_rating",
                                     }, pval=pval)
             )
     except LoaderException, e:

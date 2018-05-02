@@ -108,8 +108,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "Indigenous", "Child Mortality (Aust data)",
                                 None, IndigenousChildMortalityNationalData,
                                 {}, {
-                                        "indigenous": "Indigenous rate", 
-                                        "non_indigenous": "Non-Indigenous rate", 
+                                        "indigenous": "Indigenous rate",
+                                        "non_indigenous": "Non-Indigenous rate",
                                         "variability_lower": "Lower confidence level",
                                         "variability_upper": "Upper confidence level",
                                         "indigenous_target": "Target Indigenous rate",
@@ -129,8 +129,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "Indigenous", "Child Mortality (State data)",
                                 None, IndigenousChildMortalityStateData,
                                 {}, {
-                                        "indigenous": ("Indigenous", "Rate per 100,000"), 
-                                        "non_indigenous": ("Non-Indigenous", "Rate per 100,000"), 
+                                        "indigenous": ("Indigenous", "Rate per 100,000"),
+                                        "non_indigenous": ("Non-Indigenous", "Rate per 100,000"),
                                         "indigenous_deaths": ("Indigenous", "Number of deaths"),
                                         "non_indigenous_deaths": ("Non-Indigenous", "Number of deaths"),
                                         "rate_ratio": ("Comparison", "Rate ratio"),
@@ -140,20 +140,20 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                 )
         desc = load_benchmark_description(wb, "Description")
         messages.extend(update_stats(desc, None,
-                            "child_mortality-indigenous-hero", "child_mortality-indigenous-hero", 
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero", "child_mortality-indigenous-hero",
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "indigenous_child_mortality", "indigenous_child_mortality",
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
                             verbosity))
         messages.extend(update_state_stats(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
                             IndigenousChildMortalityStateData, [],
                             override_status="no_trajectory",
                             verbosity=verbosity))
         messages.extend(
                  update_my_national_graph(
-                    "child_mortality-indigenous-hero", "child_mortality-indigenous-hero", 
+                    "child_mortality-indigenous-hero", "child_mortality-indigenous-hero",
                     "indigenous-child_mortality-hero-graph",
                     summary=True,
                     verbosity=verbosity)
@@ -174,8 +174,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
         messages.extend(
                 populate_raw_data(
                         "indigenous_child_mortality", "indigenous_child_mortality",
-                        "indigenous_child_mortality", IndigenousChildMortalityNationalData, 
-                        { 
+                        "indigenous_child_mortality", IndigenousChildMortalityNationalData,
+                        {
                             "non_indigenous": "non_indigenous_rate",
                             "indigenous": "indigenous_rate",
                             "variability_lower": "indigenous_variability_lower",
@@ -188,8 +188,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
         messages.extend(
                 populate_raw_data(
                         "indigenous_child_mortality", "indigenous_child_mortality",
-                        "data_table", IndigenousChildMortalityNationalData, 
-                        { 
+                        "data_table", IndigenousChildMortalityNationalData,
+                        {
                             "non_indigenous": "non_indigenous_rate",
                             "indigenous": "indigenous_rate",
                             "indigenous_target": "indigenous_target",
@@ -200,7 +200,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
         messages.extend(
                 populate_raw_data(
                         "indigenous_child_mortality", "indigenous_child_mortality",
-                        "indigenous_child_mortality_state", IndigenousChildMortalityStateData, 
+                        "indigenous_child_mortality_state", IndigenousChildMortalityStateData,
                         {
                             "non_indigenous": "non_indigenous_rate",
                             "non_indigenous_deaths": "non_indigenous_deaths",
@@ -215,11 +215,11 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             state_num = state_map[pval.parameters()["state_abbrev"]]
             i = IndigenousChildMortalityStateData.objects.get(state=AUS)
             set_statistic_data(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "indigenous", i.indigenous,
                             pval=pval)
             set_statistic_data(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "non_indigenous", i.non_indigenous,
                             pval=pval)
             set_statistic_data(
@@ -233,11 +233,11 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             try:
                 i = IndigenousChildMortalityStateData.objects.get(state=state_num)
                 set_statistic_data(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "indigenous_state", i.indigenous,
                             pval=pval)
                 set_statistic_data(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "non_indigenous_state", i.non_indigenous,
                             pval=pval)
                 set_statistic_data(
@@ -250,11 +250,11 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             pval=pval)
             except IndigenousChildMortalityStateData.DoesNotExist:
                 clear_statistic_data(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "indigenous_state",
                             pval=pval)
                 clear_statistic_data(
-                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state", 
+                            "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "non_indigenous_state",
                             pval=pval)
                 clear_statistic_data(
@@ -271,8 +271,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             messages.extend(
                     populate_raw_data(
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
-                            "indigenous_child_mortality", IndigenousChildMortalityNationalData, 
-                            { 
+                            "indigenous_child_mortality", IndigenousChildMortalityNationalData,
+                            {
                                 "non_indigenous": "non_indigenous_rate",
                                 "indigenous": "indigenous_rate",
                                 "variability_lower": "indigenous_variability_lower",
@@ -286,8 +286,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             messages.extend(
                     populate_raw_data(
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
-                            "data_table", IndigenousChildMortalityStateData, 
-                            { 
+                            "data_table", IndigenousChildMortalityStateData,
+                            {
                                 "non_indigenous": "non_indigenous_rate",
                                 "non_indigenous_deaths": "non_indigenous_deaths",
                                 "indigenous": "indigenous_rate",
@@ -300,7 +300,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             messages.extend(
                     populate_raw_data(
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
-                            "indigenous_child_mortality_state", IndigenousChildMortalityStateData, 
+                            "indigenous_child_mortality_state", IndigenousChildMortalityStateData,
                             {
                                 "non_indigenous": "non_indigenous_rate",
                                 "non_indigenous_deaths": "non_indigenous_deaths",
@@ -314,9 +314,11 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             },
                             pval=pval)
             )
+
     except LoaderException, e:
         raise e
     except Exception, e:
+        raise e
         raise LoaderException("Invalid file: %s" % unicode(e))
     return messages
 

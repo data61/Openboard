@@ -452,6 +452,11 @@
                             "description": ""
                         }, 
                         {
+                            "url": "nsw_transitional", 
+                            "heading": "NSW | Transitional", 
+                            "description": ""
+                        }, 
+                        {
                             "url": "nsw_total", 
                             "heading": "NSW | Total", 
                             "description": ""
@@ -464,6 +469,11 @@
                         {
                             "url": "vic_community", 
                             "heading": "Vic | Community", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "vic_transitional", 
+                            "heading": "Vic | Transitional", 
                             "description": ""
                         }, 
                         {
@@ -482,6 +492,11 @@
                             "description": ""
                         }, 
                         {
+                            "url": "qld_transitional", 
+                            "heading": "Qld | Transitional", 
+                            "description": ""
+                        }, 
+                        {
                             "url": "qld_total", 
                             "heading": "Qld | Total", 
                             "description": ""
@@ -494,6 +509,11 @@
                         {
                             "url": "wa_community", 
                             "heading": "WA | Community", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "wa_transitional", 
+                            "heading": "WA | Transitional", 
                             "description": ""
                         }, 
                         {
@@ -512,6 +532,11 @@
                             "description": ""
                         }, 
                         {
+                            "url": "sa_transitional", 
+                            "heading": "SA | Transitional", 
+                            "description": ""
+                        }, 
+                        {
                             "url": "sa_total", 
                             "heading": "SA | Total", 
                             "description": ""
@@ -524,6 +549,11 @@
                         {
                             "url": "tas_community", 
                             "heading": "Tas | Community", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "tas_transitional", 
+                            "heading": "Tas | Transitional", 
                             "description": ""
                         }, 
                         {
@@ -542,6 +572,11 @@
                             "description": ""
                         }, 
                         {
+                            "url": "act_transitional", 
+                            "heading": "ACT | Transitional", 
+                            "description": ""
+                        }, 
+                        {
                             "url": "act_total", 
                             "heading": "ACT | Total", 
                             "description": ""
@@ -557,6 +592,11 @@
                             "description": ""
                         }, 
                         {
+                            "url": "nt_transitional", 
+                            "heading": "NT | Transitional", 
+                            "description": ""
+                        }, 
+                        {
                             "url": "nt_total", 
                             "heading": "NT | Total", 
                             "description": ""
@@ -569,6 +609,11 @@
                         {
                             "url": "australia_community", 
                             "heading": "Aust | Community", 
+                            "description": ""
+                        }, 
+                        {
+                            "url": "australia_transitional", 
+                            "heading": "Aust | Transitional", 
                             "description": ""
                         }, 
                         {
@@ -602,6 +647,11 @@
                             "url": "community", 
                             "heading": "Community places", 
                             "description": "Community aged care places (per 1,000 older people)."
+                        }, 
+                        {
+                            "url": "transitional", 
+                            "heading": "Transitional places", 
+                            "description": "Transitional aged care places (per 1,000 older people)."
                         }, 
                         {
                             "url": "total", 
