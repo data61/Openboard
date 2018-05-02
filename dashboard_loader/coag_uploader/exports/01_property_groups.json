@@ -35,7 +35,7 @@
                 }, 
                 {
                     "key": "yes", 
-                    "value": "#89A54E"
+                    "value": "#78A22F"
                 }
             ], 
             "name": "Traffic Light Text Colour"
@@ -53,11 +53,11 @@
                 }, 
                 {
                     "key": "warning", 
-                    "value": "#F6A623"
+                    "value": "#F4B123"
                 }, 
                 {
                     "key": "yes", 
-                    "value": "#89A54E"
+                    "value": "#78A22F"
                 }
             ], 
             "name": "Widget Header Colour"
@@ -183,7 +183,7 @@
                 }, 
                 {
                     "key": "red-dotted", 
-                    "value": "red"
+                    "value": "#A52429"
                 }
             ], 
             "name": "Stroke Colour"
@@ -377,15 +377,15 @@
                 }, 
                 {
                     "key": "green", 
-                    "value": "#549409"
+                    "value": "#4D7028"
                 }, 
                 {
                     "key": "green1", 
-                    "value": "#549409"
+                    "value": "#4D7028"
                 }, 
                 {
                     "key": "green2", 
-                    "value": "#549409"
+                    "value": "#4D7028"
                 }, 
                 {
                     "key": "grey1", 
@@ -447,19 +447,19 @@
                 }, 
                 {
                     "key": "grey1", 
-                    "value": "rgba(0, 0, 0, 0.25)"
+                    "value": "rgba(0, 0, 0, 0.1)"
                 }, 
                 {
                     "key": "grey2", 
-                    "value": "rgba(0, 0, 0, 0.25)"
+                    "value": "rgba(0, 0, 0, 0.10)"
                 }, 
                 {
                     "key": "grey3", 
-                    "value": "rgba(0, 0, 0, 0.25)"
+                    "value": "rgba(0, 0, 0, 0.10)"
                 }, 
                 {
                     "key": "grey4", 
-                    "value": "rgba(0, 0, 0, 0.25)"
+                    "value": "rgba(0, 0, 0, 0.10)"
                 }, 
                 {
                     "key": "pale_green", 
