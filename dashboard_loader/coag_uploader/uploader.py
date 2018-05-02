@@ -486,6 +486,12 @@ benchmark_statuses = {
         "tlc": "not_applicable",
         "icon": "unknown",
     },
+    "no_data": {
+        "short": "No data",
+        "long": "There is no data available for this benchmark, so it is not possible to assess progress.",
+        "tlc": "not_applicable",
+        "icon": "unknown",
+    },
 }
 indicator_statuses = {
     "improving": {
@@ -1028,7 +1034,10 @@ def update_state_stats(wurl_hero, wlbl_hero, wurl_dtl, wlbl_dtl,
             if reference is None:
                 if verbosity > 1:
                     messages.append("%s: No data" % state_abbrev)
-                status = indicator_statuses["no_data"]
+                if use_benchmark_tls:
+                    status = statuses["new_benchmark"]
+                else:
+                    status = statuses["no_data"]
             elif reference == measure:
                 status = indicator_statuses["new_indicator"]
                 if verbosity > 1:

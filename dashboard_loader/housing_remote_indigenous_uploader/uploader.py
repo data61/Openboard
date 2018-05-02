@@ -73,94 +73,101 @@ file_format = {
         ],
 }
 
+def state_benchmarker(obj):
+    if obj.state == WA:
+        return "not_on_track"
+    else:
+        return "on_track"
+
 def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
     messages = []
-    try:
-        if verbosity > 0:
-            messages.append("Loading workbook...")
-        wb = load_workbook(fh, read_only=True)
-        messages.extend(
-                load_state_grid(wb, "Data",
-                                "Housing", "Remote Indigenous Housing",
-                                None, HousingRemoteIndigenousData,
-                                {}, {
-                                    "new_houses": "New houses", 
-                                    "refurbishments": "Refurbishments",
-                                },
-                                verbosity=verbosity)
-        )
-        desc = load_benchmark_description(wb, "Description")
-        messages.extend(update_stats(desc, None,
-                            "indigenous_remote-housing-hero", "indigenous_remote-housing-hero", 
-                            "indigenous_remote-housing-hero-state", "indigenous_remote-housing-hero-state", 
-                            "housing_remote_indigenous", "housing_remote_indigenous", 
-                            "housing_remote_indigenous_state", "housing_remote_indigenous_state", 
-                            verbosity))
-        messages.extend(update_state_stats(
-                    "indigenous_remote-housing-hero-state", "indigenous_remote-housing-hero-state", 
-                    "housing_remote_indigenous_state", "housing_remote_indigenous_state", 
-                    None, [],
-                    override_status="improving",
-                    verbosity=verbosity))
+    # try
+    if verbosity > 0:
+        messages.append("Loading workbook...")
+    wb = load_workbook(fh, read_only=True)
+    messages.extend(
+            load_state_grid(wb, "Data",
+                            "Housing", "Remote Indigenous Housing",
+                            None, HousingRemoteIndigenousData,
+                            {}, {
+                                "new_houses": "New houses",
+                                "refurbishments": "Refurbishments",
+                            },
+                            verbosity=verbosity)
+    )
+    desc = load_benchmark_description(wb, "Description")
+    messages.extend(update_stats(desc, None,
+                        "indigenous_remote-housing-hero", "indigenous_remote-housing-hero",
+                        "indigenous_remote-housing-hero-state", "indigenous_remote-housing-hero-state",
+                        "housing_remote_indigenous", "housing_remote_indigenous",
+                        "housing_remote_indigenous_state", "housing_remote_indigenous_state",
+                        verbosity))
+    messages.extend(update_state_stats(
+                "indigenous_remote-housing-hero-state", "indigenous_remote-housing-hero-state",
+                "housing_remote_indigenous_state", "housing_remote_indigenous_state",
+                HousingRemoteIndigenousData, [],
+                use_benchmark_tls=True,
+                status_func=state_benchmarker,
+                verbosity=verbosity))
+    messages.extend(update_summary_graph_data(
+                "indigenous_remote-housing-hero",
+                "indigenous_remote-housing-hero",
+                "housing-rih-hero-graph"))
+    messages.extend(update_summary_graph_data(
+                "housing_remote_indigenous",
+                "housing_remote_indigenous",
+                "housing_remote_indigenous_summary_graph"))
+    messages.extend(update_detail_graph_data())
+    messages.extend(
+            populate_raw_data("housing_remote_indigenous", "housing_remote_indigenous",
+                        "housing_indigenous_remote", HousingRemoteIndigenousData,
+                        {
+                            "new_houses": "new",
+                            "refurbishments": "refurbished",
+                        })
+            )
+    messages.extend(
+            populate_crosstab_raw_data("housing_remote_indigenous", "housing_remote_indigenous",
+                        "data_table", HousingRemoteIndigenousData,
+                        {
+                            "new_houses": "new",
+                            "refurbishments": "refurbished",
+                        })
+            )
+    p = Parametisation.objects.get(url="state_param")
+    for pval in p.parametisationvalue_set.all():
+        state_num = state_map[pval.parameters()["state_abbrev"]]
         messages.extend(update_summary_graph_data(
-                    "indigenous_remote-housing-hero", 
-                    "indigenous_remote-housing-hero", 
-                    "housing-rih-hero-graph"))
+                    "indigenous_remote-housing-hero-state",
+                    "indigenous_remote-housing-hero-state",
+                    "housing-rih-hero-graph",
+                    pval=pval))
         messages.extend(update_summary_graph_data(
-                    "housing_remote_indigenous", 
-                    "housing_remote_indigenous", 
-                    "housing_remote_indigenous_summary_graph"))
-        messages.extend(update_detail_graph_data())
+                    "housing_remote_indigenous_state",
+                    "housing_remote_indigenous_state",
+                    "housing_remote_indigenous_summary_graph",
+                    pval=pval))
+        messages.extend(update_detail_state_graph_data(pval))
         messages.extend(
-                populate_raw_data("housing_remote_indigenous", "housing_remote_indigenous",
+                populate_raw_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
                             "housing_indigenous_remote", HousingRemoteIndigenousData,
                             {
                                 "new_houses": "new",
                                 "refurbishments": "refurbished",
-                            })
+                            }, pval=pval)
                 )
         messages.extend(
-                populate_crosstab_raw_data("housing_remote_indigenous", "housing_remote_indigenous",
+                populate_crosstab_raw_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
                             "data_table", HousingRemoteIndigenousData,
                             {
                                 "new_houses": "new",
                                 "refurbishments": "refurbished",
-                            })
+                            }, pval=pval)
                 )
-        p = Parametisation.objects.get(url="state_param")
-        for pval in p.parametisationvalue_set.all():
-            state_num = state_map[pval.parameters()["state_abbrev"]]
-            messages.extend(update_summary_graph_data(
-                        "indigenous_remote-housing-hero-state", 
-                        "indigenous_remote-housing-hero-state", 
-                        "housing-rih-hero-graph",
-                        pval=pval))
-            messages.extend(update_summary_graph_data(
-                        "housing_remote_indigenous_state", 
-                        "housing_remote_indigenous_state", 
-                        "housing_remote_indigenous_summary_graph", 
-                        pval=pval))
-            messages.extend(update_detail_state_graph_data(pval))
-            messages.extend(
-                    populate_raw_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
-                                "housing_indigenous_remote", HousingRemoteIndigenousData,
-                                {
-                                    "new_houses": "new",
-                                    "refurbishments": "refurbished",
-                                }, pval=pval)
-                    )
-            messages.extend(
-                    populate_crosstab_raw_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
-                                "data_table", HousingRemoteIndigenousData,
-                                {
-                                    "new_houses": "new",
-                                    "refurbishments": "refurbished",
-                                }, pval=pval)
-                    )
-    except LoaderException, e:
-        raise e
-    except Exception, e:
-        raise LoaderException("Invalid file: %s" % unicode(e))
+  #  except LoaderException, e:
+  #      raise e
+  #  except Exception, e:
+  #      raise LoaderException("Invalid file: %s" % unicode(e))
     return messages
 
 def update_summary_graph_data(wurl, wlbl, graph_lbl, pval=None):
