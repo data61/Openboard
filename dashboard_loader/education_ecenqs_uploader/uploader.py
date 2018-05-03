@@ -125,18 +125,18 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                 populate_raw_data("education_ecenqs", "education_ecenqs",
                                 "education_ecenqs", EducationEceNqsData,
                                 {
-                                    "meeting_nqs_pct": "meeting",
-                                    "working_towards_pct": "working_towards",
-                                    "no_rating_pct": "no_rating",
+                                    "meeting_nqs_pct_rnd": "meeting",
+                                    "working_towards_pct_rnd": "working_towards",
+                                    "no_rating_pct_rnd": "no_rating",
                                 })
                 )
         messages.extend(
                 populate_crosstab_raw_data("education_ecenqs", "education_ecenqs",
                                 "data_table", EducationEceNqsData,
                                 {
-                                    "meeting_nqs_pct": "meeting",
-                                    "working_towards_pct": "working_towards",
-                                    "no_rating_pct": "no_rating",
+                                    "meeting_nqs_pct_rnd": "meeting",
+                                    "working_towards_pct_rnd": "working_towards",
+                                    "no_rating_pct_rnd": "no_rating",
                                 })
                 )
         p = Parametisation.objects.get(url="state_param")
@@ -210,18 +210,18 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                     populate_raw_data("education_ecenqs_state", "education_ecenqs_state",
                                     "education_ecenqs", EducationEceNqsData,
                                     {
-                                        "meeting_nqs_pct": "meeting",
-                                        "working_towards_pct": "working_towards",
-                                        "no_rating_pct": "no_rating",
+                                        "meeting_nqs_pct_rnd": "meeting",
+                                        "working_towards_pct_rnd": "working_towards",
+                                        "no_rating_pct_rnd": "no_rating",
                                     }, pval=pval)
             )
             messages.extend(
                     populate_crosstab_raw_data("education_ecenqs_state", "education_ecenqs_state",
                                     "data_table", EducationEceNqsData,
                                     {
-                                        "meeting_nqs_pct": "meeting",
-                                        "working_towards_pct": "working_towards",
-                                        "no_rating_pct": "no_rating",
+                                        "meeting_nqs_pct_rnd": "meeting",
+                                        "working_towards_pct_rnd": "working_towards",
+                                        "no_rating_pct_rnd": "no_rating",
                                     }, pval=pval)
             )
     except LoaderException, e:
