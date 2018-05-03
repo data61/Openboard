@@ -76,6 +76,8 @@ file_format = {
 def state_benchmarker(obj):
     if obj.state == WA:
         return "not_on_track"
+    elif obj.state in (TAS, NSW):
+        return "no_data"
     else:
         return "on_track"
 
