@@ -34,3 +34,10 @@ class EducationEceNqsData(CoagDataBase):
     def no_rating_pct(self):
         return float(self.no_rating)/float(self.total())*100.0
 
+    def meeting_nqs_pct_rnd(self):
+        return "%.1f" % (float(self.meeting_nqs)/float(self.total())*100.0)
+    def working_towards_pct_rnd(self):
+        return "%.1f" % (float(self.working_towards)/float(self.total())*100.0)
+    def no_rating_pct_rnd(self):
+        return "%.1f" % (float(self.no_rating)/float(self.total())*100.0)
+
