@@ -32,7 +32,7 @@ class RawDataRecord(models.Model):
                 rd = self.rawdata_set.get(column=col)
                 out += rd.csv()
             except RawData.DoesNotExist:
-                pass
+                out += "n/a"
             first_cell = False
         out += "\n"
         self.csv = out
