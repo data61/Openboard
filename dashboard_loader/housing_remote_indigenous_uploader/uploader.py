@@ -77,7 +77,7 @@ def state_benchmarker(obj):
     if obj.state == WA:
         return "not_on_track"
     elif obj.state in (TAS, NSW):
-        return "no_data"
+        return "no_participate"
     else:
         return "on_track"
 

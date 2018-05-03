@@ -492,6 +492,12 @@ benchmark_statuses = {
         "tlc": "not_applicable",
         "icon": "unknown",
     },
+    "no_participate": {
+        "short": "No longer participating",
+        "long": "State/Territory is no longer participating in this agreement.",
+        "tlc": "not_applicable",
+        "icon": "unknown",
+    },
 }
 indicator_statuses = {
     "improving": {
