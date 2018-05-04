@@ -1,11 +1,29 @@
 {
     "exports": [
         {
+            "label": "traffic_background", 
+            "properties": [
+                {
+                    "key": "amber", 
+                    "value": "#FFFF00"
+                }, 
+                {
+                    "key": "green", 
+                    "value": "#00FF00"
+                }, 
+                {
+                    "key": "red", 
+                    "value": "#FF0000"
+                }
+            ], 
+            "name": "Traffic light backgrounds"
+        }, 
+        {
             "label": "traffic_text", 
             "properties": [
                 {
                     "key": "no", 
-                    "value": "#a52828"
+                    "value": "#AA4744"
                 }, 
                 {
                     "key": "unknown", 
@@ -13,14 +31,36 @@
                 }, 
                 {
                     "key": "warning", 
-                    "value": "#f4b123"
+                    "value": "#F6A623"
                 }, 
                 {
                     "key": "yes", 
-                    "value": "#78a22f"
+                    "value": "#78A22F"
                 }
             ], 
             "name": "Traffic Light Text Colour"
+        }, 
+        {
+            "label": "traffic_header", 
+            "properties": [
+                {
+                    "key": "no", 
+                    "value": "#AA4744"
+                }, 
+                {
+                    "key": "unknown", 
+                    "value": "#5E5E5E"
+                }, 
+                {
+                    "key": "warning", 
+                    "value": "#F4B123"
+                }, 
+                {
+                    "key": "yes", 
+                    "value": "#78A22F"
+                }
+            ], 
+            "name": "Widget Header Colour"
         }, 
         {
             "label": "stroke_colour", 
@@ -95,27 +135,27 @@
                 }, 
                 {
                     "key": "green", 
-                    "value": "#000000"
+                    "value": "#45bcac"
                 }, 
                 {
                     "key": "green-dotted", 
-                    "value": "#000000"
+                    "value": "#45bcac"
                 }, 
                 {
                     "key": "green-solid", 
-                    "value": "#000000"
+                    "value": "#45bcac"
                 }, 
                 {
                     "key": "orange", 
-                    "value": "rgb(244, 177, 35)"
+                    "value": "orange"
                 }, 
                 {
                     "key": "orange-dotted", 
-                    "value": "rgb(244, 177, 35)"
+                    "value": "orange"
                 }, 
                 {
                     "key": "orange-solid", 
-                    "value": "rgb(244, 177, 35)"
+                    "value": "orange"
                 }, 
                 {
                     "key": "pale_blue", 
@@ -131,15 +171,15 @@
                 }, 
                 {
                     "key": "purple", 
-                    "value": "rgb(102, 188, 219)"
+                    "value": "purple"
                 }, 
                 {
                     "key": "purple-dotted", 
-                    "value": "rgb(102, 188, 219)"
+                    "value": "purple"
                 }, 
                 {
                     "key": "purple-solid", 
-                    "value": "rgb(102, 188, 219)"
+                    "value": "purple"
                 }, 
                 {
                     "key": "red-dotted", 
@@ -147,28 +187,6 @@
                 }
             ], 
             "name": "Stroke Colour"
-        }, 
-        {
-            "label": "traffic_header", 
-            "properties": [
-                {
-                    "key": "no", 
-                    "value": "#AA4744"
-                }, 
-                {
-                    "key": "unknown", 
-                    "value": "#5E5E5E"
-                }, 
-                {
-                    "key": "warning", 
-                    "value": "#F4B123"
-                }, 
-                {
-                    "key": "yes", 
-                    "value": "#78A22F"
-                }
-            ], 
-            "name": "Widget Header Colour"
         }, 
         {
             "label": "stroke_dasharray", 
@@ -453,24 +471,6 @@
                 }
             ], 
             "name": "Traffic Light Background"
-        }, 
-        {
-            "label": "traffic_background", 
-            "properties": [
-                {
-                    "key": "amber", 
-                    "value": "#FFFF00"
-                }, 
-                {
-                    "key": "green", 
-                    "value": "#00FF00"
-                }, 
-                {
-                    "key": "red", 
-                    "value": "#FF0000"
-                }
-            ], 
-            "name": "Traffic light backgrounds"
         }
     ], 
     "type": "PropertyGroup"
