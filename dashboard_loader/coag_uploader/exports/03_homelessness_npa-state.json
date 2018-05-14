@@ -305,27 +305,6 @@
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "url": "plan2_state", 
-                            "traffic_light_scale": "Benchmark Scale", 
-                            "unit_underfix": null, 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": null, 
-                            "trend": false, 
-                            "rotates": false, 
-                            "traffic_light_automation": null
-                        }, 
-                        {
-                            "unit_prefix": null, 
-                            "icon_library": "indicator_benchmark_icons", 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "num_precision": null, 
-                            "stat_type": 1, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
                             "url": "update_state", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
@@ -389,27 +368,6 @@
                             "footer": false, 
                             "editable": true, 
                             "name_as_label": true, 
-                            "url": "plan2_aust", 
-                            "traffic_light_scale": "Benchmark Scale", 
-                            "unit_underfix": null, 
-                            "unit_signed": false, 
-                            "unit_si_prefix_rounding": 0, 
-                            "unit_suffix": null, 
-                            "trend": false, 
-                            "rotates": false, 
-                            "traffic_light_automation": null
-                        }, 
-                        {
-                            "unit_prefix": null, 
-                            "icon_library": "indicator_benchmark_icons", 
-                            "name": "", 
-                            "numbered_list": false, 
-                            "hyperlinkable": false, 
-                            "num_precision": null, 
-                            "stat_type": 1, 
-                            "footer": false, 
-                            "editable": true, 
-                            "name_as_label": true, 
                             "url": "update_aust", 
                             "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
@@ -449,7 +407,7 @@
                     "expansion": true, 
                     "geo_datasets": [], 
                     "grid": {
-                        "corner_label": "Progress", 
+                        "corner_label": "Progress against milestones",
                         "show_column_headers": true, 
                         "rows": [
                             {
@@ -457,28 +415,21 @@
                                     "plan1_state", 
                                     "plan1_aust"
                                 ], 
-                                "label": "Part 1 of Project plans submitted to C'wealth"
-                            }, 
-                            {
-                                "statistics": [
-                                    "plan2_state", 
-                                    "plan2_aust"
-                                ], 
-                                "label": "Part 2 of Project plans submitted to C'wealth"
+                                "label": "Project plans submitted to the C'wealth"
                             }, 
                             {
                                 "statistics": [
                                     "update_state", 
                                     "update_aust"
                                 ], 
-                                "label": "Update C'wealth on assessment of progress"
+                                "label": "Updates on changes to service providers"
                             }, 
                             {
                                 "statistics": [
                                     "matched_funding_state", 
                                     "matched_funding_aust"
                                 ], 
-                                "label": "At least 25% of total funding matched"
+                                "label": "Final update to the C'wealth"
                             }
                         ], 
                         "columns": [

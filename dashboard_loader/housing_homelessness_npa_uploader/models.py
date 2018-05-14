@@ -29,7 +29,6 @@ class HousingHomelessnessNpaData(CoagDataBase):
 
 class HousingHomelessnessNpaProgress(CoagProgressBase):
     plan1 = models.SmallIntegerField(choices=progresses)
-    plan2 = models.SmallIntegerField(choices=progresses)
     update = models.SmallIntegerField(choices=progresses)
     matched_funding = models.SmallIntegerField(choices=progresses)
 
