@@ -96,16 +96,14 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                         "Housing", "Homelessness NPA Progress",
                         None, HousingHomelessnessNpaProgress,
                         {}, {
-                            "plan1": "Part 1 of project plans submitted to the Commonwealth (1 July 2015)",
-                            "plan2": "Part 2 of project plans submitted to the Commonwealth (1 September 2015)",
-                            "update": "Update Commonwealth on assessment of progress against project plans, and provide assurance funding has been matched (1 September 2016)",
-                            "matched_funding": "At least 25 per cent of total matched funding directed to addressing priority outputs",
+                            "plan1": "Project plans submitted to the Commonwealth (1 July 2017)",
+                            "update": "Updates on changes to service providers and rationale for change under the NPAH (15th of each month if required)",
+                            "matched_funding": "Final update to the Commonwealth (in accordance with clauses 31 and 41) (1 September 2018)",
                         },
                         verbosity=verbosity,
                         use_dates=False,
                         transforms = {
                             "plan1": lambda x: progress_map[x.strip()],
-                            "plan2": lambda x: progress_map[x.strip()],
                             "update": lambda x: progress_map[x.strip()],
                             "matched_funding": lambda x: progress_map[x.strip()],
                         })
@@ -258,12 +256,6 @@ def update_progress(widget_url, widget_lbl, jurisdictions=None, pval=None, verbo
                                 progress_dict[prog.plan1],
                                 traffic_light_code=progress_tlc[prog.plan1],
                                 icon_code=progress_icon[prog.plan1],
-                                pval=pval)
-        set_statistic_data(widget_url, widget_lbl,
-                                "plan2" + suffix,
-                                progress_dict[prog.plan2],
-                                traffic_light_code=progress_tlc[prog.plan2],
-                                icon_code=progress_icon[prog.plan2],
                                 pval=pval)
         set_statistic_data(widget_url, widget_lbl,
                                 "update" + suffix,
