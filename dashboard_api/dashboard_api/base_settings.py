@@ -69,6 +69,7 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'dashboard_api.middleware.AllAllowedHostsHealthCheckerMiddleware',
     'dashboard_api.middleware.APISessionMiddleware',
 #    'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
