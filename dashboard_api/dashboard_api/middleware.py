@@ -38,7 +38,7 @@ class AllAllowedHostsHealthCheckerMiddleware(object):
 
     def __call__(self, request):
 
-        if request.path == '/healthz':
+        if request.path_info == '/healthz':
             service_status = {
                 "health": "not terrible"
             }
