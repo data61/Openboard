@@ -68,7 +68,8 @@ INSTALLED_APPS = (
     'django.contrib.gis',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
+    'dashboard_api.middleware.AllAllowedHostsHealthCheckerMiddleware',
     'dashboard_api.middleware.APISessionMiddleware',
 #    'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
