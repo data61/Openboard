@@ -1,7 +1,7 @@
 {
     "edit_all_groups": [], 
     "category": "health", 
-    "subtitle": "Aged care places per 1,000 older people", 
+    "subtitle": "Aged care places",
     "subcategory": "national agreement", 
     "url": "health_agedcare", 
     "source_url": "", 
