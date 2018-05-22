@@ -211,6 +211,9 @@ def update_my_graph_data(wurl, wlbl, graph,
                 ref_year, latest_year, 
                 all_states=False, state_num=0, pval=None):
     messages = []
+    mid_year = latest_year - 1
+    print "-----------------"
+    print graph, pval
     g = get_graph(wurl, wlbl, graph)
     clear_graph_data(g, pval=pval)
     qry = IndigenousSchoolAttendanceData.objects.all()
@@ -229,10 +232,12 @@ def update_my_graph_data(wurl, wlbl, graph,
             ds = "reference_year"
         elif i.year == latest_year:
             ds = "latest_year"
-        else:
+        elif i.year == mid_year:
             ds = "mid_year"
-            set_dataset_override(g, "mid_year", unicode(i.year_display()), pval=pval)
-        add_graph_data(g, ds, i.indigenous_attendance, 
+        else:
+            continue
+        print ds, cluster, i.year
+        add_graph_data(g, ds, i.indigenous_attendance,
                         cluster=cluster, pval=pval)
         if i.year == latest_year:
             add_graph_data(g, "benchmark", i.indigenous_trajectory, 
@@ -240,6 +245,7 @@ def update_my_graph_data(wurl, wlbl, graph,
                     pval=pval)
     set_dataset_override(g, "reference_year", unicode(ref_year), pval=pval)
     set_dataset_override(g, "latest_year", unicode(latest_year), pval=pval)
+    set_dataset_override(g, "mid_year", unicode(mid_year), pval=pval)
     set_dataset_override(g, "benchmark", "%s Trajectory" % latest_year, pval=pval)
     return messages
 
