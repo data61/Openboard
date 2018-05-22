@@ -149,6 +149,84 @@
             "name": "Stroke Colour"
         }, 
         {
+            "label": "bar_fill", 
+            "properties": [
+                {
+                    "key": "blue", 
+                    "value": "#66bcdb"
+                }, 
+                {
+                    "key": "brown", 
+                    "value": "#562b00"
+                }, 
+                {
+                    "key": "dark_blue", 
+                    "value": "#0a1688"
+                }, 
+                {
+                    "key": "dark_green", 
+                    "value": "#0f4017"
+                }, 
+                {
+                    "key": "gold", 
+                    "value": "gold"
+                }, 
+                {
+                    "key": "gold-solid", 
+                    "value": "gold"
+                }, 
+                {
+                    "key": "gold-solid-bar", 
+                    "value": "gold"
+                }, 
+                {
+                    "key": "green", 
+                    "value": "#92d050"
+                }, 
+                {
+                    "key": "green-dashed-line", 
+                    "value": "white"
+                }, 
+                {
+                    "key": "green-dotted", 
+                    "value": "white"
+                }, 
+                {
+                    "key": "green-solid", 
+                    "value": "#92d050"
+                }, 
+                {
+                    "key": "green-solid-bar", 
+                    "value": "#92d050"
+                }, 
+                {
+                    "key": "orange", 
+                    "value": "#f4b123"
+                }, 
+                {
+                    "key": "orange-solid", 
+                    "value": "#f6a623"
+                }, 
+                {
+                    "key": "pale_blue", 
+                    "value": "#72afe2"
+                }, 
+                {
+                    "key": "purple", 
+                    "value": "#265a9a"
+                }, 
+                {
+                    "key": "purple-solid", 
+                    "value": "#265a9a"
+                }, 
+                {
+                    "key": "purple-solid-bar", 
+                    "value": "#265a9a"
+                }
+            ], 
+            "name": "Bar Chart Fill"
+        }, 
+        {
             "label": "traffic_header", 
             "properties": [
                 {
@@ -197,84 +275,6 @@
                 }
             ], 
             "name": "Stroke Dash Width"
-        }, 
-        {
-            "label": "bar_fill", 
-            "properties": [
-                {
-                    "key": "blue", 
-                    "value": "steelblue"
-                }, 
-                {
-                    "key": "brown", 
-                    "value": "#562b00"
-                }, 
-                {
-                    "key": "dark_blue", 
-                    "value": "#0a1688"
-                }, 
-                {
-                    "key": "dark_green", 
-                    "value": "#0f4017"
-                }, 
-                {
-                    "key": "gold", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "gold-solid", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "gold-solid-bar", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "green", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-dashed-line", 
-                    "value": "white"
-                }, 
-                {
-                    "key": "green-dotted", 
-                    "value": "white"
-                }, 
-                {
-                    "key": "green-solid", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-solid-bar", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "orange", 
-                    "value": "#d99694"
-                }, 
-                {
-                    "key": "orange-solid", 
-                    "value": "#f6a623"
-                }, 
-                {
-                    "key": "pale_blue", 
-                    "value": "#72afe2"
-                }, 
-                {
-                    "key": "purple", 
-                    "value": "#800080"
-                }, 
-                {
-                    "key": "purple-solid", 
-                    "value": "#800080"
-                }, 
-                {
-                    "key": "purple-solid-bar", 
-                    "value": "#800080"
-                }
-            ], 
-            "name": "Bar Chart Fill"
         }, 
         {
             "label": "bar_stroke", 
