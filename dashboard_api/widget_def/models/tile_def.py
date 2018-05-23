@@ -236,7 +236,9 @@ class TileDefinition(models.Model, WidgetDefJsonMixin):
     def is_simple_list(self):
         return self.tile_type in (self.SINGLE_LIST_STAT, self.PRIORITY_LIST, self.URGENCY_LIST)
     def is_grid_or_list(self):
-        return self.is_grid() or self.is_list()
+        isg = self.is_grid()
+        isl = self.is_list()
+        return isg or isl
     def is_text_template(self):
         return self.tile_type == self.TEXT_TEMPLATE
     def export(self):
