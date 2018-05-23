@@ -314,6 +314,8 @@ class Statistic(models.Model, WidgetDefJsonMixin):
                     json["label"]=datum.keyval
                 else:
                     json["label"]=datum.label
+            else:
+                json["label"] = self.name
             if self.hyperlinkable:
                 json["url"]=datum.url
             if self.traffic_light_scale or self.traffic_light_automation:
