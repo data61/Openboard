@@ -104,7 +104,7 @@ class Statistic(models.Model, WidgetDefJsonMixin):
     api_state_def = {
         "label": JSON_ATTR(attribute="url"),
         "type": JSON_EXP_ARRAY_LOOKUP(lookup_array=stat_types, attribute="stat_type"),
-        "name": JSON_OPT_ATTR(decider=["tile", "is_grid"],parametise=True),
+        "name": JSON_OPT_ATTR(decider=["tile", "is_grid_or_list"],parametise=True),
         "display_name": JSON_OPT_ATTR(decider=["tile", "is_grid"], attribute="name_as_label"),
         "precision": JSON_OPT_ATTR(decider="is_numeric", attribute="num_precision"),
         "unit": JSON_OPT_ATTR(decider="is_numeric", attribute="self", exporter=stat_unit_exporter),
