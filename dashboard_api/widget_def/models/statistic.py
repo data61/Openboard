@@ -292,8 +292,8 @@ class Statistic(models.Model, WidgetDefJsonMixin):
         if self.is_data_list():
             return [ self.jsonise(datum) for datum in data ]
         else:
-            return self.jsonise(data)
-    def jsonise(self, datum):
+            return self.jsonise(data, view)
+    def jsonise(self, datum, view=None):
         """
         Converts a :model:`widget_data.StatisticData` or :model:`widget_data.StatisticListItem` datum for this statistic into json format.
         """
@@ -315,7 +315,7 @@ class Statistic(models.Model, WidgetDefJsonMixin):
                 else:
                     json["label"]=datum.label
             else:
-                json["label"] = self.name
+                json["label"] = parametise_label(self.widget(), view, self.name)
             if self.hyperlinkable:
                 json["url"]=datum.url
             if self.traffic_light_scale or self.traffic_light_automation:
