@@ -234,15 +234,20 @@ def populate_my_graph(state_num, latest_date, pval):
     g = get_graph("legal_total_svc_state", "legal_total_svc_state", 
                     "legal_total_svc_detail_graph")
     clear_graph_data(g, pval=pval)
+    last_obj = None
     for obj in LegalAssistData.objects.filter(state=state_num).order_by("start_date"):
         add_graph_data(g, "lac", obj.lac, horiz_value=obj.start_date, pval=pval)
         add_graph_data(g, "clc", obj.clc, horiz_value=obj.start_date, pval=pval)
 
-        add_graph_data(g, "lac-benchmark", obj.lac_benchmark, horiz_value=obj.start_date, pval=pval)
-        add_graph_data(g, "clc-benchmark", obj.clc_benchmark, horiz_value=obj.start_date, pval=pval)
-        if obj.start_date != latest_date:
-            add_graph_data(g, "lac-benchmark", obj.lac_benchmark, horiz_value=obj.end_date(), pval=pval)
-            add_graph_data(g, "clc-benchmark", obj.clc_benchmark, horiz_value=obj.end_date(), pval=pval)
+        if last_obj is None or last_obj.lac_benchmark != obj.lac_benchmark or obj.start_date == latest_date:
+            if last_obj is not None and last_obj.lac_benchmark != obj.lac_benchmark:
+                add_graph_data(g, "lac-benchmark", last_obj.lac_benchmark, horiz_value=obj.start_date - datetime.timedelta(days=1), pval=pval)
+            add_graph_data(g, "lac-benchmark", obj.lac_benchmark, horiz_value=obj.start_date, pval=pval)
+        if last_obj is None or last_obj.clc_benchmark != obj.clc_benchmark or obj.start_date == latest_date:
+            if last_obj is not None and last_obj.clc_benchmark != obj.clc_benchmark:
+                add_graph_data(g, "clc-benchmark", last_obj.clc_benchmark, horiz_value=obj.start_date - datetime.timedelta(days=1), pval=pval)
+            add_graph_data(g, "clc-benchmark", obj.clc_benchmark, horiz_value=obj.start_date, pval=pval)
+        last_obj = obj
     return messages
 
 def populate_my_national_graph(graph, val_fld, benchmark_fld, latest_date):
@@ -250,19 +255,24 @@ def populate_my_national_graph(graph, val_fld, benchmark_fld, latest_date):
     g = get_graph("legal_total_svc", "legal_total_svc", graph)
     clear_graph_data(g)
     last_start_date = None
+    last_obj = None
     for obj in LegalAssistData.objects.order_by("start_date"):
+        if last_obj is None or getattr(last_obj, benchmark_fld) != getattr(obj,benchmark_fld) or obj.start_date == latest_date:
+            if last_obj is not None and getattr(last_obj, benchmark_fld) != getattr(obj,benchmark_fld):
+                add_graph_data(g, "benchmark", getattr(last_obj,benchmark_fld), horiz_value=obj.start_date - datetime.timedelta(days=1))
+                print "Benchmark end date"
+            print "Benchmark start date"
+            if obj.start_date == latest_date:
+                if last_obj is not None and last_obj.start_date != latest_date:
+                    add_graph_data(g, "benchmark", getattr(obj,benchmark_fld), horiz_value=obj.start_date)
+            else:
+                add_graph_data(g, "benchmark", getattr(obj,benchmark_fld), horiz_value=obj.start_date)
+
         add_graph_data(g, obj.state_display().lower(),
-                        getattr(obj, val_fld),
-                        horiz_value=obj.start_date)
-        if obj.start_date != last_start_date:
-            last_start_date = obj.start_date
-            add_graph_data(g, "benchmark",
-                        getattr(obj, benchmark_fld),
-                        horiz_value=obj.start_date)
-            if obj.start_date != latest_date:
-                add_graph_data(g, "benchmark",
-                            getattr(obj, benchmark_fld),
-                            horiz_value=obj.end_date())
+                    getattr(obj, val_fld),
+                    horiz_value=obj.start_date)
+        last_obj = obj
+
     return messages
 
 def populate_my_raw_datasets(wurl, wlbl, pval=None):
