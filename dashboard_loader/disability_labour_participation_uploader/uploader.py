@@ -153,9 +153,9 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                     "percentage": "disabled_labour_force_participation",
                                     "uncertainty": "uncertainty",
                                     "percentage_male": "disabled_male_labour_force_participation",
-                                    "uncertainty_male": "uncertainty",
+                                    "uncertainty_male": "male_uncertainty",
                                     "percentage_female": "disabled_female_labour_force_participation",
-                                    "uncertainty_female": "uncertainty",
+                                    "uncertainty_female": "female_uncertainty",
                                 })
                 )
         messages.extend(
