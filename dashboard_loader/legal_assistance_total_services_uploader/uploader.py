@@ -260,8 +260,6 @@ def populate_my_national_graph(graph, val_fld, benchmark_fld, latest_date):
         if last_obj is None or getattr(last_obj, benchmark_fld) != getattr(obj,benchmark_fld) or obj.start_date == latest_date:
             if last_obj is not None and getattr(last_obj, benchmark_fld) != getattr(obj,benchmark_fld):
                 add_graph_data(g, "benchmark", getattr(last_obj,benchmark_fld), horiz_value=obj.start_date - datetime.timedelta(days=1))
-                print "Benchmark end date"
-            print "Benchmark start date"
             if obj.start_date == latest_date:
                 if last_obj is not None and last_obj.start_date != latest_date:
                     add_graph_data(g, "benchmark", getattr(obj,benchmark_fld), horiz_value=obj.start_date)

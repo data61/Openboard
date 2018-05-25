@@ -190,8 +190,8 @@ def populate_my_graph(wurl, graph, state_num=None, pval=None):
     clear_graph_data(g, pval=pval)
     year_map = {
         2008: "reference",
-        2015: "recent",
-        2016: "latest"
+        2016: "recent",
+        2017: "latest"
     }
     if pval:
         qry = AccessEceData.objects.filter(state=state_num)
