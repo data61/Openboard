@@ -29,7 +29,7 @@ class InfrastructureProjects(CoagDataBase):
     underway_cost = models.DecimalField(max_digits=13, decimal_places=0)
     pending_cost = models.DecimalField(max_digits=13, decimal_places=0)
     def format_cost(self, amount):
-        return "$"+intcomma(unicode(amount))
+        return "$"+intcomma(unicode(amount), use_l10n=False)
     def display_completed_cost(self):
         return self.format_cost(self.completed_cost)
     def display_underway_cost(self):
