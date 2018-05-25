@@ -15,6 +15,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.contrib.humanize.templatetags.humanize import intcomma
 from coag_uploader.models import *
 from decimal import Decimal
 
@@ -27,6 +28,16 @@ class InfrastructureProjects(CoagDataBase):
     completed_cost = models.DecimalField(max_digits=13, decimal_places=0)
     underway_cost = models.DecimalField(max_digits=13, decimal_places=0)
     pending_cost = models.DecimalField(max_digits=13, decimal_places=0)
+    def format_cost(self, amount):
+        return "$"+intcomma(unicode(amount))
+    def display_completed_cost(self):
+        return self.format_cost(self.completed_cost)
+    def display_underway_cost(self):
+        return self.format_cost(self.underway_cost)
+    def display_pending_cost(self):
+        return self.format_cost(self.pending_cost)
+    def display_total_cost(self):
+        return self.format_cost(self.total_cost)
     def total(self):
         return self.completed + self.underway + self.pending
     def total_cost(self):

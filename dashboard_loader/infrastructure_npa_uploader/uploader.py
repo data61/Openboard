@@ -214,10 +214,10 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                     "underway": "underway_count",
                                     "pending": "pending_count",
                                     "total": "total_count",
-                                    "completed_cost": "complete_cost",
-                                    "underway_cost": "underway_cost",
-                                    "pending_cost": "pending_cost",
-                                    "total_cost": "total_cost",
+                                    "display_completed_cost": "complete_cost",
+                                    "display_underway_cost": "underway_cost",
+                                    "display_pending_cost": "pending_cost",
+                                    "display_total_cost": "total_cost",
                                 },
                                 use_dates=False)
                 )

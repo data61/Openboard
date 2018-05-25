@@ -80,7 +80,7 @@ def update_graph_maxmin(graphdatum, _min, _max):
 
 def csv_escape(s):
     out = s.replace('"', '""')
-    if '"' in out or ',' in out:
+    if '"' in out or ',' in out or '\n' in out:
         return '"%s"' % out
     else:
         return out
