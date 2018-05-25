@@ -37,7 +37,7 @@ class InfrastructureProjects(CoagDataBase):
     def display_pending_cost(self):
         return self.format_cost(self.pending_cost)
     def display_total_cost(self):
-        return self.format_cost(self.total_cost)
+        return self.format_cost(self.total_cost())
     def total(self):
         return self.completed + self.underway + self.pending
     def total_cost(self):
