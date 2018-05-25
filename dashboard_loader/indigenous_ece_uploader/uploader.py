@@ -73,6 +73,14 @@ file_format = {
         ],
 }
 
+
+def state_benchmarker(obj):
+    if obj.state == NT:
+        return "not_on_track"
+    else:
+        return "on_track"
+
+
 def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
     messages = []
     try:
@@ -100,7 +108,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "indigenous_indig_ece_state", "indigenous_indig_ece_state",
                                 IndigenousECEData, 
                                 [ ("indigenous", None),],
-                                no_data_override="no_trend_data",
+                                use_benchmark_tls=True,
+                                status_func=state_benchmarker,
                                 verbosity=verbosity))
         latest_aust = IndigenousECEData.objects.filter(state=AUS).order_by("year").last()
         set_statistic_data(
