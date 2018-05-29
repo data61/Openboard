@@ -199,72 +199,6 @@
             "name": "Stroke Dash Width"
         }, 
         {
-            "label": "bar_stroke", 
-            "properties": [
-                {
-                    "key": "blue", 
-                    "value": "transparent"
-                }, 
-                {
-                    "key": "gold", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "gold-solid", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "gold-solid-bar", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "green", 
-                    "value": "transparent"
-                }, 
-                {
-                    "key": "green-dashed-line", 
-                    "value": "rgb(146, 208, 80)"
-                }, 
-                {
-                    "key": "green-dotted", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-solid", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-solid-bar", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-solid-line", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "orange", 
-                    "value": "#d99694"
-                }, 
-                {
-                    "key": "orange-solid", 
-                    "value": "transparent"
-                }, 
-                {
-                    "key": "purple", 
-                    "value": "#800080"
-                }, 
-                {
-                    "key": "purple-solid", 
-                    "value": "#800080"
-                }, 
-                {
-                    "key": "purple-solid-bar", 
-                    "value": "#800080"
-                }
-            ], 
-            "name": "Bar Chart Stroke"
-        }, 
-        {
             "label": "traffic_fore", 
             "properties": [
                 {
@@ -406,6 +340,14 @@
                     "value": "rgb(191, 191, 191)"
                 }, 
                 {
+                    "key": "brown-dashed-line", 
+                    "value": "rgb(191, 191, 191)"
+                }, 
+                {
+                    "key": "brown-solid", 
+                    "value": "rgb(191, 191, 191)"
+                }, 
+                {
                     "key": "dark_blue", 
                     "value": "rgb(173, 86, 163)"
                 }, 
@@ -414,7 +356,19 @@
                     "value": "#4d7028"
                 }, 
                 {
+                    "key": "dark_green-dashed-line", 
+                    "value": "#4d7028"
+                }, 
+                {
+                    "key": "dark_green-solid", 
+                    "value": "#4d7028"
+                }, 
+                {
                     "key": "gold", 
+                    "value": "#f15a25"
+                }, 
+                {
+                    "key": "gold-dashed-line", 
                     "value": "#f15a25"
                 }, 
                 {
@@ -450,6 +404,10 @@
                     "value": "#f4b123"
                 }, 
                 {
+                    "key": "orange-dashed-line", 
+                    "value": "#f4b123"
+                }, 
+                {
                     "key": "orange-solid", 
                     "value": "#f6a623"
                 }, 
@@ -458,7 +416,19 @@
                     "value": "rgb(165, 40, 40)"
                 }, 
                 {
+                    "key": "pale_blue-dashed-line", 
+                    "value": "rgb(165, 40, 40)"
+                }, 
+                {
+                    "key": "pale_blue-solid", 
+                    "value": "rgb(165, 40, 40)"
+                }, 
+                {
                     "key": "purple", 
+                    "value": "#265a9a"
+                }, 
+                {
+                    "key": "purple-dashed-line", 
                     "value": "#265a9a"
                 }, 
                 {
@@ -471,6 +441,108 @@
                 }
             ], 
             "name": "Bar Chart Fill"
+        }, 
+        {
+            "label": "bar_stroke", 
+            "properties": [
+                {
+                    "key": "blue", 
+                    "value": "transparent"
+                }, 
+                {
+                    "key": "brown-dashed-line", 
+                    "value": "rgb(191, 191, 191)"
+                }, 
+                {
+                    "key": "brown-solid", 
+                    "value": "rgb(191, 191, 191)"
+                }, 
+                {
+                    "key": "dark_green-dashed-line", 
+                    "value": "#4d7028"
+                }, 
+                {
+                    "key": "dark_green-solid", 
+                    "value": "#4d7028"
+                }, 
+                {
+                    "key": "gold", 
+                    "value": "gold"
+                }, 
+                {
+                    "key": "gold-dashed-line", 
+                    "value": "#f15a25"
+                }, 
+                {
+                    "key": "gold-solid", 
+                    "value": "gold"
+                }, 
+                {
+                    "key": "gold-solid-bar", 
+                    "value": "gold"
+                }, 
+                {
+                    "key": "green", 
+                    "value": "transparent"
+                }, 
+                {
+                    "key": "green-dashed-line", 
+                    "value": "rgb(146, 208, 80)"
+                }, 
+                {
+                    "key": "green-dotted", 
+                    "value": "rgb(146, 208, 80)"
+                }, 
+                {
+                    "key": "green-solid", 
+                    "value": "rgb(146, 208, 80)"
+                }, 
+                {
+                    "key": "green-solid-bar", 
+                    "value": "rgb(146, 208, 80)"
+                }, 
+                {
+                    "key": "green-solid-line", 
+                    "value": "rgb(146, 208, 80)"
+                }, 
+                {
+                    "key": "orange", 
+                    "value": "#d99694"
+                }, 
+                {
+                    "key": "orange-dashed-line", 
+                    "value": "#d99694"
+                }, 
+                {
+                    "key": "orange-solid", 
+                    "value": "#d99694"
+                }, 
+                {
+                    "key": "pale_blue-dashed-line", 
+                    "value": "rgb(165, 40, 40)"
+                }, 
+                {
+                    "key": "pale_blue-solid", 
+                    "value": "rgb(165, 40, 40)"
+                }, 
+                {
+                    "key": "purple", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-dashed-line", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-solid", 
+                    "value": "#800080"
+                }, 
+                {
+                    "key": "purple-solid-bar", 
+                    "value": "#800080"
+                }
+            ], 
+            "name": "Bar Chart Stroke"
         }
     ], 
     "type": "PropertyGroup"
