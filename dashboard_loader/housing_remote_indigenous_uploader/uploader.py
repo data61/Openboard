@@ -41,13 +41,13 @@ file_format = {
                 "name": "Data",
                 "cols": [ 
                             ('A', 'Year e.g. 2007-08 or 2007/08 or 2007'),
-                            ('B', 'Row Discriminator ("no.", % or "rate per 10k")'),
+                            ('B', 'Row Discriminator ("New houses", or "Refurbishments")'),
                             ('...', 'Column per state + Aust'),
                         ],
                 "rows": [
                             ('1', "Heading row"),
                             ('2', "State Heading row"),
-                            ('...', 'Pairs of rows per year, one for new homes (New), one for refurbishments (Refurbishments)'),
+                            ('...', 'Pairs of rows per year, one for new homes (New), one for refurbishments (Refurbishments).'),
                         ],
                 "notes": [
                     'Blank rows and columns ignored',
@@ -80,6 +80,28 @@ def state_benchmarker(obj):
         return "no_participate"
     else:
         return "on_track"
+
+new_house_targets = {
+    AUS: 4200,
+    NSW: 310,
+    QLD: 1141,
+    WA: 1012,
+    SA: 241,
+    TAS: 18,
+    NT: 1456,
+}
+new_house_target_year = 2018
+
+refurbishment_targets = {
+    AUS: 4876,
+    NSW: 101,
+    QLD: 1216,
+    WA: 1288,
+    SA: 206,
+    TAS: 3,
+    NT: 2052,
+}
+refurbishment_target_year = 2014
 
 def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
     messages = []
@@ -176,16 +198,26 @@ def update_summary_graph_data(wurl, wlbl, graph_lbl, pval=None):
     messages = []
     g = get_graph(wurl, wlbl, graph_lbl)
     clear_graph_data(g, pval=pval)
-    add_graph_data(g, "benchmark", 4200, cluster="new", pval=pval)
-    add_graph_data(g, "benchmark", 4800, cluster="refurbished", pval=pval)
+    if pval:
+        state_abbrev = pval.parameters()["state_abbrev"]
+        state_num = state_map[state_abbrev]
+        if state_num not in new_house_targets:
+            messages.append("No target for %s, skipping" % state_abbrev)
+            return messages
+        add_graph_data(g, "benchmark", new_house_targets[AUS], cluster="new", pval=pval)
+        add_graph_data(g, "benchmark", refurbishment_targets[AUS], cluster="refurbished", pval=pval)
+        add_graph_data(g, "state_benchmark", new_house_targets[state_num], cluster="new", pval=pval)
+        add_graph_data(g, "state_benchmark", refurbishment_targets[state_num], cluster="refurbished", pval=pval)
+    else:
+        add_graph_data(g, "benchmark", new_house_targets[AUS], cluster="new", pval=pval)
+        add_graph_data(g, "benchmark", refurbishment_targets[AUS], cluster="refurbished", pval=pval)
+
     data = HousingRemoteIndigenousData.objects.filter(state=AUS).order_by("year").last()
     add_graph_data(g, "year", data.new_houses, cluster="new", pval=pval)
     add_graph_data(g, "year", data.refurbishments, cluster="refurbished", pval=pval)
     yr = data.year_display()
     if pval:
         set_dataset_override(g, "year", "%s (Nat)" % data.year_display(), pval=pval)
-        state_abbrev = pval.parameters()["state_abbrev"]
-        state_num = state_map[state_abbrev]
         data = HousingRemoteIndigenousData.objects.filter(state=state_num).order_by("year").last()
         if data is not None:
             add_graph_data(g, "year_state", data.new_houses, cluster="new", pval=pval)
@@ -215,12 +247,17 @@ def update_detail_state_graph_data(pval):
     messages = []
     state_abbrev = pval.parameters()["state_abbrev"]
     state_num = state_map[state_abbrev]
+    if state_num not in new_house_targets:
+        messages.append("No target for %s, skipping" % state_abbrev)
+        return messages
     g = get_graph("housing_remote_indigenous_state", "housing_remote_indigenous_state",
                         "housing_remote_indigenous_detail_graph")
     clear_graph_data(g, pval=pval)
     year = 0
-    add_graph_data(g, "new", 4200, cluster="benchmark", pval=pval)
-    add_graph_data(g, "refurbished", 4800, cluster="benchmark", pval=pval)
+    add_graph_data(g, "refurbished_benchmark", refurbishment_targets[state_num], cluster="state", pval=pval)
+    add_graph_data(g, "refurbished_benchmark", refurbishment_targets[AUS], cluster="australia", pval=pval)
+    add_graph_data(g, "new_benchmark", new_house_targets[state_num], cluster="state", pval=pval)
+    add_graph_data(g, "new_benchmark", new_house_targets[AUS], cluster="australia", pval=pval)
     for data in HousingRemoteIndigenousData.objects.filter(state__in=[AUS, state_num]).order_by("-year"):
         if year and year != data.year:
             break

@@ -135,6 +135,16 @@
                                 "use_error_bars": false
                             }, 
                             {
+                                "hide_from_legend": false,
+                                "hyperlink": "",
+                                "url": "benchmark",
+                                "colour": "green-dashed-line",
+                                "dynamic_label": false,
+                                "label": "National Benchmark",
+                                "use_secondary_numeric_axis": false,
+                                "use_error_bars": false
+                            },
+                            {
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
                                 "url": "year_state", 
@@ -143,14 +153,14 @@
                                 "label": "Year ({{ state_abbrev }}", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
-                            }, 
+                            },
                             {
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
-                                "url": "benchmark", 
-                                "colour": "green-dashed-line", 
+                                "url": "state_benchmark",
+                                "colour": "{{ colour }}-dashed-line",
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "State/Territory Benchmark",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }

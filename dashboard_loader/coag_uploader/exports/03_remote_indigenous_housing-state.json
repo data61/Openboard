@@ -139,7 +139,17 @@
                                 "label": "Year (Aust)", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
-                            }, 
+                            },
+                            {
+                                "hide_from_legend": false,
+                                "hyperlink": "",
+                                "url": "benchmark",
+                                "colour": "green-dotted",
+                                "dynamic_label": false,
+                                "label": "National Benchmark",
+                                "use_secondary_numeric_axis": false,
+                                "use_error_bars": false
+                            },
                             {
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
@@ -153,10 +163,10 @@
                             {
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
-                                "url": "benchmark", 
-                                "colour": "green-dotted", 
+                                "url": "state_benchmark",
+                                "colour": "{{ colour }}-dotted",
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "State/Territory Benchmark",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
@@ -314,22 +324,42 @@
                         "horiz_axis_type": 0, 
                         "datasets": [
                             {
-                                "hide_from_legend": false, 
-                                "hyperlink": "", 
-                                "url": "new", 
-                                "colour": "orange", 
-                                "dynamic_label": false, 
-                                "label": "New", 
-                                "use_secondary_numeric_axis": false, 
+                                "hide_from_legend": false,
+                                "hyperlink": "",
+                                "url": "new",
+                                "colour": "orange",
+                                "dynamic_label": false,
+                                "label": "New",
+                                "use_secondary_numeric_axis": false,
                                 "use_error_bars": false
-                            }, 
+                            },
                             {
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
-                                "url": "refurbished", 
+                                "url": "new_benchmark",
+                                "colour": "orange-dotted",
+                                "dynamic_label": false, 
+                                "label": "New Houses Benchmark",
+                                "use_secondary_numeric_axis": false, 
+                                "use_error_bars": false
+                            },
+                            {
+                                "hide_from_legend": false,
+                                "hyperlink": "",
+                                "url": "refurbished",
+                                "colour": "purple",
+                                "dynamic_label": false,
+                                "label": "Refurbished",
+                                "use_secondary_numeric_axis": false,
+                                "use_error_bars": false
+                            },
+                            {
+                                "hide_from_legend": false, 
+                                "hyperlink": "", 
+                                "url": "refurbished_benchmark",
                                 "colour": "purple", 
                                 "dynamic_label": false, 
-                                "label": "Refurbished", 
+                                "label": "Refurbishment Benchmark",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
@@ -362,13 +392,8 @@
                                 "url": "australia", 
                                 "label": "Aust", 
                                 "hyperlink": ""
-                            }, 
-                            {
-                                "url": "benchmark", 
-                                "label": "National Benchmark", 
-                                "hyperlink": ""
                             }
-                        ], 
+                        ],
                         "heading": "New houses and refurbishments delivered under the Remote Housing Strategy",
                         "dynamic_clusters": false
                     }, 
