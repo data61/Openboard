@@ -149,84 +149,6 @@
             "name": "Stroke Colour"
         }, 
         {
-            "label": "bar_fill", 
-            "properties": [
-                {
-                    "key": "blue", 
-                    "value": "#66bcdb"
-                }, 
-                {
-                    "key": "brown", 
-                    "value": "#562b00"
-                }, 
-                {
-                    "key": "dark_blue", 
-                    "value": "#0a1688"
-                }, 
-                {
-                    "key": "dark_green", 
-                    "value": "#0f4017"
-                }, 
-                {
-                    "key": "gold", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "gold-solid", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "gold-solid-bar", 
-                    "value": "gold"
-                }, 
-                {
-                    "key": "green", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-dashed-line", 
-                    "value": "white"
-                }, 
-                {
-                    "key": "green-dotted", 
-                    "value": "white"
-                }, 
-                {
-                    "key": "green-solid", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "green-solid-bar", 
-                    "value": "#92d050"
-                }, 
-                {
-                    "key": "orange", 
-                    "value": "#f4b123"
-                }, 
-                {
-                    "key": "orange-solid", 
-                    "value": "#f6a623"
-                }, 
-                {
-                    "key": "pale_blue", 
-                    "value": "#72afe2"
-                }, 
-                {
-                    "key": "purple", 
-                    "value": "#265a9a"
-                }, 
-                {
-                    "key": "purple-solid", 
-                    "value": "#265a9a"
-                }, 
-                {
-                    "key": "purple-solid-bar", 
-                    "value": "#265a9a"
-                }
-            ], 
-            "name": "Bar Chart Fill"
-        }, 
-        {
             "label": "traffic_header", 
             "properties": [
                 {
@@ -471,6 +393,84 @@
                 }
             ], 
             "name": "Traffic light backgrounds"
+        }, 
+        {
+            "label": "bar_fill", 
+            "properties": [
+                {
+                    "key": "blue", 
+                    "value": "#66bcdb"
+                }, 
+                {
+                    "key": "brown", 
+                    "value": "rgb(191, 191, 191)"
+                }, 
+                {
+                    "key": "dark_blue", 
+                    "value": "rgb(173, 86, 163)"
+                }, 
+                {
+                    "key": "dark_green", 
+                    "value": "#4d7028"
+                }, 
+                {
+                    "key": "gold", 
+                    "value": "#f15a25"
+                }, 
+                {
+                    "key": "gold-solid", 
+                    "value": "#f15a25"
+                }, 
+                {
+                    "key": "gold-solid-bar", 
+                    "value": "#f15a25"
+                }, 
+                {
+                    "key": "green", 
+                    "value": "#78a22f"
+                }, 
+                {
+                    "key": "green-dashed-line", 
+                    "value": "white"
+                }, 
+                {
+                    "key": "green-dotted", 
+                    "value": "white"
+                }, 
+                {
+                    "key": "green-solid", 
+                    "value": "#78a22f"
+                }, 
+                {
+                    "key": "green-solid-bar", 
+                    "value": "#78a22f"
+                }, 
+                {
+                    "key": "orange", 
+                    "value": "#f4b123"
+                }, 
+                {
+                    "key": "orange-solid", 
+                    "value": "#f6a623"
+                }, 
+                {
+                    "key": "pale_blue", 
+                    "value": "rgb(165, 40, 40)"
+                }, 
+                {
+                    "key": "purple", 
+                    "value": "#265a9a"
+                }, 
+                {
+                    "key": "purple-solid", 
+                    "value": "#265a9a"
+                }, 
+                {
+                    "key": "purple-solid-bar", 
+                    "value": "#265a9a"
+                }
+            ], 
+            "name": "Bar Chart Fill"
         }
     ], 
     "type": "PropertyGroup"
