@@ -130,7 +130,7 @@
                                 "url": "year", 
                                 "colour": "green-solid-bar", 
                                 "dynamic_label": true, 
-                                "label": "Year (Aust)", 
+                                "label": "Year (Nat)",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -140,7 +140,7 @@
                                 "url": "benchmark",
                                 "colour": "green-dashed-line",
                                 "dynamic_label": false,
-                                "label": "National Benchmark",
+                                "label": "Benchmark (Nat)",
                                 "use_secondary_numeric_axis": false,
                                 "use_error_bars": false
                             },
@@ -160,7 +160,7 @@
                                 "url": "state_benchmark",
                                 "colour": "{{ colour }}-dashed-line",
                                 "dynamic_label": false, 
-                                "label": "State/Territory Benchmark",
+                                "label": "Benchmark ({{ state_abbrev }})",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }

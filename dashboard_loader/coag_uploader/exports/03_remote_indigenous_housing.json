@@ -81,7 +81,7 @@
                                 "url": "benchmark", 
                                 "colour": "orange", 
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "Benchmark",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
