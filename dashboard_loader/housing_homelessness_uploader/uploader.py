@@ -73,6 +73,15 @@ file_format = {
         ],
 }
 
+def status_func(obj, ref_year=2006):
+    ref_obj = HousingHomelessData.objects.get(year=ref_year, state=obj.state)
+    if abs(obj.rate_per_10k - ref_obj.rate_per_10k) <= 0.15:
+        return "no_improvement"
+    elif obj.rate_per_10k > ref_obj.rate_per_10k:
+        return "negative_change"
+    else:
+        return "improving"
+
 def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
     messages = []
     try:
@@ -100,7 +109,9 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
         messages.extend(update_state_stats(
                             "homelessness-housing-hero-state", "homelessness-housing-hero-state", 
                             "housing_homelessness_state", "housing_homelessness_state", 
-                            HousingHomelessData, [ ("rate_per_10k", None,), ],
+                            HousingHomelessData,
+                            [ ("rate_per_10k", None,), ],
+                            status_func = status_func,
                             want_increase=False,
                             verbosity=verbosity))
         messages.extend(
