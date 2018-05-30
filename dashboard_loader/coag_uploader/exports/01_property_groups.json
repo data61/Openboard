@@ -454,6 +454,14 @@
                     "value": "transparent"
                 }, 
                 {
+                    "key": "blue-dashed-line", 
+                    "value": "#66bcbd"
+                }, 
+                {
+                    "key": "dark_blue-dashed-line", 
+                    "value": "rgb(173,86,163)"
+                }, 
+                {
                     "key": "brown-dashed-line", 
                     "value": "rgb(191, 191, 191)"
                 }, 
@@ -483,7 +491,7 @@
                 }, 
                 {
                     "key": "gold-solid-bar", 
-                    "value": "gold"
+                    "value": "#f15a25"
                 }, 
                 {
                     "key": "green", 
