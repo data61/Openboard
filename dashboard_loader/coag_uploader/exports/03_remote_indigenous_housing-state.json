@@ -134,7 +134,7 @@
                                 "hide_from_legend": false, 
                                 "hyperlink": "", 
                                 "url": "year", 
-                                "colour": "green-solid", 
+                                "colour": "green-solid",
                                 "dynamic_label": true, 
                                 "label": "Year (Nat)",
                                 "use_secondary_numeric_axis": false, 

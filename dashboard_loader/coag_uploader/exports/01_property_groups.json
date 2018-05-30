@@ -341,7 +341,7 @@
                 }, 
                 {
                     "key": "brown-dashed-line", 
-                    "value": "rgb(191, 191, 191)"
+                    "value": "white"
                 }, 
                 {
                     "key": "brown-solid", 
@@ -352,12 +352,16 @@
                     "value": "rgb(173, 86, 163)"
                 }, 
                 {
+                    "key": "dark_blue-dashed-line", 
+                    "value": "white"
+                }, 
+                {
                     "key": "dark_green", 
                     "value": "#4d7028"
                 }, 
                 {
                     "key": "dark_green-dashed-line", 
-                    "value": "#4d7028"
+                    "value": "white"
                 }, 
                 {
                     "key": "dark_green-solid", 
@@ -369,7 +373,7 @@
                 }, 
                 {
                     "key": "gold-dashed-line", 
-                    "value": "#f15a25"
+                    "value": "white"
                 }, 
                 {
                     "key": "gold-solid", 
@@ -405,7 +409,7 @@
                 }, 
                 {
                     "key": "orange-dashed-line", 
-                    "value": "#f4b123"
+                    "value": "white"
                 }, 
                 {
                     "key": "orange-solid", 
@@ -417,7 +421,7 @@
                 }, 
                 {
                     "key": "pale_blue-dashed-line", 
-                    "value": "rgb(165, 40, 40)"
+                    "value": "white"
                 }, 
                 {
                     "key": "pale_blue-solid", 
@@ -429,7 +433,7 @@
                 }, 
                 {
                     "key": "purple-dashed-line", 
-                    "value": "#265a9a"
+                    "value": "white"
                 }, 
                 {
                     "key": "purple-solid", 
