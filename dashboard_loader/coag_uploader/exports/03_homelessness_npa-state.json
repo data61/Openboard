@@ -124,7 +124,7 @@
                                 "url": "accommodation_state", 
                                 "colour": "{{ colour }}", 
                                 "dynamic_label": false, 
-                                "label": "{{ state_abbrev }}",
+                                "label": "{{ state_abbrev }}", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -134,7 +134,7 @@
                                 "url": "accommodation_aust", 
                                 "colour": "green", 
                                 "dynamic_label": false, 
-                                "label": "Aust",
+                                "label": "Aust", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
@@ -406,8 +406,10 @@
                     "tile_type": 9, 
                     "expansion": true, 
                     "geo_datasets": [], 
+                    "geo_window": null, 
+                    "aspect": 2, 
                     "grid": {
-                        "corner_label": "Progress against milestones",
+                        "corner_label": "Progress against milestones", 
                         "show_column_headers": true, 
                         "rows": [
                             {
@@ -442,8 +444,6 @@
                         ], 
                         "show_row_headers": true
                     }, 
-                    "aspect": 2, 
-                    "geo_window": null, 
                     "columns": null
                 }, 
                 {
@@ -461,7 +461,7 @@
                                 "url": "accommodation_state", 
                                 "colour": "orange", 
                                 "dynamic_label": false, 
-                                "label": "Accommodation needs met ({{ state_abbrev }})",
+                                "label": "Accommodation needs met ({{ state_abbrev }})", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -471,7 +471,7 @@
                                 "url": "accommodation_aust", 
                                 "colour": "purple", 
                                 "dynamic_label": false, 
-                                "label": "Accommodation needs met (Aust)",
+                                "label": "Accommodation needs met (Aust)", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }

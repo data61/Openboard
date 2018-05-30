@@ -302,6 +302,8 @@
                     "tile_type": 9, 
                     "expansion": false, 
                     "geo_datasets": [], 
+                    "geo_window": null, 
+                    "aspect": 3, 
                     "grid": {
                         "corner_label": "Year", 
                         "show_column_headers": true, 
@@ -345,8 +347,6 @@
                         ], 
                         "show_row_headers": true
                     }, 
-                    "aspect": 3, 
-                    "geo_window": null, 
                     "columns": null
                 }
             ], 

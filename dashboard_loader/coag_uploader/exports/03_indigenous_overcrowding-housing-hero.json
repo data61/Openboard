@@ -100,7 +100,7 @@
                         }, 
                         "horiz_axis_label": "", 
                         "dataset_label": "dataset", 
-                        "vertical_axis_buffer": 0.1,
+                        "vertical_axis_buffer": 0, 
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 

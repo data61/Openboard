@@ -756,8 +756,10 @@
                     "tile_type": 9, 
                     "expansion": true, 
                     "geo_datasets": [], 
+                    "geo_window": null, 
+                    "aspect": 2, 
                     "grid": {
-                        "corner_label": "Progress against milestones",
+                        "corner_label": "Progress against milestones", 
                         "show_column_headers": true, 
                         "rows": [
                             {
@@ -834,8 +836,6 @@
                         ], 
                         "show_row_headers": true
                     }, 
-                    "aspect": 2, 
-                    "geo_window": null, 
                     "columns": null
                 }, 
                 {

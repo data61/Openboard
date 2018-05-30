@@ -53,7 +53,7 @@
                             "editable": true, 
                             "name_as_label": true, 
                             "url": "status_header_state", 
-                            "traffic_light_scale": "Benchmark Scale",
+                            "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 
@@ -202,6 +202,8 @@
                     "tile_type": 9, 
                     "expansion": false, 
                     "geo_datasets": [], 
+                    "geo_window": null, 
+                    "aspect": 3, 
                     "grid": {
                         "corner_label": "Early Childhood Enrolment", 
                         "show_column_headers": true, 
@@ -231,8 +233,6 @@
                         ], 
                         "show_row_headers": true
                     }, 
-                    "aspect": 3, 
-                    "geo_window": null, 
                     "columns": null
                 }, 
                 {
@@ -249,7 +249,7 @@
                             "editable": true, 
                             "name_as_label": true, 
                             "url": "status_short_state", 
-                            "traffic_light_scale": "Benchmark Scale",
+                            "traffic_light_scale": "Benchmark Scale", 
                             "unit_underfix": null, 
                             "unit_signed": false, 
                             "unit_si_prefix_rounding": 0, 

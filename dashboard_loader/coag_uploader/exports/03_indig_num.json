@@ -146,6 +146,8 @@
                     "tile_type": 9, 
                     "expansion": false, 
                     "geo_datasets": [], 
+                    "geo_window": null, 
+                    "aspect": 3, 
                     "grid": {
                         "corner_label": "", 
                         "show_column_headers": false, 
@@ -175,8 +177,6 @@
                         ], 
                         "show_row_headers": false
                     }, 
-                    "aspect": 3, 
-                    "geo_window": null, 
                     "columns": null
                 }, 
                 {
@@ -1012,8 +1012,10 @@
                     "tile_type": 9, 
                     "expansion": true, 
                     "geo_datasets": [], 
+                    "geo_window": null, 
+                    "aspect": 3, 
                     "grid": {
-                        "corner_label": "Achieving NMS in numeracy",
+                        "corner_label": "Achieving NMS in numeracy", 
                         "show_column_headers": true, 
                         "rows": [
                             {
@@ -1104,8 +1106,6 @@
                         ], 
                         "show_row_headers": true
                     }, 
-                    "aspect": 3, 
-                    "geo_window": null, 
                     "columns": null
                 }
             ], 

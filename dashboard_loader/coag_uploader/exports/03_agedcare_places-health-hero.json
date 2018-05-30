@@ -1,7 +1,7 @@
 {
     "edit_all_groups": [], 
     "category": "health", 
-    "subtitle": "Aged care places",
+    "subtitle": "Aged care places", 
     "subcategory": "summary", 
     "url": "agedcare-health-hero", 
     "source_url": "", 
@@ -112,6 +112,6 @@
             "expansion_hint": ""
         }
     ], 
-    "name": "Healthcare"
+    "name": "Health"
 }
 

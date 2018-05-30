@@ -81,7 +81,7 @@
                                 "url": "benchmark", 
                                 "colour": "orange", 
                                 "dynamic_label": false, 
-                                "label": "Benchmark",
+                                "label": "National Benchmark", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
@@ -274,7 +274,7 @@
                                 "hyperlink": ""
                             }
                         ], 
-                        "heading": "New houses and refurbishments delivered under the Remote Housing Strategy",
+                        "heading": "New houses and refurbishments delivered under the Remote Housing Strategy", 
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 

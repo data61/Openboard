@@ -80,7 +80,7 @@
                                 "url": "benchmark", 
                                 "colour": "green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "Benchmark",
+                                "label": "National Benchmark", 
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }

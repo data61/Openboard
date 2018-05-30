@@ -410,7 +410,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Smoking rates amongst Indigenous adults (18 years and over)",
+                        "heading": "Smoking rates amongst Indigenous adults (18 years and over)", 
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 

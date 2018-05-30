@@ -289,7 +289,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Children Under Five Mortality Rates for NSW, Qld, WA, SA and NT combined",
+                        "heading": "Children Under Five Mortality Rates for NSW, Qld, WA, SA and NT combined", 
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
