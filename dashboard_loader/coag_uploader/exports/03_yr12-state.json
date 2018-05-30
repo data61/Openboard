@@ -13,27 +13,35 @@
             "refresh_rate": 3400, 
             "views": [
                 {
+                    "sort_order": 1100, 
                     "view": "education_act"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_nsw"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_nt"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_qld"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_sa"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_tas"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_vic"
                 }, 
                 {
+                    "sort_order": 1100, 
                     "view": "education_wa"
                 }
             ], 

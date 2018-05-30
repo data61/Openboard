@@ -13,6 +13,7 @@
             "refresh_rate": 3530, 
             "views": [
                 {
+                    "sort_order": 1303, 
                     "view": "healthcare"
                 }
             ], 

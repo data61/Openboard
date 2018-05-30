@@ -14,6 +14,7 @@
             "views": [
                 {
                     "child_view": "education", 
+                    "sort_order": 1102, 
                     "child_view_text": "See all", 
                     "view": "aus"
                 }

@@ -13,27 +13,35 @@
             "refresh_rate": 3850, 
             "views": [
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_act"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_nsw"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_nt"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_qld"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_sa"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_tas"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_vic"
                 }, 
                 {
+                    "sort_order": 1700, 
                     "view": "legal_assistance_wa"
                 }
             ], 

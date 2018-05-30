@@ -13,15 +13,19 @@
             "refresh_rate": 3920, 
             "views": [
                 {
+                    "sort_order": 1500, 
                     "view": "indigenous_nsw"
                 }, 
                 {
+                    "sort_order": 1500, 
                     "view": "indigenous_nt"
                 }, 
                 {
+                    "sort_order": 1500, 
                     "view": "indigenous_qld"
                 }, 
                 {
+                    "sort_order": 1500, 
                     "view": "indigenous_sa"
                 }
             ], 

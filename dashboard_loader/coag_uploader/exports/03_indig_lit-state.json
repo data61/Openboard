@@ -13,27 +13,35 @@
             "refresh_rate": 3830, 
             "views": [
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_act"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_nsw"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_nt"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_qld"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_sa"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_tas"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_vic"
                 }, 
                 {
+                    "sort_order": 1503, 
                     "view": "indigenous_wa"
                 }
             ], 

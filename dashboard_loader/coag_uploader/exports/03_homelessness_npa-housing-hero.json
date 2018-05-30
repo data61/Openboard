@@ -14,6 +14,7 @@
             "views": [
                 {
                     "child_view": "housing", 
+                    "sort_order": 1010, 
                     "child_view_text": "see all", 
                     "view": "aus"
                 }

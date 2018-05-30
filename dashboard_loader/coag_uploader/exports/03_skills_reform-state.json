@@ -13,27 +13,35 @@
             "refresh_rate": 3780, 
             "views": [
                 {
+                    "sort_order": 1211, 
                     "view": "skills_act"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_nsw"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_nt"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_qld"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_sa"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_tas"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_vic"
                 }, 
                 {
+                    "sort_order": 1211, 
                     "view": "skills_wa"
                 }
             ], 

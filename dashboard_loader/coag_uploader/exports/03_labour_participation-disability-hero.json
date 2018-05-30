@@ -14,6 +14,7 @@
             "views": [
                 {
                     "child_view": "disability", 
+                    "sort_order": 1400, 
                     "child_view_text": "See all", 
                     "view": "aus"
                 }

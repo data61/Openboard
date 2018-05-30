@@ -13,27 +13,35 @@
             "refresh_rate": 3900, 
             "views": [
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_act"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_nsw"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_nt"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_qld"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_sa"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_tas"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_vic"
                 }, 
                 {
+                    "sort_order": 1600, 
                     "view": "infrastructure_wa"
                 }
             ], 

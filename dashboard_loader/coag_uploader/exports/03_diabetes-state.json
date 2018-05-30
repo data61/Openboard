@@ -13,27 +13,35 @@
             "refresh_rate": 3370, 
             "views": [
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_act"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_nsw"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_nt"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_qld"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_sa"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_tas"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_vic"
                 }, 
                 {
+                    "sort_order": 1301, 
                     "view": "healthcare_wa"
                 }
             ], 

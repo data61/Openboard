@@ -14,41 +14,49 @@
             "views": [
                 {
                     "child_view": "infrastructure_act", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "act"
                 }, 
                 {
                     "child_view": "infrastructure_nsw", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "nsw"
                 }, 
                 {
                     "child_view": "infrastructure_nt", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "nt"
                 }, 
                 {
                     "child_view": "infrastructure_sa", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "sa"
                 }, 
                 {
                     "child_view": "infrastructure_qld", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "qld"
                 }, 
                 {
                     "child_view": "infrastructure_vic", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "vic"
                 }, 
                 {
                     "child_view": "infrastructure_tas", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "tas"
                 }, 
                 {
                     "child_view": "infrastructure_wa", 
+                    "sort_order": 1600, 
                     "child_view_text": "See all", 
                     "view": "wa"
                 }

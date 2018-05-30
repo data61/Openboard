@@ -13,6 +13,7 @@
             "refresh_rate": 3900, 
             "views": [
                 {
+                    "sort_order": 1501, 
                     "view": "indigenous"
                 }
             ], 

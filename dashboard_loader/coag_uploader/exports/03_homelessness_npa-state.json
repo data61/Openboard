@@ -13,27 +13,35 @@
             "refresh_rate": 3000, 
             "views": [
                 {
+                    "sort_order": 1010, 
                     "view": "housing_act"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_nsw"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_nt"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_qld"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_sa"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_tas"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_vic"
                 }, 
                 {
+                    "sort_order": 1010, 
                     "view": "housing_wa"
                 }
             ], 

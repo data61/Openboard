@@ -13,9 +13,11 @@
             "refresh_rate": 4000, 
             "views": [
                 {
+                    "sort_order": 1012, 
                     "view": "housing"
                 }, 
                 {
+                    "sort_order": 1510, 
                     "view": "indigenous"
                 }
             ], 
