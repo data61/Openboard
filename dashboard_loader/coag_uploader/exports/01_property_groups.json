@@ -429,7 +429,7 @@
                 }, 
                 {
                     "key": "purple", 
-                    "value": "#265a9a"
+                    "value": "#800080"
                 }, 
                 {
                     "key": "purple-dashed-line", 
@@ -437,7 +437,7 @@
                 }, 
                 {
                     "key": "purple-solid", 
-                    "value": "#265a9a"
+                    "value": "#800080"
                 }, 
                 {
                     "key": "purple-solid-bar", 
@@ -519,15 +519,15 @@
                 }, 
                 {
                     "key": "orange", 
-                    "value": "#d99694"
+                    "value": "#f4b123"
                 }, 
                 {
                     "key": "orange-dashed-line", 
-                    "value": "#d99694"
+                    "value": "#f4b123"
                 }, 
                 {
                     "key": "orange-solid", 
-                    "value": "#d99694"
+                    "value": "#f4b123"
                 }, 
                 {
                     "key": "pale_blue-dashed-line", 
