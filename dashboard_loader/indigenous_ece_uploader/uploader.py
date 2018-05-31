@@ -142,20 +142,20 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                 populate_raw_data(
                             "indigenous_indig_ece", "indigenous_indig_ece",
                             "indigenous_indig_ece", IndigenousECEData, 
-                                {
-                                    "indigenous": "indigenous",
-                                    "non_indigenous": "non_indigenous",
-                                })
+                            {
+                                "indigenous": "indigenous",
+                                "non_indigenous": "non_indigenous",
+                            })
                 )
         messages.extend(
                 populate_crosstab_raw_data(
                             "indigenous_indig_ece", "indigenous_indig_ece",
-                                "data_table", IndigenousECEData, 
-                                {
-                                    "indigenous": "indigenous",
-                                    "non_indigenous": "non_indigenous",
-                                })
-                )
+                            "data_table", IndigenousECEData,
+                            {
+                                "indigenous": "indigenous",
+                                "non_indigenous": "non_indigenous",
+                            }
+                ))
         p = Parametisation.objects.get(url="state_param")
         for pval in p.parametisationvalue_set.all():
             state_num = state_map[pval.parameters()["state_abbrev"]]

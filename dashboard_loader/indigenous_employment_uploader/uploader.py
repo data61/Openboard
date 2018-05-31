@@ -150,6 +150,9 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             "indigenous": "indigenous",
                             "indigenous_uncertainty": "indigenous_ci",
                             "non_indigenous": "non_indigenous",
+                        },
+                        query_kwargs={
+                            "indigenous__isnull": False,
                         })
         )
         messages.extend(
@@ -159,6 +162,9 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                         {
                             "indigenous": "indigenous",
                             "non_indigenous": "non_indigenous",
+                        },
+                        query_kwargs={
+                            "indigenous__isnull": False,
                         })
         )
         p = Parametisation.objects.get(url="state_param")
@@ -237,7 +243,10 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "indigenous_uncertainty": "indigenous_ci",
                                 "non_indigenous": "non_indigenous",
                             },
-                            pval=pval)
+                            pval=pval,
+                            query_kwargs={
+                                "indigenous__isnull": False,
+                            })
             )
             messages.extend(
                     populate_crosstab_raw_data(
@@ -247,7 +256,10 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                                 "indigenous": "indigenous",
                                 "non_indigenous": "non_indigenous",
                             },
-                            pval=pval)
+                            pval=pval,
+                            query_kwargs={
+                                "indigenous__isnull": False,
+                            })
             )
     except LoaderException, e:
         raise e
