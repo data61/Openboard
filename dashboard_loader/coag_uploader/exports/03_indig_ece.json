@@ -208,7 +208,7 @@
                                 "use_error_bars": false
                             }
                         ], 
-                        "numeric_axis_label": "% of Indigenous four-year-olds", 
+                        "numeric_axis_label": "% of four-year-olds",
                         "secondary_numeric_axis_label": null, 
                         "secondary_numeric_axis_always_show_zero": true, 
                         "display_options": {
@@ -273,7 +273,7 @@
                                 "hyperlink": ""
                             }
                         ], 
-                        "heading": "Indigenous four-year-olds enrolled in early childhood education", 
+                        "heading": "Four-year-olds enrolled in early childhood education",
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
