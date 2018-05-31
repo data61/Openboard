@@ -206,7 +206,7 @@
                                 "url": "nsw_benchmark", 
                                 "colour": "pale_blue-dotted", 
                                 "dynamic_label": false, 
-                                "label": "NSW Benchmark", 
+                                "label": "NSW Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -226,7 +226,7 @@
                                 "url": "vic_benchmark", 
                                 "colour": "dark_blue-dotted", 
                                 "dynamic_label": false, 
-                                "label": "Vic Benchmark", 
+                                "label": "Vic Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -246,7 +246,7 @@
                                 "url": "qld_benchmark", 
                                 "colour": "purple-dotted", 
                                 "dynamic_label": false, 
-                                "label": "Qld Benchmark", 
+                                "label": "Qld Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -266,7 +266,7 @@
                                 "url": "wa_benchmark", 
                                 "colour": "gold-dotted", 
                                 "dynamic_label": false, 
-                                "label": "WA Benchmark", 
+                                "label": "WA Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -286,7 +286,7 @@
                                 "url": "sa_benchmark", 
                                 "colour": "orange-dotted", 
                                 "dynamic_label": false, 
-                                "label": "SA Benchmark", 
+                                "label": "SA Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -306,7 +306,7 @@
                                 "url": "tas_benchmark", 
                                 "colour": "dark_green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "Tas Benchmark", 
+                                "label": "Tas Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -326,7 +326,7 @@
                                 "url": "act_benchmark", 
                                 "colour": "blue-dotted", 
                                 "dynamic_label": false, 
-                                "label": "ACT Benchmark", 
+                                "label": "ACT Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -346,7 +346,7 @@
                                 "url": "nt_benchmark", 
                                 "colour": "brown-dotted", 
                                 "dynamic_label": false, 
-                                "label": "NT Benchmark", 
+                                "label": "NT Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -366,7 +366,7 @@
                                 "url": "benchmark", 
                                 "colour": "green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "National Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }

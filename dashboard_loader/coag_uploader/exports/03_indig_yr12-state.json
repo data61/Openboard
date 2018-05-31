@@ -142,7 +142,7 @@
                                 "url": "benchmark", 
                                 "colour": "green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "National Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -162,7 +162,7 @@
                                 "url": "benchmark_state", 
                                 "colour": "{{ colour }}-dotted", 
                                 "dynamic_label": false, 
-                                "label": "{{ state_abbrev }} Benchmark", 
+                                "label": "{{ state_abbrev }} Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
