@@ -226,7 +226,7 @@
                                 "url": "benchmark", 
                                 "colour": "green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "Indigenous Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
@@ -250,7 +250,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Indigenous Employment Rate", 
+                        "heading": "Employment Rate",
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
@@ -355,7 +355,7 @@
                                 "hyperlink": ""
                             }
                         ], 
-                        "heading": "Indigenous/Non-Indigenous Employment Rates by State", 
+                        "heading": "Employment Rates by State/Territory",
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 

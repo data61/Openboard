@@ -401,7 +401,7 @@
                                 "url": "benchmark", 
                                 "colour": "green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "National Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }, 
@@ -411,7 +411,7 @@
                                 "url": "benchmark_state", 
                                 "colour": "purple-dotted", 
                                 "dynamic_label": false, 
-                                "label": "{{ state_abbrev }} Benchmark", 
+                                "label": "{{ state_abbrev }} Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
@@ -435,7 +435,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Indigenous Employment Rate", 
+                        "heading": "Employment Rate",
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
