@@ -89,7 +89,7 @@
                                 "url": "benchmark", 
                                 "colour": "green-dotted", 
                                 "dynamic_label": false, 
-                                "label": "National Benchmark", 
+                                "label": "Indigenous Target",
                                 "use_secondary_numeric_axis": false, 
                                 "use_error_bars": false
                             }
