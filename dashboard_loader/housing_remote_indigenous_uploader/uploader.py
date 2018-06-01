@@ -151,12 +151,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                         })
             )
     messages.extend(
-            populate_crosstab_raw_data("housing_remote_indigenous", "housing_remote_indigenous",
-                        "data_table", HousingRemoteIndigenousData,
-                        {
-                            "new_houses": "new",
-                            "refurbishments": "refurbished",
-                        })
+            generate_csv_datatable("housing_remote_indigenous", "housing_remote_indigenous",
+                                   "data_table", None)
             )
     p = Parametisation.objects.get(url="state_param")
     for pval in p.parametisationvalue_set.all():
@@ -181,12 +177,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             }, pval=pval)
                 )
         messages.extend(
-                populate_crosstab_raw_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
-                            "data_table", HousingRemoteIndigenousData,
-                            {
-                                "new_houses": "new",
-                                "refurbishments": "refurbished",
-                            }, pval=pval)
+                generate_csv_datatable("housing_remote_indigenous_state", "housing_remote_indigenous_state",
+                                   "data_table", pval)
                 )
   #  except LoaderException, e:
   #      raise e
@@ -270,3 +262,59 @@ def update_detail_state_graph_data(pval):
         add_graph_data(g, "refurbished", data.refurbishments, cluster=cluster, pval=pval)
     return messages
 
+def generate_csv_datatable(w_url, w_lbl, rds_lbl, pval):
+    messages = []
+    rds = get_rawdataset(w_url, w_lbl, rds_lbl)
+    clear_rawdataset(rds, pval=pval)
+    sort_order = 1
+    kwargs = { "year": None }
+    for obj in HousingRemoteIndigenousData.objects.order_by("year", "financial_year", "state"):
+        if obj.year_display != kwargs["year"]:
+            if kwargs["year"]:
+                add_rawdatarecord(rds, sort_order, **kwargs)
+                sort_order += 1
+            kwargs = {}
+            kwargs["year"] = obj.year_display()
+            if pval:
+                kwargs["pval"] = pval
+        jurisdiction = obj.state_display().lower()
+        kwargs[jurisdiction + "_new"] = obj.new_houses
+        kwargs[jurisdiction + "_refurbished"] = obj.refurbishments
+    if kwargs["year"]:
+        add_rawdatarecord(rds, sort_order, **kwargs)
+    sort_order += 1
+    kwargs = {
+                "year": "Target",
+                "pval": pval,
+    }
+    for state_num in new_house_targets.keys():
+        state_name = state_dict[state_num].lower()
+        kwargs[state_name + "_new"] = new_house_targets[state_num]
+        kwargs[state_name + "_refurbished"] = refurbishment_targets[state_num]
+    add_rawdatarecord(rds, sort_order, **kwargs)
+    return messages
+
+def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
+    messages = []
+    rds = get_rawdataset(w_url, w_lbl, rds_lbl)
+    clear_rawdataset(rds, pval=pval)
+    sort_order = 1
+    for obj in HousingRemoteIndigenousData.objects.order_by("state", "year", "financial_year"):
+        kwargs = {}
+        kwargs["year"] = obj.year_display()
+        kwargs["jurisdiction"] = obj.state_display()
+        kwargs["new"] = obj.new_houses
+        kwargs["refurbished"] = obj.refurbishments
+        add_rawdatarecord(rds, sort_order, **kwargs)
+        sort_order += 1
+
+    for state_num in new_house_targets.keys():
+        state_name = state_dict[state_num]
+        add_rawdatarecord(rds, sort_order,
+                                year="Target",
+                                jurisdiction=state_name,
+                                new=new_house_targets[state_num],
+                                refurbished=refurbishment_targets[state_num])
+        sort_order += 1
+
+    return messages
