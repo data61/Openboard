@@ -212,8 +212,6 @@ def update_my_graph_data(wurl, wlbl, graph,
                 all_states=False, state_num=0, pval=None):
     messages = []
     mid_year = latest_year - 1
-    print "-----------------"
-    print graph, pval
     g = get_graph(wurl, wlbl, graph)
     clear_graph_data(g, pval=pval)
     qry = IndigenousSchoolAttendanceData.objects.all()
@@ -236,7 +234,6 @@ def update_my_graph_data(wurl, wlbl, graph,
             ds = "mid_year"
         else:
             continue
-        print ds, cluster, i.year
         add_graph_data(g, ds, i.indigenous_attendance,
                         cluster=cluster, pval=pval)
         if i.year == latest_year:
