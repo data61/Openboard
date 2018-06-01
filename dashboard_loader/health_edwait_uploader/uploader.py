@@ -195,7 +195,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             pval=pval)
             set_statistic_data("health_edwait_state", "health_edwait_state",
                             'latest_state', state_latest.treated_ontime,
-                            traffic_light_code=aust_tlc,
+                            traffic_light_code=state_tlc,
                             trend=state_trend,
                             pval=pval)
             set_statistic_data("health_edwait_state", "health_edwait_state",
