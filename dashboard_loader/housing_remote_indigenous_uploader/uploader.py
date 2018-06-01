@@ -143,12 +143,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                 "housing_remote_indigenous_summary_graph"))
     messages.extend(update_detail_graph_data())
     messages.extend(
-            populate_raw_data("housing_remote_indigenous", "housing_remote_indigenous",
-                        "housing_indigenous_remote", HousingRemoteIndigenousData,
-                        {
-                            "new_houses": "new",
-                            "refurbishments": "refurbished",
-                        })
+            generate_csv_data("housing_remote_indigenous", "housing_remote_indigenous",
+                          "housing_indigenous_remote", None)
             )
     messages.extend(
             generate_csv_datatable("housing_remote_indigenous", "housing_remote_indigenous",
@@ -169,12 +165,8 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                     pval=pval))
         messages.extend(update_detail_state_graph_data(pval))
         messages.extend(
-                populate_raw_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
-                            "housing_indigenous_remote", HousingRemoteIndigenousData,
-                            {
-                                "new_houses": "new",
-                                "refurbishments": "refurbished",
-                            }, pval=pval)
+                generate_csv_data("housing_remote_indigenous_state", "housing_remote_indigenous_state",
+                          "housing_indigenous_remote", pval)
                 )
         messages.extend(
                 generate_csv_datatable("housing_remote_indigenous_state", "housing_remote_indigenous_state",
@@ -269,7 +261,7 @@ def generate_csv_datatable(w_url, w_lbl, rds_lbl, pval):
     sort_order = 1
     kwargs = { "year": None }
     for obj in HousingRemoteIndigenousData.objects.order_by("year", "financial_year", "state"):
-        if obj.year_display != kwargs["year"]:
+        if obj.year_display() != kwargs["year"]:
             if kwargs["year"]:
                 add_rawdatarecord(rds, sort_order, **kwargs)
                 sort_order += 1
