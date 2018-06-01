@@ -300,7 +300,7 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
         add_rawdatarecord(rds, sort_order, **kwargs)
         sort_order += 1
 
-    for state_num in new_house_targets.keys():
+    for state_num in sorted(new_house_targets.keys()):
         state_name = state_dict[state_num]
         add_rawdatarecord(rds, sort_order,
                                 year="Target",
