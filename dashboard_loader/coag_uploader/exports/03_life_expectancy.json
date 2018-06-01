@@ -59,7 +59,7 @@
                         {
                             "unit_prefix": "", 
                             "icon_library": null, 
-                            "name": "Men", 
+                            "name": "Males",
                             "numbered_list": false, 
                             "hyperlinkable": false, 
                             "num_precision": 1, 
@@ -80,7 +80,7 @@
                         {
                             "unit_prefix": "", 
                             "icon_library": null, 
-                            "name": "Women", 
+                            "name": "Females",
                             "numbered_list": false, 
                             "hyperlinkable": false, 
                             "num_precision": 1, 
@@ -297,7 +297,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Average Life Expectancy for Men", 
+                        "heading": "Average Life Expectancy for Males",
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
@@ -426,7 +426,7 @@
                         "graph_type": 1, 
                         "cluster_label": "cluster", 
                         "clusters": [], 
-                        "heading": "Average Life Expectancy for Women", 
+                        "heading": "Average Life Expectancy for Females",
                         "dynamic_clusters": false
                     }, 
                     "tile_type": 6, 
@@ -451,92 +451,92 @@
                         }, 
                         {
                             "url": "nsw_males", 
-                            "heading": "NSW | Men", 
+                            "heading": "NSW | Males",
                             "description": ""
                         }, 
                         {
                             "url": "nsw_females", 
-                            "heading": "NSW | Women", 
+                            "heading": "NSW | Females",
                             "description": ""
                         }, 
                         {
                             "url": "vic_males", 
-                            "heading": "Vic | Men", 
+                            "heading": "Vic | Males",
                             "description": ""
                         }, 
                         {
                             "url": "vic_females", 
-                            "heading": "Vic | Women", 
+                            "heading": "Vic | Females",
                             "description": ""
                         }, 
                         {
                             "url": "qld_males", 
-                            "heading": "Qld | Men", 
+                            "heading": "Qld | Males",
                             "description": ""
                         }, 
                         {
                             "url": "qld_females", 
-                            "heading": "Qld | Women", 
+                            "heading": "Qld | Females",
                             "description": ""
                         }, 
                         {
                             "url": "wa_males", 
-                            "heading": "WA | Men", 
+                            "heading": "WA | Males",
                             "description": ""
                         }, 
                         {
                             "url": "wa_females", 
-                            "heading": "WA | Women", 
+                            "heading": "WA | Females",
                             "description": ""
                         }, 
                         {
                             "url": "sa_males", 
-                            "heading": "SA | Men", 
+                            "heading": "SA | Males",
                             "description": ""
                         }, 
                         {
                             "url": "sa_females", 
-                            "heading": "SA | Women", 
+                            "heading": "SA | Females",
                             "description": ""
                         }, 
                         {
                             "url": "tas_males", 
-                            "heading": "Tas | Men", 
+                            "heading": "Tas | Males",
                             "description": ""
                         }, 
                         {
                             "url": "tas_females", 
-                            "heading": "Tas | Women", 
+                            "heading": "Tas | Females",
                             "description": ""
                         }, 
                         {
                             "url": "act_males", 
-                            "heading": "ACT | Men", 
+                            "heading": "ACT | Males",
                             "description": ""
                         }, 
                         {
                             "url": "act_females", 
-                            "heading": "ACT | Women", 
+                            "heading": "ACT | Females",
                             "description": ""
                         }, 
                         {
                             "url": "nt_males", 
-                            "heading": "NT | Men", 
+                            "heading": "NT | Males",
                             "description": ""
                         }, 
                         {
                             "url": "nt_females", 
-                            "heading": "NT | Women", 
+                            "heading": "NT | Females",
                             "description": ""
                         }, 
                         {
                             "url": "australia_males", 
-                            "heading": "Aust | Men", 
+                            "heading": "Aust | Males",
                             "description": ""
                         }, 
                         {
                             "url": "australia_females", 
-                            "heading": "Aust | Women", 
+                            "heading": "Aust | Females",
                             "description": ""
                         }
                     ], 

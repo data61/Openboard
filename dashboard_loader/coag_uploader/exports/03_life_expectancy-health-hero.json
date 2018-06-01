@@ -9,7 +9,7 @@
     "groups": [], 
     "definitions": [
         {
-            "about": "<p>Improve the life expectancy for Australian men and women.</p>", 
+            "about": "<p>Improve the life expectancy for Australians.</p>",
             "refresh_rate": 3900, 
             "views": [
                 {
@@ -61,7 +61,7 @@
                         {
                             "unit_prefix": "", 
                             "icon_library": null, 
-                            "name": "Men", 
+                            "name": "Males",
                             "numbered_list": false, 
                             "hyperlinkable": false, 
                             "num_precision": 1, 
@@ -82,7 +82,7 @@
                         {
                             "unit_prefix": "", 
                             "icon_library": null, 
-                            "name": "Women", 
+                            "name": "Females",
                             "numbered_list": false, 
                             "hyperlinkable": false, 
                             "num_precision": 1, 
