@@ -143,29 +143,13 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                         latest_year)
         )
         messages.extend(
-                populate_raw_data(
-                        "indigenous_indig_employment", "indigenous_indig_employment",
-                        "indigenous_indig_employment", IndigenousEmploymentData, 
-                        {
-                            "indigenous": "indigenous",
-                            "indigenous_uncertainty": "indigenous_ci",
-                            "non_indigenous": "non_indigenous",
-                        },
-                        query_kwargs={
-                            "indigenous__isnull": False,
-                        })
+                generate_csv_data("indigenous_indig_employment", "indigenous_indig_employment",
+                        "indigenous_indig_employment", None)
         )
         messages.extend(
-                populate_crosstab_raw_data(
-                        "indigenous_indig_employment", "indigenous_indig_employment",
-                        "data_table", IndigenousEmploymentData, 
-                        {
-                            "indigenous": "indigenous",
-                            "non_indigenous": "non_indigenous",
-                        },
-                        query_kwargs={
-                            "indigenous__isnull": False,
-                        })
+            generate_csv_datatable(
+                "indigenous_indig_employment", "indigenous_indig_employment",
+                "data_table", None)
         )
         p = Parametisation.objects.get(url="state_param")
         earliest_aust = IndigenousEmploymentData.objects.filter(state=AUS, indigenous__isnull=False).first()
@@ -235,31 +219,13 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             pval=pval)
             )
             messages.extend(
-                    populate_raw_data(
-                            "indigenous_indig_employment_state", "indigenous_indig_employment_state",
-                            "indigenous_indig_employment", IndigenousEmploymentData, 
-                            {
-                                "indigenous": "indigenous",
-                                "indigenous_uncertainty": "indigenous_ci",
-                                "non_indigenous": "non_indigenous",
-                            },
-                            pval=pval,
-                            query_kwargs={
-                                "indigenous__isnull": False,
-                            })
+                generate_csv_data("indigenous_indig_employment_state", "indigenous_indig_employment_state",
+                                  "indigenous_indig_employment", pval)
             )
             messages.extend(
-                    populate_crosstab_raw_data(
+                    generate_csv_datatable(
                             "indigenous_indig_employment_state", "indigenous_indig_employment_state",
-                            "data_table", IndigenousEmploymentData, 
-                            {
-                                "indigenous": "indigenous",
-                                "non_indigenous": "non_indigenous",
-                            },
-                            pval=pval,
-                            query_kwargs={
-                                "indigenous__isnull": False,
-                            })
+                            "data_table", pval)
             )
     except LoaderException, e:
         raise e
@@ -312,3 +278,61 @@ def update_state_graph(wurl, wlbl, graph, latest_year):
         add_graph_data(g, "non_indigenous", i.non_indigenous,
                             cluster = i.state_display().lower())
     return messages
+
+def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
+    messages = []
+    rds = get_rawdataset(w_url, w_lbl, rds_lbl)
+    clear_rawdataset(rds, pval=pval)
+    sort_order = 1
+    for obj in IndigenousEmploymentData.objects.order_by("state", "year", "financial_year"):
+        kwargs = {}
+        kwargs["jurisdiction"] = obj.state_display()
+        if obj.indigenous is None:
+            kwargs["year"] = "Target"
+            kwargs["indigenous"] = obj.trajectory_point
+            kwargs["indigenous_ci"] = "n/a"
+            kwargs["non_indigenous"] = "n/a"
+        else:
+            kwargs["year"] = obj.year_display()
+            kwargs["indigenous"] = obj.indigenous
+            kwargs["indigenous_ci"] = obj.indigenous_uncertainty
+            kwargs["non_indigenous"] = obj.non_indigenous
+        add_rawdatarecord(rds, sort_order, **kwargs)
+
+        sort_order += 1
+    return messages
+
+
+def generate_csv_datatable(w_url, w_lbl, rds_lbl, pval):
+    messages = []
+    rds = get_rawdataset(w_url, w_lbl, rds_lbl)
+    clear_rawdataset(rds, pval=pval)
+    sort_order = 1
+    kwargs = { "year": None }
+    for obj in IndigenousEmploymentData.objects.filter(indigenous__isnull=False).order_by("year", "financial_year", "state"):
+        if obj.year_display() != kwargs["year"]:
+            if kwargs["year"]:
+                add_rawdatarecord(rds, sort_order, **kwargs)
+                sort_order += 1
+            kwargs = {}
+            kwargs["year"] = obj.year_display()
+            if pval:
+                kwargs["pval"] = pval
+        jurisdiction = obj.state_display().lower()
+        kwargs[jurisdiction + "_indigenous"] = obj.indigenous
+        kwargs[jurisdiction + "_non_indigenous"] = obj.non_indigenous
+    if kwargs["year"]:
+        add_rawdatarecord(rds, sort_order, **kwargs)
+    sort_order += 1
+    kwargs = {
+        "year": "Target",
+        "pval": pval,
+    }
+    for obj in IndigenousEmploymentData.objects.filter(indigenous__isnull=True).order_by("year", "financial_year", "state"):
+        state_name = state_dict[obj.state].lower()
+        kwargs[state_name + "_indigenous"] = obj.trajectory_point
+        kwargs[state_name + "_non_indigenous"] = "-"
+    add_rawdatarecord(rds, sort_order, **kwargs)
+    return messages
+
+
