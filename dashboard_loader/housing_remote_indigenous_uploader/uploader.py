@@ -293,7 +293,9 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
     sort_order = 1
     state_num = None
     for obj in HousingRemoteIndigenousData.objects.order_by("state", "year", "financial_year"):
-        if state_num is not None and state_num != obj.state:
+        if state_num is None:
+            state_num = obj.state
+        elif state_num != obj.state:
             state_name = state_dict[state_num]
             add_rawdatarecord(rds, sort_order,
                               year="Target",
@@ -310,4 +312,12 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
         add_rawdatarecord(rds, sort_order, **kwargs)
 
         sort_order += 1
+    if state_num is not None:
+        state_name = state_dict[state_num]
+        add_rawdatarecord(rds, sort_order,
+                          year="Target",
+                          jurisdiction=state_name,
+                          new=new_house_targets[state_num],
+                          refurbished=refurbishment_targets[state_num])
+
     return messages
