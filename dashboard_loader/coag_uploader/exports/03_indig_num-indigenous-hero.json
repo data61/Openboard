@@ -153,32 +153,32 @@
                     "aspect": 3, 
                     "grid": {
                         "corner_label": "Achieving NMS",
-                        "show_column_headers": false, 
+                        "show_column_headers": true,
                         "rows": [
                             {
                                 "statistics": [
                                     "year_3", 
                                     "year_7"
                                 ], 
-                                "label": "Early"
+                                "label": " "
                             }, 
                             {
                                 "statistics": [
                                     "year_5", 
                                     "year_9"
                                 ], 
-                                "label": "Late"
+                                "label": "  "
                             }
                         ], 
                         "columns": [
                             {
-                                "label": "Primary"
+                                "label": "   "
                             }, 
                             {
-                                "label": "Secondary"
+                                "label": "    "
                             }
                         ], 
-                        "show_row_headers": false
+                        "show_row_headers": true
                     }, 
                     "columns": null
                 }
