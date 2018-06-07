@@ -624,7 +624,7 @@
                     "geo_window": null, 
                     "aspect": 3, 
                     "grid": {
-                        "corner_label": "Achieving NMS in literacy", 
+                        "corner_label": "Achieving NMS in reading",
                         "show_column_headers": true, 
                         "rows": [
                             {
