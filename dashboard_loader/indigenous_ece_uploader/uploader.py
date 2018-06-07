@@ -192,6 +192,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             "indig_ece-indigenous-hero-state", "indig_ece-indigenous-hero-state", 
                             'indigenous_state',
                             latest_state.indigenous,
+                            traffic_light_code=state_benchmarker(latest_state),
                             pval=pval)
             set_statistic_data(
                             "indigenous_indig_ece_state", "indigenous_indig_ece_state",
@@ -202,6 +203,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                             "indigenous_indig_ece_state", "indigenous_indig_ece_state",
                             'indigenous_state',
                             latest_state.indigenous,
+                            traffic_light_code=state_benchmarker(latest_state),
                             pval=pval)
             messages.extend(
                     update_my_graph_data(
