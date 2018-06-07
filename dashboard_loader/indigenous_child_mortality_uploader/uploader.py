@@ -217,6 +217,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             set_statistic_data(
                             "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
                             "indigenous", i.indigenous,
+                            traffic_light_code=desc["status"]["tlc"],
                             pval=pval)
             set_statistic_data(
                             "child_mortality-indigenous-hero-state", "child_mortality-indigenous-hero-state",
@@ -225,6 +226,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
             set_statistic_data(
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
                             "indigenous", i.indigenous,
+                            traffic_light_code=desc["status"]["tlc"],
                             pval=pval)
             set_statistic_data(
                             "indigenous_child_mortality_state", "indigenous_child_mortality_state",
