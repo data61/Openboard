@@ -150,7 +150,7 @@
                     "geo_window": null, 
                     "aspect": 3, 
                     "grid": {
-                        "corner_label": "Achieving NMS",
+                        "corner_label": "Achieving NMS in Numeracy",
                         "show_column_headers": true,
                         "rows": [
                             {
