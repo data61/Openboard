@@ -301,7 +301,8 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
                               year="Target",
                               jurisdiction=state_name,
                               new=new_house_targets[state_num],
-                              refurbished=refurbishment_targets[state_num])
+                              refurbished=refurbishment_targets[state_num],
+                              pval=pval)
             sort_order += 1
             state_num = obj.state
         kwargs = {}
@@ -318,6 +319,7 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
                           year="Target",
                           jurisdiction=state_name,
                           new=new_house_targets[state_num],
-                          refurbished=refurbishment_targets[state_num])
+                          refurbished=refurbishment_targets[state_num],
+                          pval=pval)
 
     return messages

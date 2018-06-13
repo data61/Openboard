@@ -297,6 +297,7 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
             kwargs["indigenous"] = obj.indigenous
             kwargs["indigenous_ci"] = obj.indigenous_uncertainty
             kwargs["non_indigenous"] = obj.non_indigenous
+        kwargs["pval"] = pval
         add_rawdatarecord(rds, sort_order, **kwargs)
 
         sort_order += 1
