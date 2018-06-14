@@ -536,7 +536,7 @@
                 }, 
                 {
                     "url": "health_indig_smoking", 
-                    "name": "Adults at a Healthy Weight Data", 
+                    "name": "Indigenous Smoking Data",
                     "columns": [
                         {
                             "url": "jurisdiction", 
