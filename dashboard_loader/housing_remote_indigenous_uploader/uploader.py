@@ -310,6 +310,7 @@ def generate_csv_data(w_url, w_lbl, rds_lbl, pval):
         kwargs["jurisdiction"] = obj.state_display()
         kwargs["new"] = obj.new_houses
         kwargs["refurbished"] = obj.refurbishments
+        kwargs["pval"] = pval
         add_rawdatarecord(rds, sort_order, **kwargs)
 
         sort_order += 1
