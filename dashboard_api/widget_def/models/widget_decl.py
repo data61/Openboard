@@ -58,5 +58,6 @@ class ViewWidgetDeclaration(models.Model, WidgetDefJsonMixin):
         self.state_cache=json.dumps(super(ViewWidgetDeclaration, self).__getstate__(view=self.view))
         super(ViewWidgetDeclaration, self).save(*args, **kwargs)
     def save(self, *args, **kwargs):
+        # update_state_cache calls super.save() so we don't need to do it here.
         self.update_state_cache(*args, **kwargs)
 
