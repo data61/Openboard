@@ -169,7 +169,7 @@ def upload_file(uploader, fh, actual_freq_display=None, verbosity=0):
                         pval=pval)
             set_statistic_data("ecenqs-education-hero-state", "ecenqs-education-hero-state", 
                         "meeting_nqs_state",
-                        aust_data["latest"]["val"],
+                        state_data["latest"]["val"],
                         traffic_light_code=state_data["tlc"],
                         trend=state_data["trend"],
                         pval=pval)
