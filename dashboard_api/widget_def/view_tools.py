@@ -17,7 +17,9 @@ import decimal
 import types
 
 from django.shortcuts import render
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
+from django.utils.http import urlencode
+
 
 def redirect_for_external_view(request, view):
     path = view.external_url + request.path_info
@@ -78,7 +80,7 @@ def update_graph_maxmin(graphdatum, _min, _max):
 
 def csv_escape(s):
     out = s.replace('"', '""')
-    if '"' in out or ',' in out:
+    if '"' in out or ',' in out or '\n' in out:
         return '"%s"' % out
     else:
         return out

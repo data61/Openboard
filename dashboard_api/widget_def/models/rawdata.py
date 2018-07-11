@@ -32,6 +32,7 @@ class RawDataSet(models.Model, WidgetDefJsonMixin):
     export_def = {
         "widget": JSON_INHERITED("raw_datasets"),
         "url": JSON_ATTR(),
+        "name": JSON_ATTR(),
         "filename": JSON_ATTR(),
         "columns": JSON_RECURSEDOWN("RawDataSetColumn", "columns", "rds", "url", app="widget_def")
     }

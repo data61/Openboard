@@ -13,6 +13,8 @@
 #   limitations under the License.
 
 from django.contrib.sessions.middleware import SessionMiddleware
+from django.http import JsonResponse
+
 
 class APISessionMiddleware(SessionMiddleware):
     def process_request(self, request):
@@ -28,3 +30,21 @@ class APISessionMiddleware(SessionMiddleware):
             refreshed_response["X-Dashboard-Session-Id"] = refreshed_response.session.session_key
         return refreshed_response
 
+
+class AllAllowedHostsHealthCheckerMiddleware(object):
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+
+        if request.path_info == '/healthz':
+            service_status = {
+                "health": "not terrible"
+            }
+
+            return JsonResponse(service_status, status=200)
+
+        response = self.get_response(request)
+
+        return response

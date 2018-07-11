@@ -29,7 +29,7 @@ class ViewWidgetDeclaration(models.Model, WidgetDefJsonMixin):
     export_def = {
         "definition": JSON_INHERITED("views"),
         "view": JSON_CAT_LOOKUP(["view", "label"], lambda js, key, imp_kwargs: WidgetView.objects.get(label=js["view"])),
-        "sort_order": JSON_IMPLIED(),
+        "sort_order": JSON_ATTR(),
         "child_view": JSON_CAT_LOOKUP(["child_view","label"], lambda js, key, imp_kwargs: WidgetView.objects.get(label=js["child_view"]), optional=True),
         "child_view_text": JSON_ATTR(deciders=["child_view", "child_view_text"])
     }
@@ -58,5 +58,6 @@ class ViewWidgetDeclaration(models.Model, WidgetDefJsonMixin):
         self.state_cache=json.dumps(super(ViewWidgetDeclaration, self).__getstate__(view=self.view))
         super(ViewWidgetDeclaration, self).save(*args, **kwargs)
     def save(self, *args, **kwargs):
+        # update_state_cache calls super.save() so we don't need to do it here.
         self.update_state_cache(*args, **kwargs)
 

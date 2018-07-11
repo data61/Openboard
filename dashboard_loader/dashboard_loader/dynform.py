@@ -171,7 +171,7 @@ class DynamicGraphClusterForm(forms.ModelForm):
         exclude = [ 'graph', 'param_value' ]
 
 def get_override_form_class_for_graph(graph):
-    override_datasets = graph.graphdataset_set.filter(dynamic_label=True)
+    override_datasets = graph.datasets.filter(dynamic_label=True)
     form_fields = OrderedDict()
     field_count = 0
     for d in override_datasets:
@@ -203,7 +203,7 @@ def get_form_class_for_graph(graph, pval=None):
     field_count = 0
     clean_checks = []
     error_bar_datasets = []
-    for ds in graph.graphdataset_set.filter(use_error_bars=True):
+    for ds in graph.datasets.filter(use_error_bars=True):
         error_bar_datasets.append(ds.url)
     form_fields["error_bar_datasets"] = error_bar_datasets
     if graph.use_clusters():
@@ -218,7 +218,7 @@ def get_form_class_for_graph(graph, pval=None):
             return data
         clean_checks.append(clean_check_cluster)
         field_count += 1
-    form_fields["dataset"] = forms.ModelChoiceField(queryset=graph.graphdataset_set.all(), to_field_name="url", required=False)
+    form_fields["dataset"] = forms.ModelChoiceField(queryset=graph.datasets.all(), to_field_name="url", required=False)
     def clean_check_dataset(self, data):
         if not data["DELETE"] and not self.is_blank(data):
             if not data["dataset"]:

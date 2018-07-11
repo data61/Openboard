@@ -243,7 +243,7 @@ def api_geo_dataset(request, dataset, window):
         default_fmt = "json"
     fmt = request.GET.get("format", default_fmt)
     if fmt not in ("json", "html", "csv"):
-        return ResponseNotFound("Unrecognised format: %s" % fmt)
+        return HttpResponseNotFound("Unrecognised format: %s" % fmt)
     if fmt == "csv":
         if not dataset.terria_prefer_csv():
             return HttpResponseNotFound("CSV format not supported for %s type datasets" % dataset.geom_types[dataset.geom_type])

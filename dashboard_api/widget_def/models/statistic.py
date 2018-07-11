@@ -104,7 +104,7 @@ class Statistic(models.Model, WidgetDefJsonMixin):
     api_state_def = {
         "label": JSON_ATTR(attribute="url"),
         "type": JSON_EXP_ARRAY_LOOKUP(lookup_array=stat_types, attribute="stat_type"),
-        "name": JSON_OPT_ATTR(decider=["tile", "is_grid"],parametise=True),
+        "name": JSON_OPT_ATTR(decider=["tile", "is_grid_or_list"],parametise=True),
         "display_name": JSON_OPT_ATTR(decider=["tile", "is_grid"], attribute="name_as_label"),
         "precision": JSON_OPT_ATTR(decider="is_numeric", attribute="num_precision"),
         "unit": JSON_OPT_ATTR(decider="is_numeric", attribute="self", exporter=stat_unit_exporter),
@@ -292,8 +292,8 @@ class Statistic(models.Model, WidgetDefJsonMixin):
         if self.is_data_list():
             return [ self.jsonise(datum) for datum in data ]
         else:
-            return self.jsonise(data)
-    def jsonise(self, datum):
+            return self.jsonise(data, view)
+    def jsonise(self, datum, view=None):
         """
         Converts a :model:`widget_data.StatisticData` or :model:`widget_data.StatisticListItem` datum for this statistic into json format.
         """
@@ -314,6 +314,8 @@ class Statistic(models.Model, WidgetDefJsonMixin):
                     json["label"]=datum.keyval
                 else:
                     json["label"]=datum.label
+            else:
+                json["label"] = parametise_label(self.widget(), view, self.name)
             if self.hyperlinkable:
                 json["url"]=datum.url
             if self.traffic_light_scale or self.traffic_light_automation:

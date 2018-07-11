@@ -11,6 +11,7 @@
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
+from collections import OrderedDict
 
 from django.db import models
 from django.apps import apps
@@ -32,20 +33,20 @@ class WidgetDefinition(models.Model, WidgetDefJsonMixin):
     Widgets may appear in multiple views. When closely related but distinct widgets appear in different views,
     this can be accomplished either by parametisation or by grouping widgets into a family.
     """
-    export_def = {
-        "family": JSON_INHERITED("definitions"),
-        "parametisation": JSON_CAT_LOOKUP(["parametisation", "url"], lambda js, key, imp_kwargs: Parametisation.objects.get(url=js["parametisation"])),
-        "expansion_hint": JSON_ATTR(),
-        "deexpansion_hint": JSON_ATTR(),
-        "refresh_rate": JSON_ATTR(),
-        "label": JSON_ATTR(),
-        "default_frequency_text": JSON_ATTR(),
-        "about": JSON_ATTR(),
-        "sort_order": JSON_IMPLIED(),
-        "tiles": JSON_RECURSEDOWN("TileDefinition", "tiles", "widget", "url", app="widget_def"),
-        "views": JSON_RECURSEDOWN("ViewWidgetDeclaration", "views", "definition", "view", app="widget_def"),
-        "raw_data_sets": JSON_RECURSEDOWN("RawDataSet", "raw_datasets", "widget", "url", app="widget_def")
-    }
+    export_def = OrderedDict([
+        ("family", JSON_INHERITED("definitions")),
+        ("parametisation", JSON_CAT_LOOKUP(["parametisation", "url"], lambda js, key, imp_kwargs: Parametisation.objects.get(url=js["parametisation"]))),
+        ("expansion_hint", JSON_ATTR()),
+        ("deexpansion_hint", JSON_ATTR()),
+        ("refresh_rate", JSON_ATTR()),
+        ("label", JSON_ATTR()),
+        ("default_frequency_text", JSON_ATTR()),
+        ("about", JSON_ATTR()),
+        ("sort_order", JSON_IMPLIED()),
+        ("tiles", JSON_RECURSEDOWN("TileDefinition", "tiles", "widget", "url", app="widget_def")),
+        ("raw_data_sets", JSON_RECURSEDOWN("RawDataSet", "raw_datasets", "widget", "url", app="widget_def")),
+        ("views", JSON_RECURSEDOWN("ViewWidgetDeclaration", "views", "definition", "view", app="widget_def")),
+    ])
     export_lookup = { "family": "family", "label": "label" }
     api_state_def = {
         "category": JSON_CAT_LOOKUP(["subcategory", "category", "name"], None),
@@ -54,6 +55,8 @@ class WidgetDefinition(models.Model, WidgetDefJsonMixin):
         "name": JSON_ATTR(parametise=True),
         "subtitle": JSON_ATTR(parametise=True),
         "label": JSON_ATTR(attribute="url"),
+        "source_url": JSON_ATTR(),
+        "source_url_text": JSON_ATTR(parametise=True),
         "about": JSON_ATTR(parametise=True),
         "display": JSON_EXP_SUB_DICT({
                     "expansion_hint": JSON_ATTR(),
@@ -122,6 +125,8 @@ class WidgetDefinition(models.Model, WidgetDefJsonMixin):
         return self.family.subtitle
     def source_url(self):
         return self.family.source_url
+    def source_url_text(self):
+        return self.family.source_url_text
     def widget_data(self, view=None, pval=None):
         """
         Return the :model:`widget_data.WidgetData` object for this widget.
