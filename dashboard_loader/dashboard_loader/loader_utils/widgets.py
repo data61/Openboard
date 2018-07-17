@@ -15,7 +15,7 @@
 import decimal
 from interface import LoaderException
 
-from widget_def.models import WidgetDefinition, Statistic, IconCode, TrafficLightScaleCode
+from widget_def.models import WidgetDefinition, Statistic, IconCode, TrafficLightScaleCode, ParameterValue
 from widget_data.models import WidgetData, StatisticData, StatisticListItem
 
 def get_statistic(widget_url_or_stat, label=None, statistic_url=None):
@@ -92,7 +92,7 @@ If any arguments are required according to the statistic meta-data and not suppl
 LoaderException is raised.
 """
     if stat.is_data_list():
-        raise LoaderException("Statistic %s is a list statistic" % statistic_url)
+        raise LoaderException("Statistic %s is a list statistic" % stat.url)
     if stat.tile.widget.parametisation:
         if not pval:
             raise LoaderException("Must provide parameter values to set statistic data in a parametised widget")
@@ -194,35 +194,35 @@ If any arguments are required according to the statistic meta-data and not suppl
 LoaderException is raised.
 """
     if not stat.is_data_list():
-        raise LoaderException("Not a list statistic %s" % statistic_url)
+        raise LoaderException("Not a list statistic %s" % stat.url)
     if stat.is_kvlist() and not label:
-        raise LoaderException("Must provide a label for list items for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a label for list items for statistic %s" % stat.url)
     elif not stat.is_display_list() and not stat.name_as_label and not label:
-        raise LoaderException("Must provide a label for list items for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a label for list items for statistic %s" % stat.url)
     elif not stat.is_display_list() and stat.name_as_label and label:
-        raise LoaderException("Cannot provide a label for list items for statistic %s" % statistic_url)
+        raise LoaderException("Cannot provide a label for list items for statistic %s" % stat.url)
     elif stat.is_display_list() and not stat.is_kvlist() and label:
-        raise LoaderException("Cannot provide a label for list items for statistic %s" % statistic_url)
+        raise LoaderException("Cannot provide a label for list items for statistic %s" % stat.url)
     if stat.use_datekey() and not datekey:
-        raise LoaderException("Must provide a datekey for list items for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a datekey for list items for statistic %s" % stat.url)
     elif datekey and not stat.use_datekey():
-        raise LoaderException("Cannot provide a datekey for list items for statistic %s" % statistic_url)
+        raise LoaderException("Cannot provide a datekey for list items for statistic %s" % stat.url)
     if stat.use_datetimekey() and not datetimekey:
-        raise LoaderException("Must provide a datetimekey for list items for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a datetimekey for list items for statistic %s" % stat.url)
     elif datetimekey and not stat.use_datetimekey():
-        raise LoaderException("Cannot provide a datetimekey for list items for statistic %s" % statistic_url)
+        raise LoaderException("Cannot provide a datetimekey for list items for statistic %s" % stat.url)
     if stat.use_datetimekey_level() and not datetimekey_level:
-        raise LoaderException("Must provide a datetimekey level for list items for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a datetimekey level for list items for statistic %s" % stat.url)
     elif datetimekey_level and not stat.use_datetimekey_level():
-        raise LoaderException("Cannot provide a datetimekey level for list items for statistic %s" % statistic_url)
+        raise LoaderException("Cannot provide a datetimekey level for list items for statistic %s" % stat.url)
     if stat.trend and trend is None:
-        raise LoaderException("Must provide a trend for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a trend for statistic %s" % stat.url)
     if not stat.hyperlinkable and url is not None:
-        raise LoaderException("Cannnot provide a url for statistic %s (not hyperlinkable)" % statistic_url)
+        raise LoaderException("Cannnot provide a url for statistic %s (not hyperlinkable)" % stat.url)
     if stat.traffic_light_scale and not traffic_light_code:
-        raise LoaderException("Must provide a traffic light code for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a traffic light code for statistic %s" % stat.url)
     if stat.icon_library and not icon_code:
-        raise LoaderException("Must provide a icon code for statistic %s" % statistic_url)
+        raise LoaderException("Must provide a icon code for statistic %s" % stat.url)
     if stat.tile.widget.parametisation:
         if not pval:
             raise LoaderException("Must provide parameter values to add a statistic list item in a parametised widget")
