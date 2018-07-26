@@ -574,7 +574,7 @@ class JSON_RECURSEDOWN(JSON_ATTR):
                 try:
                     model.import_data(**kwargs)
                     saved = True
-                except IntegrityError:
+                except IntegrityError, e:
                     if isinstance(model.export_def.get("sort_order"), JSON_IMPLIED):
                         kwargs["sort_order"] += 1
                     else:
