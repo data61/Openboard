@@ -28,9 +28,28 @@ def parametise_label(widget_or_parametisation, view, text):
         else:
             param = widget_or_parametisation.parametisation
     else:
-         param = None
+        param = None
     if param:
         context = Context(view.my_properties())
+        eng = Engine.get_default()
+        template = eng.from_string(text)
+        return template.render(context)
+    else:
+        return text
+
+def parametise_label_by_pval(widget_or_parametisation, pval, text):
+    if text is None:
+        return None
+    Parametisation = apps.get_app_config("widget_def").get_model("Parametisation")
+    if widget_or_parametisation:
+        if isinstance(widget_or_parametisation, Parametisation):
+            param = widget_or_parametisation
+        else:
+            param = widget_or_parametisation.parametisation
+    else:
+         param = None
+    if param:
+        context = Context(pval.parameters())
         eng = Engine.get_default()
         template = eng.from_string(text)
         return template.render(context)
