@@ -617,7 +617,7 @@ class GraphDataset(models.Model, WidgetDefJsonMixin):
     # Lines, Bars, or Sectors
     graph=models.ForeignKey(GraphDefinition, related_name="datasets", help_text="The graph the dataset belongs to")
     url=models.SlugField(verbose_name="label", help_text="A short symbolic label for the dataset, as used in the API.")
-    label=models.CharField(verbose_name="name", max_length=80, help_text="A longer human-readable description of the dataset. (May be parametised)")
+    label=models.CharField(verbose_name="name", max_length=128, help_text="A longer human-readable description of the dataset. (May be parametised)")
     dynamic_label=models.BooleanField(default=False, help_text="If false, the name (label) of the dataset is used. If true, this may be over-ridden by a dynamic value supplied with the data for the graph.")
     colour = models.CharField(max_length=50, help_text="The colour of the dataset. Interpretation is implementation-specific. Typically a word colour hint rather than an explicit rgb value. (May be parametised)")
     use_secondary_numeric_axis = models.BooleanField(default=False, help_text="If true, data for this dataset are plotted against the graph's secondary numeric axis (which obviously must be defined). Not supported for pie charts.")
