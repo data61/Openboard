@@ -42,7 +42,7 @@ class WidgetDefinition(models.Model, WidgetDefJsonMixin):
         ("label", JSON_ATTR()),
         ("default_frequency_text", JSON_ATTR()),
         ("about", JSON_ATTR()),
-        ("sort_order", JSON_IMPLIED()),
+        ("sort_order", JSON_UNIQUE()),
         ("tiles", JSON_RECURSEDOWN("TileDefinition", "tiles", "widget", "url", app="widget_def")),
         ("raw_data_sets", JSON_RECURSEDOWN("RawDataSet", "raw_datasets", "widget", "url", app="widget_def")),
         ("views", JSON_RECURSEDOWN("ViewWidgetDeclaration", "views", "definition", "view", app="widget_def")),

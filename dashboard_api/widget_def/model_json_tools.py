@@ -14,7 +14,7 @@
 
 import decimal
 
-from django.db.models import Model
+from django.db.models import Model, Max
 from django.db.utils import IntegrityError
 from django.apps import apps
 from django.core.exceptions import ObjectDoesNotExist 
@@ -390,6 +390,14 @@ class JSON_IMPLIED(JSON_ATTR):
     def handle_import(self, js, cons_args, key, imp_kwargs, env):
         cons_args[key] = imp_kwargs[key]
 
+
+class JSON_UNIQUE(JSON_ATTR):
+    def handle_export(self, *args, **kwargs):
+        pass
+    def handle_import(self, js, cons_args, key, imp_kwargs, env):
+        cons_args[key] = imp_kwargs[key]
+
+
 class JSON_INHERITED(JSON_ATTR):
     def __init__(self, related_name, optional=False):
         super(JSON_INHERITED, self).__init__()
@@ -568,6 +576,8 @@ class JSON_RECURSEDOWN(JSON_ATTR):
             kwargs["merge"] = do_not_delete
             if isinstance(model.export_def.get("sort_order"), JSON_IMPLIED):
                 kwargs["sort_order"] = (i + 1)*100
+            if isinstance(model.export_def.get("sort_order"), JSON_UNIQUE):
+                kwargs["sort_order"] = model.objects.all().aggregate(Max('sort_order'))['sort_order__max'] + 1
             kwargs["js"] = _js[i]
             saved = False
             while not saved:
