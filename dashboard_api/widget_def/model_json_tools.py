@@ -577,7 +577,11 @@ class JSON_RECURSEDOWN(JSON_ATTR):
             if isinstance(model.export_def.get("sort_order"), JSON_IMPLIED):
                 kwargs["sort_order"] = (i + 1)*100
             if isinstance(model.export_def.get("sort_order"), JSON_UNIQUE):
-                kwargs["sort_order"] = model.objects.all().aggregate(Max('sort_order'))['sort_order__max'] + 1
+                curr_max = model.objects.all().aggregate(Max('sort_order'))['sort_order__max']
+                if curr_max is None:
+                    kwargs["sort_order"] = 1
+                else:
+                    kwargs["sort_order"] = curr_max + 1
             kwargs["js"] = _js[i]
             saved = False
             while not saved:
