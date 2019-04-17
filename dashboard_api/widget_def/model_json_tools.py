@@ -95,14 +95,7 @@ class JSON_ATTR(object):
     def apply_parametisation(self, obj, val, **kwargs):
         parametisation_or_widget = kwargs.get("parametisation") 
         view = kwargs.get("view")
-        if not parametisation_or_widget:
-            try:
-                parametisation_or_widget = call_or_get_attr(obj, "widget")
-                if not parametisation_or_widget.parametisation:
-                    return val
-            except AttributeError:
-                pass
-        if view is None or parametisation_or_widget is None:
+        if view is None and parametisation_or_widget is None:
             raise ImportExportException("Cannot determine which parametisation to use")
         return parametise_label(parametisation_or_widget, view, val)
     def handle_import(self, js, cons_args, key, imp_kwargs, env):
